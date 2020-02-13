@@ -1,0 +1,1224 @@
+# Reading C:/altera/12.1sp1/modelsim_ase/tcl/vsim/pref.tcl 
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# ** Error: ./find_next_pc.v(9): near "clk": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(10): near "instruction": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(11): near "program_counter": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(12): 'logic' already declared in this scope (find_next_pc) with a conflicting port direction.
+# ** Error: ./find_next_pc.v(12): near "program_counter_next": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(22): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(37): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(38): (vlog-2730) Undefined variable: 'clk'.
+# 
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: clk.
+# ** Error: ./find_next_pc.v(38): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: rst.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: instruction.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter_next.
+# -- Compiling module find_next_pc_testbench
+# ** Error: ./find_next_pc.v(41): near ",": Syntax error.
+# ** Error: ./find_next_pc.v(46): (vlog-2730) Undefined variable: 'clk'.
+# 
+# ** Error: ./find_next_pc.v(46): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(46): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(46): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(46): (vlog-2730) Undefined variable: 'program_counter_next'.
+# 
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# ** Error: ./find_next_pc.v(9): near "clk": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(10): near "instruction": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(11): 'logic' already declared in this scope (find_next_pc) with a conflicting port direction.
+# ** Error: ./find_next_pc.v(11): near "program_counter_next": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(21): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(36): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(37): (vlog-2730) Undefined variable: 'clk'.
+# 
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: clk.
+# ** Error: ./find_next_pc.v(37): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: rst.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: instruction.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter_next.
+# -- Compiling module find_next_pc_testbench
+# ** Error: ./find_next_pc.v(40): near ",": Syntax error.
+# ** Error: ./find_next_pc.v(45): (vlog-2730) Undefined variable: 'clk'.
+# 
+# ** Error: ./find_next_pc.v(45): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(45): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(45): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(45): (vlog-2730) Undefined variable: 'program_counter_next'.
+# 
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# ** Error: ./find_next_pc.v(9): near "clk": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(10): near "instruction": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(11): 'logic' already declared in this scope (find_next_pc) with a conflicting port direction.
+# ** Error: ./find_next_pc.v(11): near "program_counter_next": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(21): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(36): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(37): (vlog-2730) Undefined variable: 'clk'.
+# 
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: clk.
+# ** Error: ./find_next_pc.v(37): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: rst.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: instruction.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter_next.
+# -- Compiling module find_next_pc_testbench
+# ** Error: ./find_next_pc.v(40): near ",": Syntax error.
+# ** Error: ./find_next_pc.v(50): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(50): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(50): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(50): (vlog-2730) Undefined variable: 'program_counter_next'.
+# 
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# ** Error: ./find_next_pc.v(9): near "clk": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(10): near "instruction": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(11): 'logic' already declared in this scope (find_next_pc) with a conflicting port direction.
+# ** Error: ./find_next_pc.v(11): near "program_counter_next": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(21): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(36): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(37): (vlog-2730) Undefined variable: 'clk'.
+# 
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: clk.
+# ** Error: ./find_next_pc.v(37): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: rst.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: instruction.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter_next.
+# -- Compiling module find_next_pc_testbench
+# ** Error: ./find_next_pc.v(40): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(41): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(55): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(55): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(55): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(55): (vlog-2730) Undefined variable: 'program_counter_next'.
+# 
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# ** Error: ./find_next_pc.v(9): near "clk": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(10): near "rst": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(11): near "instruction": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(12): near "program_counter": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(13): 'logic' already declared in this scope (find_next_pc) with a conflicting port direction.
+# ** Error: ./find_next_pc.v(13): near "program_counter_next": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(23): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(38): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(39): (vlog-2730) Undefined variable: 'clk'.
+# 
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: clk.
+# ** Error: ./find_next_pc.v(39): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: rst.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: instruction.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter_next.
+# -- Compiling module find_next_pc_testbench
+# ** Error: ./find_next_pc.v(42): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(43): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter_next'.
+# 
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# ** Error: ./find_next_pc.v(11): near "instruction": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(12): near "program_counter": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(13): 'logic' already declared in this scope (find_next_pc) with a conflicting port direction.
+# ** Error: ./find_next_pc.v(13): near "program_counter_next": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(23): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(38): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: instruction.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter_next.
+# -- Compiling module find_next_pc_testbench
+# ** Error: ./find_next_pc.v(42): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(43): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter_next'.
+# 
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# ** Error: ./find_next_pc.v(11): near "[": syntax error, unexpected '[', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: ./find_next_pc.v(23): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: instruction.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter_next.
+# -- Compiling module find_next_pc_testbench
+# ** Error: ./find_next_pc.v(42): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(43): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter_next'.
+# 
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: instruction.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter_next.
+# -- Compiling module find_next_pc_testbench
+# ** Error: ./find_next_pc.v(42): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(43): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter_next'.
+# 
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: instruction.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter_next.
+# -- Compiling module find_next_pc_testbench
+# ** Error: ./find_next_pc.v(42): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(43): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter_next'.
+# 
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# ** Error: ./find_next_pc.v(11): Port mode is incompatible with declaration: instruction
+# ** Error: ./find_next_pc.v(12): Port mode is incompatible with declaration: program_counter
+# -- Compiling module find_next_pc_testbench
+# ** Error: ./find_next_pc.v(42): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(43): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter_next'.
+# 
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# ** Error: ./find_next_pc.v(11): near "instruction": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(12): near "program_counter": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./find_next_pc.v(23): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(38): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: instruction.
+# ** Error: ./find_next_pc.v(7): Identifier must be declared with a port mode: program_counter.
+# -- Compiling module find_next_pc_testbench
+# ** Error: ./find_next_pc.v(42): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(43): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter_next'.
+# 
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# ** Error: ./find_next_pc.v(8): near ";": syntax error, unexpected ';', expecting ')'
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# ** Error: ./find_next_pc.v(13): near ")": Missing port in ansi port list.
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# -- Compiling module find_next_pc_testbench
+# ** Error: ./find_next_pc.v(42): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(43): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter_next'.
+# 
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# -- Compiling module find_next_pc_testbench
+# ** Error: ./find_next_pc.v(42): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(43): near ";": Syntax error.
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'rst'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'instruction'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter'.
+# 
+# ** Error: ./find_next_pc.v(56): (vlog-2730) Undefined variable: 'program_counter_next'.
+# 
+# ** Error: ./find_next_pc.v(59): near "@": syntax error, unexpected '@', expecting ';'
+# ** Error: ./find_next_pc.v(61): near "instruction": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# -- Compiling module find_next_pc_testbench
+# ** Error: ./find_next_pc.v(62): (vlog-2730) Undefined variable: 'program_count'.
+# 
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# -- Compiling module find_next_pc_testbench
+# 
+# Top level modules:
+# 	find_next_pc_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps find_next_pc_testbench 
+# Loading work.find_next_pc_testbench
+# Loading work.find_next_pc
+# ** Error: Cannot open macro file: find_next_pc_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: find_next_pc_wave.do
+#     while executing
+# "do find_next_pc_wave.do"
+add wave  \
+sim:/find_next_pc_testbench/dut/branch \
+sim:/find_next_pc_testbench/dut/branchLink \
+sim:/find_next_pc_testbench/dut/clk \
+sim:/find_next_pc_testbench/dut/rst \
+sim:/find_next_pc_testbench/dut/instruction \
+sim:/find_next_pc_testbench/dut/program_counter \
+sim:/find_next_pc_testbench/dut/program_counter_next \
+sim:/find_next_pc_testbench/dut/instructionType \
+sim:/find_next_pc_testbench/dut/branchAddress
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/14253/Documents/CSE 469/starter/find_next_pc_wave.do}
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/14253/Documents/CSE 469/starter/find_next_pc_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# -- Compiling module find_next_pc_testbench
+# 
+# Top level modules:
+# 	find_next_pc_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps find_next_pc_testbench 
+# Loading work.find_next_pc_testbench
+# Loading work.find_next_pc
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module find_next_pc_testbench at ./find_next_pc.v line 64
+# Simulation Breakpoint: Break in Module find_next_pc_testbench at ./find_next_pc.v line 64
+# MACRO ./runlab.do PAUSED at line 25
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# -- Compiling module find_next_pc_testbench
+# ** Error: ./find_next_pc.v(61): near "1000101010101010": Numeric value exceeds 32-bit capacity.
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# -- Compiling module find_next_pc_testbench
+# 
+# Top level modules:
+# 	find_next_pc_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps find_next_pc_testbench 
+# Loading work.find_next_pc_testbench
+# Loading work.find_next_pc
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module find_next_pc_testbench at ./find_next_pc.v line 73
+# Simulation Breakpoint: Break in Module find_next_pc_testbench at ./find_next_pc.v line 73
+# MACRO ./runlab.do PAUSED at line 25
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# -- Compiling module find_next_pc_testbench
+# 
+# Top level modules:
+# 	find_next_pc_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps find_next_pc_testbench 
+# Loading work.find_next_pc_testbench
+# Loading work.find_next_pc
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module find_next_pc_testbench at ./find_next_pc.v line 73
+# Simulation Breakpoint: Break in Module find_next_pc_testbench at ./find_next_pc.v line 73
+# MACRO ./runlab.do PAUSED at line 25
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# -- Compiling module find_next_pc_testbench
+# 
+# Top level modules:
+# 	find_next_pc_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps find_next_pc_testbench 
+# Loading work.find_next_pc_testbench
+# Loading work.find_next_pc
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module find_next_pc_testbench at ./find_next_pc.v line 73
+# Simulation Breakpoint: Break in Module find_next_pc_testbench at ./find_next_pc.v line 73
+# MACRO ./runlab.do PAUSED at line 25
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# -- Compiling module find_next_pc_testbench
+# 
+# Top level modules:
+# 	find_next_pc_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps find_next_pc_testbench 
+# Loading work.find_next_pc_testbench
+# Loading work.find_next_pc
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module find_next_pc_testbench at ./find_next_pc.v line 73
+# Simulation Breakpoint: Break in Module find_next_pc_testbench at ./find_next_pc.v line 73
+# MACRO ./runlab.do PAUSED at line 25
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# -- Compiling module find_next_pc_testbench
+# 
+# Top level modules:
+# 	find_next_pc_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps find_next_pc_testbench 
+# Loading work.find_next_pc_testbench
+# Loading work.find_next_pc
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module find_next_pc_testbench at ./find_next_pc.v line 73
+# Simulation Breakpoint: Break in Module find_next_pc_testbench at ./find_next_pc.v line 73
+# MACRO ./runlab.do PAUSED at line 25
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# ** Error: ./instruction_decoder.v(7): near "instruction_set": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(9): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(9): near "rm": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(10): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(10): near "shift": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(11): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(11): near "rn": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(12): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(12): near "rd": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(14): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(14): near "cond_field": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(15): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(15): near "br_address": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(16): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(16): near "dt_address": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(17): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(17): near "ALUCtl_code": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(22): (vlog-2730) Undefined variable: 'rm'.
+# 
+# ** Error: ./instruction_decoder.v(23): (vlog-2730) Undefined variable: 'shift'.
+# 
+# ** Error: ./instruction_decoder.v(24): (vlog-2730) Undefined variable: 'rn'.
+# 
+# ** Error: ./instruction_decoder.v(25): (vlog-2730) Undefined variable: 'rd'.
+# 
+# ** Error: ./instruction_decoder.v(26): (vlog-2730) Undefined variable: 'dt_address'.
+# 
+# ** Error: ./instruction_decoder.v(27): (vlog-2730) Undefined variable: 'br_address'.
+# 
+# ** Error: ./instruction_decoder.v(28): (vlog-2730) Undefined variable: 'cond_field'.
+# 
+# ** Error: ./instruction_decoder.v(29): (vlog-2730) Undefined variable: 'ALUCtl_code'.
+# 
+# ** Error: ./instruction_decoder.v(34): (vlog-2730) Undefined variable: 'instruction_set'.
+# 
+# ** Error: ./instruction_decoder.v(59): near "b": syntax error, unexpected IDENTIFIER, expecting ':'
+# ** Error: ./instruction_decoder.v(70): near "8": syntax error, unexpected INTEGER NUMBER
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./instruction_decoder.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# ** Error: ./instruction_decoder.v(7): near "instruction_set": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(9): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(9): near "rm": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(10): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(10): near "shift": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(11): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(11): near "rn": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(12): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(12): near "rd": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(14): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(14): near "cond_field": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(15): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(15): near "br_address": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(16): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(16): near "dt_address": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(17): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(17): near "ALUCtl_code": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(22): (vlog-2730) Undefined variable: 'rm'.
+# 
+# ** Error: ./instruction_decoder.v(23): (vlog-2730) Undefined variable: 'shift'.
+# 
+# ** Error: ./instruction_decoder.v(24): (vlog-2730) Undefined variable: 'rn'.
+# 
+# ** Error: ./instruction_decoder.v(25): (vlog-2730) Undefined variable: 'rd'.
+# 
+# ** Error: ./instruction_decoder.v(26): (vlog-2730) Undefined variable: 'dt_address'.
+# 
+# ** Error: ./instruction_decoder.v(27): (vlog-2730) Undefined variable: 'br_address'.
+# 
+# ** Error: ./instruction_decoder.v(28): (vlog-2730) Undefined variable: 'cond_field'.
+# 
+# ** Error: ./instruction_decoder.v(29): (vlog-2730) Undefined variable: 'ALUCtl_code'.
+# 
+# ** Error: ./instruction_decoder.v(34): (vlog-2730) Undefined variable: 'instruction_set'.
+# 
+# ** Error: ./instruction_decoder.v(59): near "b": syntax error, unexpected IDENTIFIER, expecting ':'
+# ** Error: ./instruction_decoder.v(70): near "8": syntax error, unexpected INTEGER NUMBER
+# ** Error: ./instruction_decoder.v(231): 'instruction_set' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.v(232): 'rm' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.v(233): 'shift' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.v(234): 'rn' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.v(235): 'rd' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.v(237): 'cond_field' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.v(238): 'br_address' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.v(239): 'dt_address' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.v(243): near "instruction_decoder": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: instruction_set.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: rm.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: shift.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: rn.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: rd.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: cond_field.
+# ** Error: ./instruction_decoder.v(5): Identifier must be declared with a port mode: br_address.
+# ** Error: ./instruction_decoder.v(5): Identifier must be declared with a port mode: dt_address.
+# ** Error: ./instruction_decoder.v(5): Identifier must be declared with a port mode: ALUCtl_code.
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./instruction_decoder.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# ** Error: ./instruction_decoder.v(7): near "instruction_set": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(9): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(9): near "rm": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(10): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(10): near "shift": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(11): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(11): near "rn": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(12): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(12): near "rd": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(14): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(14): near "cond_field": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(15): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(15): near "br_address": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(16): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(16): near "dt_address": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(17): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(17): near "ALUCtl_code": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(22): (vlog-2730) Undefined variable: 'rm'.
+# 
+# ** Error: ./instruction_decoder.v(23): (vlog-2730) Undefined variable: 'shift'.
+# 
+# ** Error: ./instruction_decoder.v(24): (vlog-2730) Undefined variable: 'rn'.
+# 
+# ** Error: ./instruction_decoder.v(25): (vlog-2730) Undefined variable: 'rd'.
+# 
+# ** Error: ./instruction_decoder.v(26): (vlog-2730) Undefined variable: 'dt_address'.
+# 
+# ** Error: ./instruction_decoder.v(27): (vlog-2730) Undefined variable: 'br_address'.
+# 
+# ** Error: ./instruction_decoder.v(28): (vlog-2730) Undefined variable: 'cond_field'.
+# 
+# ** Error: ./instruction_decoder.v(29): (vlog-2730) Undefined variable: 'ALUCtl_code'.
+# 
+# ** Error: ./instruction_decoder.v(34): (vlog-2730) Undefined variable: 'instruction_set'.
+# 
+# ** Error: ./instruction_decoder.v(59): near "b": syntax error, unexpected IDENTIFIER, expecting ':'
+# ** Error: ./instruction_decoder.v(70): near "8": syntax error, unexpected INTEGER NUMBER
+# ** Error: ./instruction_decoder.v(231): 'instruction_set' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.v(232): 'rm' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.v(233): 'shift' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.v(234): 'rn' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.v(235): 'rd' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.v(237): 'cond_field' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.v(238): 'br_address' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.v(239): 'dt_address' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.v(243): near "instruction_decoder": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: instruction_set.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: rm.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: shift.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: rn.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: rd.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: cond_field.
+# ** Error: ./instruction_decoder.v(5): Identifier must be declared with a port mode: br_address.
+# ** Error: ./instruction_decoder.v(5): Identifier must be declared with a port mode: dt_address.
+# ** Error: ./instruction_decoder.v(5): Identifier must be declared with a port mode: ALUCtl_code.
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./instruction_decoder.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# ** Error: ./instruction_decoder.v(7): near "instruction_set": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(9): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(9): near "rm": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(10): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(10): near "shift": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(11): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(11): near "rn": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(12): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(12): near "rd": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(14): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(14): near "cond_field": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(15): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(15): near "br_address": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(16): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(16): near "dt_address": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(17): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(17): near "ALUCtl_code": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(22): (vlog-2730) Undefined variable: 'rm'.
+# 
+# ** Error: ./instruction_decoder.v(23): (vlog-2730) Undefined variable: 'shift'.
+# 
+# ** Error: ./instruction_decoder.v(24): (vlog-2730) Undefined variable: 'rn'.
+# 
+# ** Error: ./instruction_decoder.v(25): (vlog-2730) Undefined variable: 'rd'.
+# 
+# ** Error: ./instruction_decoder.v(26): (vlog-2730) Undefined variable: 'dt_address'.
+# 
+# ** Error: ./instruction_decoder.v(27): (vlog-2730) Undefined variable: 'br_address'.
+# 
+# ** Error: ./instruction_decoder.v(28): (vlog-2730) Undefined variable: 'cond_field'.
+# 
+# ** Error: ./instruction_decoder.v(29): (vlog-2730) Undefined variable: 'ALUCtl_code'.
+# 
+# ** Error: ./instruction_decoder.v(34): (vlog-2730) Undefined variable: 'instruction_set'.
+# 
+# ** Error: ./instruction_decoder.v(59): near "b": syntax error, unexpected IDENTIFIER, expecting ':'
+# ** Error: ./instruction_decoder.v(70): near "8": syntax error, unexpected INTEGER NUMBER
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: instruction_set.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: rm.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: shift.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: rn.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: rd.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: cond_field.
+# ** Error: ./instruction_decoder.v(5): Identifier must be declared with a port mode: br_address.
+# ** Error: ./instruction_decoder.v(5): Identifier must be declared with a port mode: dt_address.
+# ** Error: ./instruction_decoder.v(5): Identifier must be declared with a port mode: ALUCtl_code.
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./instruction_decoder.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module test
+# ** Error: ./test.sv(59): near "b": syntax error, unexpected IDENTIFIER, expecting ':'
+# ** Error: ./test.sv(70): near "8": syntax error, unexpected INTEGER NUMBER
+# ** Error: ./test.sv(231): 'instruction_set' already declared in this scope (test).
+# ** Error: ./test.sv(232): 'rm' already declared in this scope (test).
+# ** Error: ./test.sv(233): 'shift' already declared in this scope (test).
+# ** Error: ./test.sv(234): 'rn' already declared in this scope (test).
+# ** Error: ./test.sv(235): 'rd' already declared in this scope (test).
+# ** Error: ./test.sv(237): 'cond_field' already declared in this scope (test).
+# ** Error: ./test.sv(238): 'br_address' already declared in this scope (test).
+# ** Error: ./test.sv(239): 'dt_address' already declared in this scope (test).
+# ** Error: ./test.sv(240): 'ALUCtl_code' already declared in this scope (test).
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./test.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module test
+# -- Compiling module test_testbench
+# 
+# Top level modules:
+# 	test
+# 	test_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps test_testbench 
+# Loading sv_std.std
+# Loading work.test_testbench
+# ** Error: (vsim-3033) ./test.sv(244): Instantiation of 'instruction_decoder' failed. The design unit was not found.
+# 
+#         Region: /test_testbench
+#         Searched libraries:
+#             C:/Users/14253/Documents/CSE 469/starter/work
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./runlab.do PAUSED at line 12
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# ** Error: ./instruction_decoder.v(7): near "instruction_set": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(9): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(9): near "rm": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(10): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(10): near "shift": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(11): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(11): near "rn": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(12): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(12): near "rd": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(14): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(14): near "cond_field": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(15): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(15): near "br_address": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(16): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(16): near "dt_address": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(17): 'logic' already declared in this scope (instruction_decoder) with a conflicting port direction.
+# ** Error: ./instruction_decoder.v(17): near "ALUCtl_code": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(22): (vlog-2730) Undefined variable: 'rm'.
+# 
+# ** Error: ./instruction_decoder.v(23): (vlog-2730) Undefined variable: 'shift'.
+# 
+# ** Error: ./instruction_decoder.v(24): (vlog-2730) Undefined variable: 'rn'.
+# 
+# ** Error: ./instruction_decoder.v(25): (vlog-2730) Undefined variable: 'rd'.
+# 
+# ** Error: ./instruction_decoder.v(26): (vlog-2730) Undefined variable: 'dt_address'.
+# 
+# ** Error: ./instruction_decoder.v(27): (vlog-2730) Undefined variable: 'br_address'.
+# 
+# ** Error: ./instruction_decoder.v(28): (vlog-2730) Undefined variable: 'cond_field'.
+# 
+# ** Error: ./instruction_decoder.v(29): (vlog-2730) Undefined variable: 'ALUCtl_code'.
+# 
+# ** Error: ./instruction_decoder.v(34): (vlog-2730) Undefined variable: 'instruction_set'.
+# 
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: instruction_set.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: rm.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: shift.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: rn.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: rd.
+# ** Error: ./instruction_decoder.v(4): Identifier must be declared with a port mode: cond_field.
+# ** Error: ./instruction_decoder.v(5): Identifier must be declared with a port mode: br_address.
+# ** Error: ./instruction_decoder.v(5): Identifier must be declared with a port mode: dt_address.
+# ** Error: ./instruction_decoder.v(5): Identifier must be declared with a port mode: ALUCtl_code.
+# -- Compiling module instruction_decoder_testbench
+# ** Error: ./instruction_decoder.v(231): near "[": syntax error, unexpected '[', expecting IDENTIFIER or TYPE_IDENTIFIER
+# ** Error: ./instruction_decoder.v(243): (vlog-2730) Undefined variable: 'instruction_set'.
+# 
+# ** Error: ./instruction_decoder.v(243): (vlog-2730) Undefined variable: 'rm'.
+# 
+# ** Error: ./instruction_decoder.v(243): (vlog-2730) Undefined variable: 'shift'.
+# 
+# ** Error: ./instruction_decoder.v(243): (vlog-2730) Undefined variable: 'rn'.
+# 
+# ** Error: ./instruction_decoder.v(243): (vlog-2730) Undefined variable: 'rd'.
+# 
+# ** Error: ./instruction_decoder.v(243): (vlog-2730) Undefined variable: 'cond_field'.
+# 
+# ** Error: ./instruction_decoder.v(244): (vlog-2730) Undefined variable: 'br_address'.
+# 
+# ** Error: ./instruction_decoder.v(244): (vlog-2730) Undefined variable: 'dt_address'.
+# 
+# ** Error: ./instruction_decoder.v(244): (vlog-2730) Undefined variable: 'ALUCtl_code'.
+# 
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./instruction_decoder.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# ** Error: (vlog-7) Failed to open design unit file "./instruction_decoder.v" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./instruction_decoder.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# -- Compiling module instruction_decoder_testbench
+# 
+# Top level modules:
+# 	instruction_decoder_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps instruction_decoder_testbench 
+# Loading sv_std.std
+# Loading work.instruction_decoder_testbench
+# Loading work.instruction_decoder
+# ** Error: Cannot open macro file: instruction_decoder_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: instruction_decoder_wave.do
+#     while executing
+# "do instruction_decoder_wave.do"
+add wave -position end  sim:/instruction_decoder_testbench/instruction_set
+add wave -position end  sim:/instruction_decoder_testbench/rm
+add wave -position end  sim:/instruction_decoder_testbench/shift
+add wave -position end  sim:/instruction_decoder_testbench/rn
+add wave -position end  sim:/instruction_decoder_testbench/rd
+add wave -position end  sim:/instruction_decoder_testbench/cond_field
+add wave -position end  sim:/instruction_decoder_testbench/br_address
+add wave -position end  sim:/instruction_decoder_testbench/dt_address
+add wave -position end  sim:/instruction_decoder_testbench/ALUCtl_code
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/14253/Documents/CSE 469/starter/instruction_decoder_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# -- Compiling module instruction_decoder_testbench
+# 
+# Top level modules:
+# 	instruction_decoder_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps instruction_decoder_testbench 
+# Loading sv_std.std
+# Loading work.instruction_decoder_testbench
+# Loading work.instruction_decoder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 256
+# Simulation Breakpoint: Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 256
+# MACRO ./runlab.do PAUSED at line 25
+# WARNING: No extended dataflow license exists
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# -- Compiling module instruction_decoder_testbench
+# 
+# Top level modules:
+# 	instruction_decoder_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps instruction_decoder_testbench 
+# Loading sv_std.std
+# Loading work.instruction_decoder_testbench
+# Loading work.instruction_decoder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 256
+# Simulation Breakpoint: Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 256
+# MACRO ./runlab.do PAUSED at line 25
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# -- Compiling module instruction_decoder_testbench
+# 
+# Top level modules:
+# 	instruction_decoder_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps instruction_decoder_testbench 
+# Loading sv_std.std
+# Loading work.instruction_decoder_testbench
+# Loading work.instruction_decoder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 256
+# Simulation Breakpoint: Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 256
+# MACRO ./runlab.do PAUSED at line 25
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# ** Error: ./instruction_decoder.sv(37): near "begin": syntax error, unexpected begin, expecting ':'
+# ** Error: ./instruction_decoder.sv(48): near "8": syntax error, unexpected INTEGER NUMBER
+# ** Error: ./instruction_decoder.sv(231): 'instruction_set' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(232): 'rm' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(233): 'shift' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(234): 'rn' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(235): 'rd' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(237): 'cond_field' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(238): 'br_address' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(239): 'dt_address' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(240): 'ALUCtl_code' already declared in this scope (instruction_decoder).
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./instruction_decoder.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# ** Error: ./instruction_decoder.sv(37): near "begin": syntax error, unexpected begin, expecting ':'
+# ** Error: ./instruction_decoder.sv(48): near "8": syntax error, unexpected INTEGER NUMBER
+# ** Error: ./instruction_decoder.sv(231): 'instruction_set' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(232): 'rm' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(233): 'shift' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(234): 'rn' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(235): 'rd' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(237): 'cond_field' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(238): 'br_address' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(239): 'dt_address' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(240): 'ALUCtl_code' already declared in this scope (instruction_decoder).
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./instruction_decoder.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# ** Error: ./instruction_decoder.sv(37): near "begin": syntax error, unexpected begin, expecting ':'
+# ** Error: ./instruction_decoder.sv(48): near "8": syntax error, unexpected INTEGER NUMBER
+# ** Error: ./instruction_decoder.sv(231): 'instruction_set' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(232): 'rm' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(233): 'shift' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(234): 'rn' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(235): 'rd' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(237): 'cond_field' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(238): 'br_address' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(239): 'dt_address' already declared in this scope (instruction_decoder).
+# ** Error: ./instruction_decoder.sv(240): 'ALUCtl_code' already declared in this scope (instruction_decoder).
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./instruction_decoder.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# -- Compiling module instruction_decoder_testbench
+# 
+# Top level modules:
+# 	instruction_decoder_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps instruction_decoder_testbench 
+# Loading sv_std.std
+# Loading work.instruction_decoder_testbench
+# Loading work.instruction_decoder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 256
+# Simulation Breakpoint: Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 256
+# MACRO ./runlab.do PAUSED at line 25
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/14253/Documents/CSE 469/starter/instruction_decoder_wave.do}
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/14253/Documents/CSE 469/starter/instruction_decoder_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# -- Compiling module instruction_decoder_testbench
+# 
+# Top level modules:
+# 	instruction_decoder_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps instruction_decoder_testbench 
+# Loading sv_std.std
+# Loading work.instruction_decoder_testbench
+# Loading work.instruction_decoder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 256
+# Simulation Breakpoint: Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 256
+# MACRO ./runlab.do PAUSED at line 25
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# -- Compiling module instruction_decoder_testbench
+# ** Error: ./instruction_decoder.sv(252): near "'1": syntax error, unexpected UNSIZED_BIT, expecting ';'
+# ** Error: ./instruction_decoder.sv(252): near "11010100000000000000": Numeric value exceeds 32-bit capacity.
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./instruction_decoder.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# -- Compiling module instruction_decoder_testbench
+# 
+# Top level modules:
+# 	instruction_decoder_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps instruction_decoder_testbench 
+# Loading sv_std.std
+# Loading work.instruction_decoder_testbench
+# Loading work.instruction_decoder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 256
+# Simulation Breakpoint: Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 256
+# MACRO ./runlab.do PAUSED at line 25
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# -- Compiling module instruction_decoder_testbench
+# 
+# Top level modules:
+# 	instruction_decoder_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps instruction_decoder_testbench 
+# Loading sv_std.std
+# Loading work.instruction_decoder_testbench
+# Loading work.instruction_decoder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 256
+# Simulation Breakpoint: Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 256
+# MACRO ./runlab.do PAUSED at line 25
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# -- Compiling module instruction_decoder_testbench
+# 
+# Top level modules:
+# 	instruction_decoder_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps instruction_decoder_testbench 
+# Loading sv_std.std
+# Loading work.instruction_decoder_testbench
+# Loading work.instruction_decoder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 276
+# Simulation Breakpoint: Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 276
+# MACRO ./runlab.do PAUSED at line 25
+add wave -position end  sim:/instruction_decoder_testbench/immediateValue
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/14253/Documents/CSE 469/starter/instruction_decoder_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# -- Compiling module instruction_decoder_testbench
+# 
+# Top level modules:
+# 	instruction_decoder_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps instruction_decoder_testbench 
+# Loading sv_std.std
+# Loading work.instruction_decoder_testbench
+# Loading work.instruction_decoder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 276
+# Simulation Breakpoint: Break in Module instruction_decoder_testbench at ./instruction_decoder.sv line 276
+# MACRO ./runlab.do PAUSED at line 25
