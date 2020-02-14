@@ -43,7 +43,7 @@ for port in ports:
                 thiscycle = ch[0]
                 if thiscycle != lastcycle:
                     sys.stdout.write(" ")
-                    sys.stdout.write(int(ch[0]))
+                    sys.stdout.write(hex(ch[0]))
                     sys.stdout.write("     ")
                 i = 1
                 while i < debugbytes:
@@ -57,6 +57,12 @@ for port in ports:
                             sys.stdout.write("B: ")
                         elif (i == 4):
                             sys.stdout.write("Immediate: ")
+                        elif (i == 5):
+                            sys.stdout.write("Rd: ")
+                        elif (i == 6):
+                            sys.stdout.write("Rm: ")
+                        elif (i == 7):
+                            sys.stdout.write("Rn: ")
 
 
                         sys.stdout.write(hex(ch[0]))
