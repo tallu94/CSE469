@@ -113,9 +113,10 @@ module cpu(
 	reg_file rg (.clk(clk), .read_addr1(rm), .read_addr2(rn), .write_addr(rd), .write_data(32'b0/*comes from alu*/), .read_enable1(read_en),
 		.write_enable1(write_en), .read_data1(A), .read_data2(B));
 
-	// ALU File Compute instructions (make sure to deal with cpsr values)
+	// Mmeory File -- The input and output values need to be changed
+	memory_file mem (.clk(clk), .read_addr(rm), .write_addr(rd), .write_data(32'b0), .ldr_str_en(ldr_str_en), .read_data(A));
 
-	// Memory File Loading and storing values
+	// ALU File Compute instructions (make sure to deal with cpsr values)
 
 	// if instruction is branch and link then write the new pc to R14
 endmodule
