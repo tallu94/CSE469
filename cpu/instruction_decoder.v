@@ -1,8 +1,8 @@
 // EE469 LAB 1
 // Erika Burk, Jeff Josephsen, Ameer Talal Mahmood
 
-module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediateValue, cond_field,
-		 br_address, dt_address, ALUCtl_code, enable );
+module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediateValue,
+		 br_address, dt_address, ALUCtl_code, enable, execute_flag );
 
 	input wire  [31:0] instruction_set;
 	input wire enable;
@@ -13,12 +13,15 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 	output wire [3:0]  rd;
 	output wire [3:0]	rotate;					// shift applied to an immediate value
 	output wire [7:0]  immediateValue;
-	output wire [3:0]  cond_field;				// flags for alu
-	output wire [23:0] br_address;				// address to branch to
+	wire [3:0]  cond_field;				// flags for alu
+	output wire [23:0] br_address;				// address to branch 
 	output wire [11:0] dt_address;  			// used in LDR and STR as an immediate offset
 	output wire [10:0] ALUCtl_code;
 
+	input wire [31:0] cpsr;
+	output wire execute_flag; 					//if condition field matches cpsr, true, else false
 
+	assign cond_field = instruction_set[31:28];
 
 /* 	initial begin
 		rm = 4'b0;
@@ -36,6 +39,26 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 	always @(*) begin
 
 		if (enable) begin
+
+			case (cond_field)
+				4'b0000: execute_flag = cpsr[30];
+				4'b0001: execute_flag = ~cpsr[30];
+				4'b0010: execute_flag = cpsr[29];
+				4'b0011: execute_flag = ~cpsr[29];
+				4'b0100: execute_flag = cpsr[31];
+				4'b0101: execute_flag = ~cpsr[31];
+				4'b0110: execute_flag = cpsr[28];
+				4'b0111: execute_flag = ~cpsr[28];
+				4'b1000: execute_flag = cpsr[29] & ~cpsr[30];
+				4'b1001: execute_flag = ~cpsr[29] & cpsr[30];
+				4'b1010: execute_flag = (cpsr[31] & cpsr[28]) | (~cpsr[31] & ~cpsr[28]); 
+				4'b1011: execute_flag = (cpsr[31] & ~cpsr[28]) | (~cpsr[31] & cpsr[28]);
+				4'b1100: execute_flag = ~cpsr[30] & ((cpsr[31] & cpsr[28]) | (~cpsr[31] & ~cpsr[28]));
+				4'b1101: execute_flag = cpsr[30] | (cpsr[31] & ~cpsr[28]) | (~cpsr[31] & cpsr[28]);
+				4'b1110: execute_flag = 1'b1;
+				default: execute_flag = 1'b1;
+			endcase
+
 			casex(instruction_set[27:20])
 
 				// ------------- DATA PROCESSING OPERATIONS (0-30) --------------
