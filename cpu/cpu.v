@@ -114,7 +114,7 @@ module cpu(
 		.write_enable1(write_en), .read_data1(A), .read_data2(B));
 
 	// Mmeory File -- The input and output values need to be changed
-	memory_file mem (.clk(clk), .read_addr(rm), .write_addr(rd), .write_data(32'b0), .ldr_str_en(ldr_str_en), .read_data(A));
+	memory_file mem (.clk(clk), .addr(rd), .write_data(A), .ldr_str_en(ldr_str_en), .read_data(A), .load_en(dt_address[20]), .store_en(~dt_address[20]));
 
 	// ALU File Compute instructions (make sure to deal with cpsr values)
 
