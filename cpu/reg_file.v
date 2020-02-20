@@ -16,24 +16,7 @@ module reg_file(clk, read_addr1, read_addr2, write_addr, write_data, read_enable
 	output wire [31:0] read_data2;
 
 	reg [31:0] regfile [15:0]; 	// 16 32-bit registers
-	initial begin
-		regfile[0] = 32'd0;
-		regfile[1] = 32'd1;
-		regfile[2] = 32'd2;
-		regfile[3] = 32'd3;
-		regfile[4] = 32'd4;
-		regfile[5] = 32'd5;
-		regfile[6] = 32'd6;
-		regfile[7] = 32'd7;
-		regfile[8] = 32'd8;
-		regfile[9] = 32'd9;
-		regfile[10] = 32'd10;
-		regfile[11] = 32'd11;
-		regfile[12] = 32'd12;
-		regfile[13] = 32'd13;
-		regfile[14] = 32'd14;
-		regfile[15] = 32'd15;
-	end
+
 /* 	always @(posedge clk) begin
 		if (read_enable1) begin
 			read_data1 <= regfile[read_addr1];
@@ -45,10 +28,12 @@ module reg_file(clk, read_addr1, read_addr2, write_addr, write_data, read_enable
 		if (write_enable1)
 			regfile[write_addr] <= write_data;
 	end */
+	assign read_data1 = regfile[read_addr1];
+	assign read_data2 = regfile[read_addr2];
 
 	always @(*) begin
-			read_data1 <= regfile[read_addr1];
-			read_data2 <= regfile[read_addr2];
+			//read_data1 <= regfile[read_addr1];
+			//read_data2 <= regfile[read_addr2];
 			if (write_enable1)
 				regfile[write_addr] <= write_data;
 	end

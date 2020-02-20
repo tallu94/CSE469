@@ -25,19 +25,21 @@ module cpu(
 	reg [11:0] dt_address;
 	reg [23:0] br_address;
 	reg [10:0] ALUCtl_code;
-	reg [3:0]  cpsr;
+	reg [31:0]  cpsr;
 	reg [3:0]  cpsr_n;
 	reg [31:0] rm_data;
 	reg [31:0] rn_data;
 	reg [31:0] next_r14;			// R[14] value to be written into reg file
 	reg [31:0] A;					// ouput from reg file --> input in alu
 	reg [31:0] B;					// ouput from reg file --> input in alu
+	reg [31:0] memOut;
 	reg write_en;					// gets assigned as an output from alu
 	reg read_en;
 	reg instruction_en;
 	reg ldr_str_en;
 	reg [1:0] cycle_counter;
-
+	reg cpsr_enable;
+	reg execute_flag;
 	// Controls the LED on the board.
 	assign led = 1'b1;
 
@@ -46,54 +48,61 @@ module cpu(
 	assign debug_port2 = A[7:0];			// A VALUE (Rm) 8'h02;
 	assign debug_port3 = B[7:0];			// B VALUE (Rn) 8'h03;
 	assign debug_port4 = immediateValue;	// IMMEDIATE VALUE 8'h04;
-	assign debug_port5 = rd;
-	assign debug_port6 = rm;
-	assign debug_port7 = rn;
+	assign debug_port5 = rm;
+	assign debug_port6 = rn;
+	assign debug_port7 = cpsr[31:28];
 
 
 	// initialize and update next
 	always @(posedge clk) begin
 		if (~nreset) begin //might need to be a "~"
+			execute_flag <= 1;
 			pc <= 32'b0;
-			cycle_counter = 0;
-			write_en = 0;
-			read_en = 0;
-			instruction_en = 1;
-			ldr_str_en = 0;
+			cycle_counter <= 0;
+			write_en <= 0;
+			read_en <= 0;
+			instruction_en <= 1;
+			ldr_str_en <= 0;
 		end
 
 		case (cycle_counter)
 			0: begin
 				pc <= pc_n;
-				instruction_en = 1;
-				read_en = 0;
-				ldr_str_en = 0;
-				write_en = 0;
-				cycle_counter = cycle_counter + 1;
+				instruction_en <= 1;
+				read_en <= 0;
+				ldr_str_en <= 0;
+				write_en <= 0;
+				cycle_counter <= cycle_counter + 1;
 			end
 
 			1: begin
-				instruction_en = 0;
-				read_en = 1;
-				ldr_str_en = 0;
-				write_en = 0;
-				cycle_counter = cycle_counter + 1;
+				if (execute_flag) begin
+				instruction_en <= 0;
+				read_en <= 1;
+				ldr_str_en <= 0;
+				write_en <= 0;
+				cycle_counter <= cycle_counter + 1;
+				end
 			end
 
 			2: begin
-				instruction_en = 0;
-				read_en = 0;
-				ldr_str_en = 1;
-				write_en = 0;
-				cycle_counter = cycle_counter + 1;
+			if (execute_flag) begin
+				instruction_en <= 0;
+				read_en <= 0;
+				ldr_str_en <= 1;
+				write_en <= 0;
+				cycle_counter <= cycle_counter + 1;
+				end
 			end
 
 			3: begin
-				instruction_en = 0;
-				read_en = 0;
-				ldr_str_en = 0;
-				write_en = 1;
-				cycle_counter = 0;
+			if (execute_flag) begin
+				instruction_en <= 0;
+				read_en <= 0;
+				ldr_str_en <= 0;
+				write_en <= 1;
+				cycle_counter <= 0;
+			end
 			end
 		endcase
 	end
@@ -107,17 +116,17 @@ module cpu(
 
 	// updates format flags and address/values
 	instruction_decoder id (.instruction_set(instruction_set), .rm(rm), .shift(shift), .rn(rn), .rd(rd), .rotate(rotate),
-		.immediateValue(immediateValue), .cond_field(cond_field),	.br_address(br_address), .dt_address(dt_address), .ALUCtl_code(ALUCtl_code), .enable(instruction_en));
+		.immediateValue(immediateValue), .br_address(br_address), .dt_address(dt_address), .ALUCtl_code(ALUCtl_code), .enable(instruction_en), .execute_flag(execute_flag));
 
 	// Register File get and write values
-	reg_file rg (.clk(clk), .read_addr1(rm), .read_addr2(rn), .write_addr(rd), .write_data(32'b0/*comes from alu*/), .read_enable1(read_en),
+	reg_file rg (.clk(clk), .read_addr1(rm), .read_addr2(rn), .write_addr(rd), .write_data(memOut), .read_enable1(read_en),
 		.write_enable1(write_en), .read_data1(A), .read_data2(B));
 
 	// Mmeory File -- The input and output values need to be changed
-	memory_file mem (.clk(clk), .addr(rd), .write_data(A), .ldr_str_en(ldr_str_en), .read_data(A), .load_en(dt_address[20]), .store_en(~dt_address[20]));
+	memory_file mem (.clk(clk), .addr(rd), .write_data(A), .ldr_str_en(ldr_str_en), .read_data(memOut), .load_en(dt_address[20]), .store_en(~dt_address[20]));
 
 	// ALU File Compute instructions (make sure to deal with cpsr values)
-
+	alu my_alu (.ALUCtl(ALUCtl), .A(A), .B(B), .I(immediateValue), .cpsr(cpsr), .cpsr_enable(cpsr_enable));
 	// if instruction is branch and link then write the new pc to R14
 endmodule
 

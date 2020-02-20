@@ -62,7 +62,7 @@ for port in ports:
                         elif (i == 6):
                             sys.stdout.write("Rm: ")
                         elif (i == 7):
-                            sys.stdout.write("Rn: ")
+                            sys.stdout.write("CPSR: ")
 
 
                         sys.stdout.write(hex(ch[0]))
