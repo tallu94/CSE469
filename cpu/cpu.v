@@ -58,7 +58,7 @@ module cpu(
 	// initialize and update next
 	always @(posedge clk) begin
 		if (~nreset) begin //might need to be a "~"
-			pc <= 32'b0;
+			pc = 32'b0;
 			cycle_counter <= 0;
 			write_en <= 0;
 			read_en <= 0;
@@ -68,7 +68,7 @@ module cpu(
 
 		case (cycle_counter)
 			0: begin
-				pc <= pc_n;
+				pc = pc_n;
 				instruction_en <= 1;
 				read_en <= 0;
 				ldr_str_en <= 0;
@@ -157,6 +157,8 @@ module cpu_testbench();
 		.debug_port5(debug_port5), .debug_port6(debug_port6), .debug_port7(debug_port7));
 
 	initial begin
+		nreset = 1'b0;
+		@(posedge clk);
 		nreset = 1'b1;
 		@(posedge clk);
 		nreset = 1'b0;

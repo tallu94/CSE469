@@ -28,8 +28,8 @@ module find_next_pc(
 	assign program_counter_next = temp_program_counter_next;
 	assign next_r14 = temp_next_r14;
 
-	parameter [10:0] Branch = 11'd31;
-	parameter [10:0] BranchLink = 11'd32;
+	reg [10:0] Branch = 11'd31;
+	reg [10:0] BranchLink = 11'd32;
 
 
 	always @(*) begin
@@ -46,7 +46,7 @@ module find_next_pc(
 
 			default: begin
 				temp_next_r14 <= 32'dx;
-				temp_program_counter_next <= program_counter + 23'd1; //we will increment by just one
+				temp_program_counter_next <= program_counter + 32'd1; //we will increment by just one
 			end
 		endcase
 	end

@@ -4,15 +4,13 @@ vlib work
 # Compile Verilog
 #     All Verilog files that are part of this design should have
 #     their own "vlog" line below.
-
-vlog "./find_next_pc.v"
 vlog "./alu.v"
-vlog "./instruction_memory.v"
+vlog "./find_next_pc.v"
+vlog "./Instruction_memory.v"
 vlog "./instruction_decoder.v"
 vlog "./memory_file.v"
 vlog "./reg_file.v"
 vlog "./cpu.v"
-
 
 # Call vsim to invoke simulator
 #     Make sure the last item on the line is the name of the

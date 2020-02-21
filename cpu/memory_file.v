@@ -3,16 +3,20 @@
 
 module memory_file(clk, addr, write_data, ldr_str_en, read_data, load_en, store_en);
 
-	input wire clk;
-	input wire [3:0] addr;
-	input wire ldr_str_en;
-	input wire load_en;
-	input wire store_en;
-	input wire [31:0] write_data;
+	input clk;
+	input [3:0] addr;
+	input ldr_str_en;
+	input load_en;
+	input store_en;
+	input [31:0] write_data;
 
-	output reg [31:0] read_data;
+	output wire [31:0] read_data;
+
+	reg [31:0] temp_read_data;
 
 	reg [31:0] memfile [15:0]; 	// 16 32-bit registers
+
+	assign read_data = temp_read_data;
 	/*
 	initial begin
 		memfile[0] = 32'd0;
@@ -39,7 +43,7 @@ module memory_file(clk, addr, write_data, ldr_str_en, read_data, load_en, store_
 				if (store_en)
 					memfile[addr] <= write_data;
 				if (load_en)
-					read_data <= memfile[addr];
+					temp_read_data <= memfile[addr];
 			end
 	end
 
