@@ -1,12 +1,13 @@
-// EE469 LAB 1
-// Erika Burk, Jeff Josephsen, Ameer Talal Mahmood
-
 module alu (ALUCtl, A, B, I, ALUOut, cpsr, cpsr_enable);
-	input  wire [10:0] ALUCtl;		// dictates which instruction set to run
-	input  wire [31:0] A, B, I;			// values coming from reg file
-	output wire [31:0] ALUOut;	// new data to be added to reg or memory
 
-	output wire [31:0] cpsr;
+	//in/out
+	input  wire [10:0] ALUCtl;		// dictates which instruction set to run
+	input  wire [31:0] A, B, I;	// values coming from reg file
+	input wire cpsr_enable;
+	output reg [31:0] ALUOut;	// new data to be added to reg or memory
+	output reg [31:0] cpsr;
+
+	//variables
 	wire Z;
 	wire [31:0] sub_result;
 	wire [31:0] add_result;
@@ -14,7 +15,6 @@ module alu (ALUCtl, A, B, I, ALUOut, cpsr, cpsr_enable);
 	wire [31:0] orr_result;
 	wire [31:0] eor_result;
 	wire [31:0] bic_result;
-	input wire cpsr_enable;
 	assign sub_result = A - B;
 	assign add_result = A + B;
 	assign and_result = A & B;
@@ -22,10 +22,7 @@ module alu (ALUCtl, A, B, I, ALUOut, cpsr, cpsr_enable);
 	assign eor_result = A ^ B;
 	assign bic_result = A & (~B);
 
-
-	// assign Zero = (ALUOut == Zero); 	// Zero is true if ALUOut is 0
 	always @(ALUCtl, A, B, I) begin
-
 		casex(ALUCtl)
 			0: begin
 				ALUOut <= A + B;			//ADD
@@ -33,7 +30,8 @@ module alu (ALUCtl, A, B, I, ALUOut, cpsr, cpsr_enable);
 					if ((A+B) == 0) cpsr[30] <= 1'b1;
 					else cpsr[30] <= 1'b0;			// set zero bit
 					cpsr[31] <= add_result[31]; //set negative bit if solution MSB is 1
-					if (((A > 0) && (B > 0) && ((A+B) < 0)) || ((A < 0) && (B < 0) && ((A+B) < 0))) cpsr[28] <= 1'b1;
+					if ((~A[31]) && (~B[31]) && ((add_result[31])) //pos + pos = neg
+					|| ((A[31]) && (B[31]) && ((~add_result[31])))) cpsr[28] <= 1'b1; //neg + neg = pos
 					else cpsr[28] <= 1'b0; //set V bit
 				end
 			end
@@ -46,7 +44,8 @@ module alu (ALUCtl, A, B, I, ALUOut, cpsr, cpsr_enable);
 					else cpsr[30] <= 1'b0;		//set zero bit
 					if (B > A) cpsr[29] <= 1'b1;
 					else cpsr[29] <= 1'b1; 			// set Carry bit
-					if (((A < 0) && (B > 0) && ((A-B) > 0)) || ((A > 0) && (B < 0) && ((A-B) < 0))) cpsr[28] <= 1'b1;
+					if ((A[31]) && (~B[31]) && ((~sub_result[31])) //neg - pos = pos
+					|| ((~A[31]) && (B[31]) && ((sub_result[31])))) cpsr[28] <= 1'b1; //pos - neg = neg
 					else cpsr[28] <= 1'b0; //set V bit
 					cpsr[31] <= sub_result[31];		//set negative bit
 				end
@@ -83,11 +82,12 @@ module alu (ALUCtl, A, B, I, ALUOut, cpsr, cpsr_enable);
 			8: begin
 				ALUOut <= A < B;				// CMP
 				if ((A - B) == 0)  cpsr[30] <= 1'b1;
-				else cpsr[30] <= 1'b0;		//set zero bit
+					else cpsr[30] <= 1'b0;		//set zero bit
 				if (B > A) cpsr[29] <= 1'b1;
-				else cpsr[29] <= 1'b1; 			// set Carry bit
-				if (((A < 0) && (B > 0) && ((A-B) > 0)) || ((A > 0) && (B < 0) && ((A-B) < 0))) cpsr[28] <= 1'b1;
-				else cpsr[28] <= 1'b0; //set V bit
+					else cpsr[29] <= 1'b1; 			// set Carry bit
+				if ((A[31]) && (~B[31]) && ((~sub_result[31])) //neg - pos = pos
+					|| ((~A[31]) && (B[31]) && ((sub_result[31])))) cpsr[28] <= 1'b1; //pos - neg = neg
+					else cpsr[28] <= 1'b0; //set V bit
 				cpsr[31] <= sub_result[31];		//set negative bit
 			end
 			9: begin 						// TST (performs a bitwise AND
@@ -118,4 +118,49 @@ module alu (ALUCtl, A, B, I, ALUOut, cpsr, cpsr_enable);
 			default: ALUOut <= 32'bx;
 		endcase
 		end
+endmodule
+
+module alu_testbench();
+	reg [10:0] ALUCtl;
+	reg [31:0] A, B, I;
+	reg cpsr_enable;
+	wire [31:0] ALUoutput;
+	wire [31:0] cpsr;
+
+	alu dut (ALUCtl, A, B, I, ALUoutput, cpsr, cpsr_enable);
+
+	initial begin
+	//test ADD
+	cpsr_enable <= 1;
+	A <= 32'h00000010; B <= 32'h00000001; ALUCtl <= 0; #10;
+	A <= 32'h7FFFFFFF; B <= 32'h00000FF1; #10; // V = 1 p + p = n
+	A <= 32'h80000000; B <= 32'hF000FFFF; #10; // V = 1 n + n = p
+	A <= 32'h00000000; B <= 32'h00000000; #10; // Z = 1
+	A <= 32'h10000000; B <= 32'h00000001; #10; // N = 1
+
+	//test SUB
+	A <= 32'h00001001; B <= 32'h00000001; ALUCtl <= 8; #10;
+	A <= 32'h80000000; B <= 32'h00000FFF; #10; // V = 1 n - p = p
+	A <= 32'h7FFFFFFF; B <= 32'hFFFFFFF0; #10; // V = 1 p - n = n
+	A <= 32'h00000000; B <= 32'h00000000; #10; // Z = 1
+	A <= 32'h00000000; B <= 32'h00000111; #10; // N = 1
+
+	//ORR
+	A <= 32'h00100100; B <= 32'h01000111; #10; ALUCtl <= 4; #10;
+	//AND
+	ALUCtl <= 8; #10;
+	//EOR
+	ALUCtl <= 5; #10;
+	//BIC
+	ALUCtl <= 11; #10;
+	ALUCtl <= 9; #10;
+	ALUCtl <= 10; #10;
+	ALUCtl <= 6; #10;
+	ALUCtl <= 7; #10;
+	ALUCtl <= 31; #10;
+	ALUCtl <= 32; #10;
+	ALUCtl <= 41; #10;
+	ALUCtl <= 42; #10;
+
+	end
 endmodule

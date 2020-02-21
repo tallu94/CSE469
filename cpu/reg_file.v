@@ -17,6 +17,10 @@ module reg_file(clk, read_addr1, read_addr2, write_addr, write_data, read_enable
 
 	reg [31:0] regfile [15:0]; 	// 16 32-bit registers
 
+
+	assign regfile[2] = 9;
+	assign regfile[10] = 0;
+
 /* 	always @(posedge clk) begin
 		if (read_enable1) begin
 			read_data1 <= regfile[read_addr1];

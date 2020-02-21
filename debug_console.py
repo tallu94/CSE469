@@ -56,13 +56,13 @@ for port in ports:
                         elif (i == 3):
                             sys.stdout.write("B: ")
                         elif (i == 4):
-                            sys.stdout.write("Immediate: ")
+                            sys.stdout.write("Cycle: ")
                         elif (i == 5):
-                            sys.stdout.write("Rd: ")
-                        elif (i == 6):
                             sys.stdout.write("Rm: ")
+                        elif (i == 6):
+                            sys.stdout.write("Rn: ")
                         elif (i == 7):
-                            sys.stdout.write("CPSR: ")
+                            sys.stdout.write("Rd: ")
 
 
                         sys.stdout.write(hex(ch[0]))

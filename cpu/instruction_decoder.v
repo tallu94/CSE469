@@ -274,12 +274,12 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 
 				//------------- SINGLE DATA TRANSFER (41-50)----------------------
 				8'b01xxxxx0: begin 						// LDR
-					rm = instruction_set[3:0];
+					rm = 	4'bx;				
 					shift = instruction_set[11:4];
 					rn = instruction_set[19:16];
 					rd = instruction_set[15:12];
 					rotate = 4'bx;
-					immediateValue = 8'bx;
+					immediateValue = instruction_set[11:0];
 					dt_address = instruction_set[23:0];
 					br_address = 24'bx;
 					cond_field = instruction_set[31:28];
@@ -287,12 +287,12 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 				end
 
 				8'b01xxxxx1: begin 						// STR
-					rm = instruction_set[3:0];
+					rm = instruction_set[15:12];
 					shift = instruction_set[11:4];
 					rn = instruction_set[19:16];
-					rd = instruction_set[15:12];
+					rd = 4'bx;
 					rotate = 4'bx;
-					immediateValue = 8'bx;
+					immediateValue = instruction_set[11:0];
 					dt_address = instruction_set[23:0];
 					br_address = 24'bx;
 					cond_field = instruction_set[31:28];

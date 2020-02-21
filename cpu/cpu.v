@@ -47,10 +47,10 @@ module cpu(
 	assign debug_port1 = ALUCtl_code[7:0];	// INSTRUCTION  8'h01;
 	assign debug_port2 = A[7:0];			// A VALUE (Rm) 8'h02;
 	assign debug_port3 = B[7:0];			// B VALUE (Rn) 8'h03;
-	assign debug_port4 = immediateValue;	// IMMEDIATE VALUE 8'h04;
+	assign debug_port4 = cycle_counter;	// IMMEDIATE VALUE 8'h04;
 	assign debug_port5 = rm;
 	assign debug_port6 = rn;
-	assign debug_port7 = cpsr[31:28];
+	assign debug_port7 = rd;
 
 
 	// initialize and update next
@@ -123,9 +123,9 @@ module cpu(
 		.write_enable1(write_en), .read_data1(A), .read_data2(B));
 
 	// Mmeory File -- The input and output values need to be changed
-	memory_file mem (.clk(clk), .addr(rd), .write_data(A), .ldr_str_en(ldr_str_en), .read_data(memOut), .load_en(dt_address[20]), .store_en(~dt_address[20]));
+	memory_file mem (.clk(clk), .addr(B), .write_data(A), .ldr_str_en(ldr_str_en), .read_data(memOut), .load_en(dt_address[20]), .store_en(~dt_address[20]));
 
-	// ALU File Compute instructions (make sure to deal with cpsr values)
+	// ALU File Compute instructions (m	ake sure to deal with cpsr values)
 	alu my_alu (.ALUCtl(ALUCtl), .A(A), .B(B), .I(immediateValue), .cpsr(cpsr), .cpsr_enable(cpsr_enable));
 	// if instruction is branch and link then write the new pc to R14
 endmodule
