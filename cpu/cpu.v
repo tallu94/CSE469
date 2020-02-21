@@ -1,6 +1,6 @@
 module cpu(
-	input  wire clk,
-	input  wire nreset,
+	input  clk,
+	input  nreset,
 	output wire  led,
 	output wire  [7:0] debug_port1,	// outputs the Instruction Type (ADD, SUB, etc.)
 	output wire  [7:0] debug_port2,	// display Rm
@@ -13,33 +13,35 @@ module cpu(
 
 	// declaring local variables
 	reg [31:0] pc;
-	reg [31:0] pc_n;
-	reg [31:0] instruction_set;
-	reg [7:0]  shift;
-	reg [3:0]  rm;
-	reg [3:0]  rn;
-	reg [3:0]  rd;
-	reg [3:0]  rotate;
-	reg [7:0]  immediateValue;
-	reg [3:0]  cond_field;
-	reg [11:0] dt_address;
-	reg [23:0] br_address;
-	reg [10:0] ALUCtl_code;
-	reg [31:0]  cpsr;
-	reg [3:0]  cpsr_n;
-	reg [31:0] rm_data;
-	reg [31:0] rn_data;
-	reg [31:0] next_r14;			// R[14] value to be written into reg file
-	reg [31:0] A;					// ouput from reg file --> input in alu
-	reg [31:0] B;					// ouput from reg file --> input in alu
-	reg [31:0] memOut;
+	wire [31:0] pc_n;
+	wire [31:0] instruction_set;
+	wire [7:0]  shift;
+	wire [3:0]  rm;
+	wire [3:0]  rn;
+	wire [3:0]  rd;
+	wire [3:0]  rotate;
+	wire [7:0]  immediateValue;
+	wire [3:0]  cond_field;
+	wire [11:0] dt_address;
+	wire [23:0] br_address;
+	wire [10:0] ALUCtl_code;
+	wire [31:0] ALUOut;
+	wire [31:0]  cpsr;
+	wire [3:0]  cpsr_n;
+	wire [31:0] rm_data;
+	wire [31:0] rn_data;
+	wire [31:0] next_r14;			// R[14] value to be written into reg file
+	wire [31:0] A;					// ouput from reg file --> input in alu
+	wire [31:0] B;					// ouput from reg file --> input in alu
+	wire [31:0] memOut;
 	reg write_en;					// gets assigned as an output from alu
 	reg read_en;
+	wire ldr_en;
 	reg instruction_en;
 	reg ldr_str_en;
 	reg [1:0] cycle_counter;
-	reg cpsr_enable;
-	reg execute_flag;
+	wire cpsr_enable;
+	wire execute_flag;
 	// Controls the LED on the board.
 	assign led = 1'b1;
 
@@ -56,7 +58,6 @@ module cpu(
 	// initialize and update next
 	always @(posedge clk) begin
 		if (~nreset) begin //might need to be a "~"
-			execute_flag <= 1;
 			pc <= 32'b0;
 			cycle_counter <= 0;
 			write_en <= 0;
@@ -116,25 +117,26 @@ module cpu(
 
 	// updates format flags and address/values
 	instruction_decoder id (.instruction_set(instruction_set), .rm(rm), .shift(shift), .rn(rn), .rd(rd), .rotate(rotate),
-		.immediateValue(immediateValue), .br_address(br_address), .dt_address(dt_address), .ALUCtl_code(ALUCtl_code), .enable(instruction_en), .execute_flag(execute_flag));
+		.immediateValue(immediateValue), .br_address(br_address), .dt_address(dt_address), .ALUCtl_code(ALUCtl_code), .enable(instruction_en), .cpsr_enable(cpsr_enable), .execute_flag(execute_flag), .cpsr(cpsr), .cond_field(cond_field));
 
 	// Register File get and write values
 	reg_file rg (.clk(clk), .read_addr1(rm), .read_addr2(rn), .write_addr(rd), .write_data(memOut), .read_enable1(read_en),
 		.write_enable1(write_en), .read_data1(A), .read_data2(B));
 
 	// Mmeory File -- The input and output values need to be changed
-	memory_file mem (.clk(clk), .addr(B), .write_data(A), .ldr_str_en(ldr_str_en), .read_data(memOut), .load_en(dt_address[20]), .store_en(~dt_address[20]));
+	memory_file mem (.clk(clk), .addr(B[3:0]), .write_data(A), .ldr_str_en(ldr_str_en), .read_data(memOut), .load_en(instruction_set[20]), .store_en(~instruction_set[20]));
 
 	// ALU File Compute instructions (m	ake sure to deal with cpsr values)
-	alu my_alu (.ALUCtl(ALUCtl), .A(A), .B(B), .I(immediateValue), .cpsr(cpsr), .cpsr_enable(cpsr_enable));
+	alu my_alu (.ALUCtl(ALUCtl_code), .A(A), .B(B), .I(immediateValue), .ALUOut(ALUOut), .cpsr(cpsr), .cpsr_enable(cpsr_enable));
 	// if instruction is branch and link then write the new pc to R14
 endmodule
 
 
-/*module cpu_testbench();
+
+module cpu_testbench();
 	reg clk;
 	reg nreset;
-	wire  led;
+	wire led;
 	wire  [7:0] debug_port1;	// outputs the Instruction Type (ADD, SUB, etc.)
 	wire  [7:0] debug_port2;	// display Rm
 	wire  [7:0] debug_port3;	// display Rn
@@ -163,4 +165,4 @@ endmodule
 		$stop;
 
 	end
-endmodule */
+endmodule

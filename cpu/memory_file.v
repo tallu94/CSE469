@@ -10,9 +10,10 @@ module memory_file(clk, addr, write_data, ldr_str_en, read_data, load_en, store_
 	input wire store_en;
 	input wire [31:0] write_data;
 
-	output wire [31:0] read_data;
+	output reg [31:0] read_data;
 
 	reg [31:0] memfile [15:0]; 	// 16 32-bit registers
+	/*
 	initial begin
 		memfile[0] = 32'd0;
 		memfile[1] = 32'd0;
@@ -31,6 +32,7 @@ module memory_file(clk, addr, write_data, ldr_str_en, read_data, load_en, store_
 		memfile[14] = 32'd0;
 		memfile[15] = 32'd0;
 	end
+	*/
 
 	always @(*) begin
 			if (ldr_str_en) begin

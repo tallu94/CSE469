@@ -4,35 +4,49 @@
 
 //input includes the instruction
 //output is the next program counter value/target
-module find_next_pc(clk, ALUCtl_code, br_address, program_counter, program_counter_next,
-					next_r14);
+module find_next_pc(
+	input clk,
+	input [10:0] ALUCtl_code,
+	input [23:0] br_address,
+	input [31:0] program_counter,
+	output wire [31:0] program_counter_next,
+	output wire [31:0] next_r14);
 
+	/*
 	input wire clk;
-	input wire  [10:0] ALUCtl_code;		// this tells us what instruction set it is.
-	input wire  [23:0] br_address;			// tells us where to branch to
-	input wire  [31:0] program_counter;
-	output wire [31:0] program_counter_next;
-	output wire [31:0] next_r14;
+	input wire [10:0] ALUCtl_code;		// this tells us what instruction set it is.
+	input wire [23:0] br_address;			// tells us where to branch to
+	input wire [31:0] program_counter;
+	output reg [31:0] program_counter_next;
+	output reg [31:0] next_r14;
 
-	reg [10:0] Branch = 11'd31;
-	reg [10:0] BranchLink = 11'd32;
+	*/
+
+	reg [31:0] temp_program_counter_next;
+	reg [31:0] temp_next_r14;
+
+	assign program_counter_next = temp_program_counter_next;
+	assign next_r14 = temp_next_r14;
+
+	parameter [10:0] Branch = 11'd31;
+	parameter [10:0] BranchLink = 11'd32;
 
 
 	always @(*) begin
 		case(ALUCtl_code)
 			Branch: begin
-				next_r14 = 32'dx;
-				program_counter_next = program_counter + br_address;
+				temp_next_r14 <= 32'dx;
+				temp_program_counter_next <= program_counter + br_address;
 			end
 
 			BranchLink: begin
-				next_r14 = program_counter + 32'd1;
-				program_counter_next = program_counter + br_address;
+				temp_next_r14 <= program_counter + 32'd1;
+				temp_program_counter_next <= program_counter + br_address;
 			end
 
 			default: begin
-				next_r14 = 32'dx;
-				program_counter_next = program_counter + 23'd1; //we will increment by just one
+				temp_next_r14 <= 32'dx;
+				temp_program_counter_next <= program_counter + 23'd1; //we will increment by just one
 			end
 		endcase
 	end

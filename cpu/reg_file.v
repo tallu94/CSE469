@@ -1,45 +1,27 @@
 // EE469 LAB 1
 // Erika Burk, Jeff Josephsen, Ameer Talal Mahmood
 
-module reg_file(clk, read_addr1, read_addr2, write_addr, write_data, read_enable1,
-		write_enable1, read_data1, read_data2);
-
-	input wire clk;
-	input wire [3:0] read_addr1;
-	input wire [3:0] read_addr2;
-	input wire [3:0] write_addr;
-	input wire [31:0] write_data;
-	input wire read_enable1;
-	input wire write_enable1;
-
-	output wire [31:0] read_data1;
-	output wire [31:0] read_data2;
+module reg_file(
+	input clk,
+	input [3:0] read_addr1,
+	input [3:0] read_addr2,
+	input [3:0] write_addr,
+	input [31:0] write_data,
+	input read_enable1,
+	input write_enable1,
+	output wire [31:0] read_data1,
+	output wire [31:0] read_data2);
 
 	reg [31:0] regfile [15:0]; 	// 16 32-bit registers
 
-
-	assign regfile[2] = 9;
-	assign regfile[10] = 0;
-
-/* 	always @(posedge clk) begin
-		if (read_enable1) begin
-			read_data1 <= regfile[read_addr1];
-			read_data2 <= regfile[read_addr2];
-		end
-	end
-
-	always @(posedge clk) begin
-		if (write_enable1)
-			regfile[write_addr] <= write_data;
-	end */
 	assign read_data1 = regfile[read_addr1];
 	assign read_data2 = regfile[read_addr2];
 
+
 	always @(*) begin
-			//read_data1 <= regfile[read_addr1];
-			//read_data2 <= regfile[read_addr2];
+
 			if (write_enable1)
-				regfile[write_addr] <= write_data;
+				regfile[write_addr] = write_data;
 	end
 
 endmodule

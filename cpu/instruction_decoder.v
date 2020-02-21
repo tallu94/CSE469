@@ -2,26 +2,28 @@
 // Erika Burk, Jeff Josephsen, Ameer Talal Mahmood
 
 module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediateValue,
-		 br_address, dt_address, ALUCtl_code, enable, cpsr_enable, execute_flag);
+		 br_address, dt_address, ALUCtl_code, enable, cpsr_enable, execute_flag, cpsr, cond_field);
 
 	input wire  [31:0] instruction_set;
 	input wire enable;
+	input wire [31:0] cpsr;
 
-	output wire [3:0]  rm;
-	output wire [7:0]  shift;
-	output wire [3:0]  rn;
-	output wire [3:0]  rd;
-	output wire [3:0]	rotate;					// shift applied to an immediate value
-	output wire [7:0]  immediateValue;
-	wire [3:0]  cond_field;				// flags for alu
-	output wire [23:0] br_address;				// address to branch to
-	output wire [11:0] dt_address;  			// used in LDR and STR as an immediate offset
-	output wire [10:0] ALUCtl_code;
-	output wire cpsr_enable;
+	output reg [3:0]  rm;
+	output reg [7:0]  shift;
+	output reg [3:0]  rn;
+	output reg [3:0]  rd;
+	output reg [3:0]	rotate;					// shift applied to an immediate value
+	output reg [7:0]  immediateValue;
+	output reg [3:0]  cond_field;				// flags for alu
+	output reg [23:0] br_address;				// address to branch to
+	output reg [11:0] dt_address;  			// used in LDR and STR as an immediate offset
+	output reg [10:0] ALUCtl_code;
+	output reg cpsr_enable;
+	output reg execute_flag;
 
-	assign cond_field = instruction_set[31:28];
-	assign cpsr_enable = instruction_set[20];
-	output wire execute_flag;
+
+
+
 
 /* 	initial begin
 		rm = 4'b0;
@@ -38,7 +40,9 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 	// case statememt to decode instruction set
 	always @(*) begin
 
-
+	cond_field = instruction_set[31:28];
+	cpsr_enable = instruction_set[20];
+	
 		if (enable) begin
 
 		case (cond_field)
@@ -274,7 +278,7 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 
 				//------------- SINGLE DATA TRANSFER (41-50)----------------------
 				8'b01xxxxx0: begin 						// LDR
-					rm = 	4'bx;				
+					rm = 	4'bx;
 					shift = instruction_set[11:4];
 					rn = instruction_set[19:16];
 					rd = instruction_set[15:12];
