@@ -24,13 +24,104 @@ do runlab.do
 # 	instruction_decoder
 # Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
 # -- Compiling module memory_file
-# ** Error: ./memory_file.v(42): (vlog-2110) Illegal reference to net "read_data".
 # 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(60): near "assign": syntax error, unexpected assign
+# -- Compiling module cpu_testbench
 # ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 11
+# Error in macro ./runlab.do line 13
 # C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
 #     while executing
-# "vlog "./memory_file.v""
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(73): (vlog-2110) Illegal reference to net "write_en".
+# 
+# ** Error: ./cpu.v(74): (vlog-2110) Illegal reference to net "read_en".
+# 
+# ** Error: ./cpu.v(75): (vlog-2110) Illegal reference to net "instruction_en".
+# 
+# ** Error: ./cpu.v(76): (vlog-2110) Illegal reference to net "ldr_str_en".
+# 
+# ** Error: ./cpu.v(82): (vlog-2110) Illegal reference to net "instruction_en".
+# 
+# ** Error: ./cpu.v(83): (vlog-2110) Illegal reference to net "read_en".
+# 
+# ** Error: ./cpu.v(84): (vlog-2110) Illegal reference to net "ldr_str_en".
+# 
+# ** Error: ./cpu.v(85): (vlog-2110) Illegal reference to net "write_en".
+# 
+# ** Error: ./cpu.v(91): (vlog-2110) Illegal reference to net "instruction_en".
+# 
+# ** Error: ./cpu.v(92): (vlog-2110) Illegal reference to net "read_en".
+# 
+# ** Error: ./cpu.v(93): (vlog-2110) Illegal reference to net "ldr_str_en".
+# 
+# ** Error: ./cpu.v(94): (vlog-2110) Illegal reference to net "write_en".
+# 
+# ** Error: ./cpu.v(101): (vlog-2110) Illegal reference to net "instruction_en".
+# 
+# ** Error: ./cpu.v(102): (vlog-2110) Illegal reference to net "read_en".
+# 
+# ** Error: ./cpu.v(103): (vlog-2110) Illegal reference to net "ldr_str_en".
+# 
+# ** Error: ./cpu.v(104): (vlog-2110) Illegal reference to net "write_en".
+# 
+# ** Error: ./cpu.v(111): (vlog-2110) Illegal reference to net "instruction_en".
+# 
+# ** Error: ./cpu.v(112): (vlog-2110) Illegal reference to net "read_en".
+# 
+# ** Error: ./cpu.v(113): (vlog-2110) Illegal reference to net "ldr_str_en".
+# 
+# ** Error: ./cpu.v(114): (vlog-2110) Illegal reference to net "write_en".
+# 
+# -- Compiling module cpu_testbench
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
@@ -79,64 +170,8 @@ do runlab.do
 # Loading work.reg_file
 # Loading work.memory_file
 # Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-7) Failed to open readmem file "Machine_code_02.mem" in read mode.
-# 
-# No such file or directory. (errno = ENOENT)    : ./Instruction_memory.v(12)
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/im
-# Break in Module cpu_testbench at ./cpu.v line 167
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 167
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/ldr_en'.
+# Executing ONERROR command at macro ./cpu_wave.do line 44
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
@@ -144,11 +179,539 @@ do runlab.do
 # 
 # No such file or directory. (errno = ENOENT)    : ./Instruction_memory.v(13)
 #    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/im
-# Break in Module cpu_testbench at ./cpu.v line 167
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 167
+# Break in Module cpu_testbench at ./cpu.v line 177
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 177
 # MACRO ./runlab.do PAUSED at line 31
-add wave -position 22  sim:/cpu_testbench/dut/im/instruction_set
+add wave -position end  sim:/cpu_testbench/dut/id/instruction_set
+add wave -position end  sim:/cpu_testbench/dut/id/enable
+add wave -position end  sim:/cpu_testbench/dut/id/cpsr
+add wave -position end  sim:/cpu_testbench/dut/id/rm
+add wave -position end  sim:/cpu_testbench/dut/id/shift
+add wave -position end  sim:/cpu_testbench/dut/id/rn
+add wave -position end  sim:/cpu_testbench/dut/id/rd
+add wave -position end  sim:/cpu_testbench/dut/id/rotate
+add wave -position end  sim:/cpu_testbench/dut/id/immediateValue
+add wave -position end  sim:/cpu_testbench/dut/id/cond_field
+add wave -position end  sim:/cpu_testbench/dut/id/br_address
+add wave -position end  sim:/cpu_testbench/dut/id/dt_address
+add wave -position end  sim:/cpu_testbench/dut/id/ALUCtl_code
+add wave -position end  sim:/cpu_testbench/dut/id/cpsr_enable
+add wave -position end  sim:/cpu_testbench/dut/id/execute_flag
+add wave -position end  sim:/cpu_testbench/dut/id/temp_rm
+add wave -position end  sim:/cpu_testbench/dut/id/temp_shift
+add wave -position end  sim:/cpu_testbench/dut/id/temp_rn
+add wave -position end  sim:/cpu_testbench/dut/id/temp_rd
+add wave -position end  sim:/cpu_testbench/dut/id/temp_rotate
+add wave -position end  sim:/cpu_testbench/dut/id/temp_immediateValue
+add wave -position end  sim:/cpu_testbench/dut/id/temp_cond_field
+add wave -position end  sim:/cpu_testbench/dut/id/temp_br_address
+add wave -position end  sim:/cpu_testbench/dut/id/temp_dt_address
+add wave -position end  sim:/cpu_testbench/dut/id/temp_ALUCtl_code
+add wave -position end  sim:/cpu_testbench/dut/id/temp_cpsr_enable
+add wave -position end  sim:/cpu_testbench/dut/id/temp_execute_flag
+add wave -position end  sim:/cpu_testbench/dut/im/clk
+add wave -position end  sim:/cpu_testbench/dut/im/rst
+add wave -position end  sim:/cpu_testbench/dut/im/pc_address
+add wave -position end  sim:/cpu_testbench/dut/im/instruction_set
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/ldr_en'.
+# Executing ONERROR command at macro ./cpu_wave.do line 44
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-7) Failed to open readmem file "Machine_code_02.mem" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : ./Instruction_memory.v(13)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/im
+# Break in Module cpu_testbench at ./cpu.v line 177
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 177
+# MACRO ./runlab.do PAUSED at line 31
+add wave -position end  sim:/cpu_testbench/dut/id/instruction_set
+add wave -position end  sim:/cpu_testbench/dut/id/enable
+add wave -position end  sim:/cpu_testbench/dut/id/cpsr
+add wave -position end  sim:/cpu_testbench/dut/id/rm
+add wave -position end  sim:/cpu_testbench/dut/id/shift
+add wave -position end  sim:/cpu_testbench/dut/id/rn
+add wave -position end  sim:/cpu_testbench/dut/id/rd
+add wave -position end  sim:/cpu_testbench/dut/id/rotate
+add wave -position end  sim:/cpu_testbench/dut/id/immediateValue
+add wave -position end  sim:/cpu_testbench/dut/id/cond_field
+add wave -position end  sim:/cpu_testbench/dut/id/br_address
+add wave -position end  sim:/cpu_testbench/dut/id/dt_address
+add wave -position end  sim:/cpu_testbench/dut/id/ALUCtl_code
+add wave -position end  sim:/cpu_testbench/dut/id/cpsr_enable
+add wave -position end  sim:/cpu_testbench/dut/id/execute_flag
+add wave -position end  sim:/cpu_testbench/dut/id/temp_rm
+add wave -position end  sim:/cpu_testbench/dut/id/temp_shift
+add wave -position end  sim:/cpu_testbench/dut/id/temp_rn
+add wave -position end  sim:/cpu_testbench/dut/id/temp_rd
+add wave -position end  sim:/cpu_testbench/dut/id/temp_rotate
+add wave -position end  sim:/cpu_testbench/dut/id/temp_immediateValue
+add wave -position end  sim:/cpu_testbench/dut/id/temp_cond_field
+add wave -position end  sim:/cpu_testbench/dut/id/temp_br_address
+add wave -position end  sim:/cpu_testbench/dut/id/temp_dt_address
+add wave -position end  sim:/cpu_testbench/dut/id/temp_ALUCtl_code
+add wave -position end  sim:/cpu_testbench/dut/id/temp_cpsr_enable
+add wave -position end  sim:/cpu_testbench/dut/id/temp_execute_flag
+add wave -position 52  sim:/cpu_testbench/dut/im/clk
+add wave -position 53  sim:/cpu_testbench/dut/im/rst
+add wave -position 54  sim:/cpu_testbench/dut/im/pc_address
+add wave -position 55  sim:/cpu_testbench/dut/im/instruction_set
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# ** Error: (vlog-1935) Unable to move temporary file C:/Users/14253/ee469/cpu/work/_temp/vlognt6zdz to C:/Users/14253/ee469/cpu/work/instruction_decoder/_primary.dat.
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: ./instruction_decoder.v(345): Verilog Compiler exiting
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 10
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./instruction_decoder.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/ldr_en'.
+# Executing ONERROR command at macro ./cpu_wave.do line 44
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-7) Failed to open readmem file "Machine_code_02.mem" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : ./Instruction_memory.v(13)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/im
+# Break in Module cpu_testbench at ./cpu.v line 177
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 177
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/ldr_en'.
+# Executing ONERROR command at macro ./cpu_wave.do line 44
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vsim-7) Failed to open readmem file "Machine_code_02.mem" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : ./Instruction_memory.v(13)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/im
+# Break in Module cpu_testbench at ./cpu.v line 176
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 176
+# MACRO ./runlab.do PAUSED at line 31
+add wave -position 55  sim:/cpu_testbench/dut/im/instruction_set
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/ldr_en'.
+# Executing ONERROR command at macro ./cpu_wave.do line 44
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 176
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 176
+# MACRO ./runlab.do PAUSED at line 31
+add wave -position end  sim:/cpu_testbench/dut/rg/clk
+add wave -position end  sim:/cpu_testbench/dut/rg/read_addr1
+add wave -position end  sim:/cpu_testbench/dut/rg/read_addr2
+add wave -position end  sim:/cpu_testbench/dut/rg/write_addr
+add wave -position end  sim:/cpu_testbench/dut/rg/write_data
+add wave -position end  sim:/cpu_testbench/dut/rg/read_enable1
+add wave -position end  sim:/cpu_testbench/dut/rg/write_enable1
+add wave -position end  sim:/cpu_testbench/dut/rg/read_data1
+add wave -position end  sim:/cpu_testbench/dut/rg/read_data2
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(139): [PCDPC] - Port size (32 or 32) does not match connection size (1) for port 'B'. The port definition is at: ./alu.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/rm_data'.
+# Executing ONERROR command at macro ./cpu_wave.do line 38
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/rn_data'.
+# Executing ONERROR command at macro ./cpu_wave.do line 39
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/ldr_en'.
+# Executing ONERROR command at macro ./cpu_wave.do line 44
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 176
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 176
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/rm_data'.
+# Executing ONERROR command at macro ./cpu_wave.do line 38
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/rn_data'.
+# Executing ONERROR command at macro ./cpu_wave.do line 39
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/ldr_en'.
+# Executing ONERROR command at macro ./cpu_wave.do line 44
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 176
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 176
+# MACRO ./runlab.do PAUSED at line 31
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/14253/ee469/cpu/wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/rm_data'.
+# Executing ONERROR command at macro ./cpu_wave.do line 38
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/rn_data'.
+# Executing ONERROR command at macro ./cpu_wave.do line 39
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/ldr_en'.
+# Executing ONERROR command at macro ./cpu_wave.do line 44
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 176
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 176
+# MACRO ./runlab.do PAUSED at line 31
+add wave -position end  sim:/cpu_testbench/dut/rg/clk
+add wave -position end  sim:/cpu_testbench/dut/rg/read_addr1
+add wave -position end  sim:/cpu_testbench/dut/rg/read_addr2
+add wave -position end  sim:/cpu_testbench/dut/rg/write_addr
+add wave -position end  sim:/cpu_testbench/dut/rg/write_data
+add wave -position end  sim:/cpu_testbench/dut/rg/read_enable1
+add wave -position end  sim:/cpu_testbench/dut/rg/write_enable1
+add wave -position end  sim:/cpu_testbench/dut/rg/read_data1
+add wave -position end  sim:/cpu_testbench/dut/rg/read_data2
 do runlab.d
 # Cannot open macro file: runlab.d
 do runlab.do
@@ -199,79 +762,38 @@ do runlab.do
 # Loading work.reg_file
 # Loading work.memory_file
 # Loading work.alu
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/rm_data'.
+# Executing ONERROR command at macro ./cpu_wave.do line 38
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/rn_data'.
+# Executing ONERROR command at macro ./cpu_wave.do line 39
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/ldr_en'.
+# Executing ONERROR command at macro ./cpu_wave.do line 44
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-7) Failed to open readmem file "Machine_code_02.mem" in read mode.
-# 
-# No such file or directory. (errno = ENOENT)    : ./Instruction_memory.v(13)
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/im
-# Break in Module cpu_testbench at ./cpu.v line 167
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 167
+# Break in Module cpu_testbench at ./cpu.v line 176
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 176
 # MACRO ./runlab.do PAUSED at line 31
-add wave -position 22  sim:/cpu_testbench/dut/im/clk
-add wave -position 23  sim:/cpu_testbench/dut/im/rst
-add wave -position 24  sim:/cpu_testbench/dut/im/pc_address
-add wave -position 25  sim:/cpu_testbench/dut/im/instruction_set
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-7) Failed to open readmem file "Machine_code_02.mem" in read mode.
-# 
-# No such file or directory. (errno = ENOENT)    : ./Instruction_memory.v(13)
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/im
-# Break in Module cpu_testbench at ./cpu.v line 167
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 167
-# MACRO ./runlab.do PAUSED at line 31
-add wave -position 22  sim:/cpu_testbench/dut/im/pc_address
+add wave -position end  sim:/cpu_testbench/dut/rg/clk
+add wave -position end  sim:/cpu_testbench/dut/rg/read_addr1
+add wave -position end  sim:/cpu_testbench/dut/rg/read_addr2
+add wave -position end  sim:/cpu_testbench/dut/rg/write_addr
+add wave -position end  sim:/cpu_testbench/dut/rg/write_data
+add wave -position end  sim:/cpu_testbench/dut/rg/read_enable1
+add wave -position end  sim:/cpu_testbench/dut/rg/write_enable1
+add wave -position end  sim:/cpu_testbench/dut/rg/read_data1
+add wave -position end  sim:/cpu_testbench/dut/rg/read_data2
+add wave -position 40  sim:/cpu_testbench/dut/r1_data
+add wave -position 41  sim:/cpu_testbench/dut/r2_data
+add wave -position 51  sim:/cpu_testbench/dut/rg/clk
+add wave -position 52  sim:/cpu_testbench/dut/rg/read_addr1
+add wave -position 53  sim:/cpu_testbench/dut/rg/read_addr2
+add wave -position 54  sim:/cpu_testbench/dut/rg/write_addr
+add wave -position 55  sim:/cpu_testbench/dut/rg/write_data
+add wave -position 56  sim:/cpu_testbench/dut/rg/read_enable1
+add wave -position 57  sim:/cpu_testbench/dut/rg/write_enable1
+add wave -position 58  sim:/cpu_testbench/dut/rg/read_data1
+add wave -position 59  sim:/cpu_testbench/dut/rg/read_data2
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/14253/ee469/cpu/wave.do
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
@@ -321,16 +843,84 @@ do runlab.do
 # Loading work.reg_file
 # Loading work.memory_file
 # Loading work.alu
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/rm_data'.
+# Executing ONERROR command at macro ./cpu_wave.do line 38
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/rn_data'.
+# Executing ONERROR command at macro ./cpu_wave.do line 39
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/ldr_en'.
+# Executing ONERROR command at macro ./cpu_wave.do line 44
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-7) Failed to open readmem file "Machine_code_02.mem" in read mode.
-# 
-# No such file or directory. (errno = ENOENT)    : ./Instruction_memory.v(13)
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/im
-# Break in Module cpu_testbench at ./cpu.v line 167
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 167
+# Break in Module cpu_testbench at ./cpu.v line 176
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 176
 # MACRO ./runlab.do PAUSED at line 31
+add wave -position 37  sim:/cpu_testbench/dut/r1_data
+add wave -position 37  sim:/cpu_testbench/dut/r2_data
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/14253/ee469/cpu/wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/rm_data'.
+# Executing ONERROR command at macro ./cpu_wave.do line 38
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/rn_data'.
+# Executing ONERROR command at macro ./cpu_wave.do line 39
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/ldr_en'.
+# Executing ONERROR command at macro ./cpu_wave.do line 44
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 176
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 176
+# MACRO ./runlab.do PAUSED at line 31
+add wave -position 37  sim:/cpu_testbench/dut/r1_data
+add wave -position 37  sim:/cpu_testbench/dut/r2_data
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/14253/ee469/cpu/cpu_wave.do
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
@@ -382,13 +972,139 @@ do runlab.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Warning: (vsim-7) Failed to open readmem file "Machine_code_02.mem" in read mode.
-# 
-# No such file or directory. (errno = ENOENT)    : ./Instruction_memory.v(13)
-#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/im
-# Break in Module cpu_testbench at ./cpu.v line 167
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 167
+# Break in Module cpu_testbench at ./cpu.v line 176
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 176
 # MACRO ./runlab.do PAUSED at line 31
+add wave -position end  sim:/cpu_testbench/dut/rg/clk
+add wave -position end  sim:/cpu_testbench/dut/rg/read_addr1
+add wave -position end  sim:/cpu_testbench/dut/rg/read_addr2
+add wave -position end  sim:/cpu_testbench/dut/rg/write_addr
+add wave -position end  sim:/cpu_testbench/dut/rg/write_data
+add wave -position end  sim:/cpu_testbench/dut/rg/read_enable1
+add wave -position end  sim:/cpu_testbench/dut/rg/write_enable1
+add wave -position end  sim:/cpu_testbench/dut/rg/read_data1
+add wave -position end  sim:/cpu_testbench/dut/rg/read_data2
+# WARNING: No extended dataflow license exists
+add wave -position end  sim:/cpu_testbench/dut/clk
+add wave -position end  sim:/cpu_testbench/dut/nreset
+add wave -position end  sim:/cpu_testbench/dut/led
+add wave -position end  sim:/cpu_testbench/dut/debug_port1
+add wave -position end  sim:/cpu_testbench/dut/debug_port2
+add wave -position end  sim:/cpu_testbench/dut/debug_port3
+add wave -position end  sim:/cpu_testbench/dut/debug_port4
+add wave -position end  sim:/cpu_testbench/dut/debug_port5
+add wave -position end  sim:/cpu_testbench/dut/debug_port6
+add wave -position end  sim:/cpu_testbench/dut/debug_port7
+add wave -position end  sim:/cpu_testbench/dut/temp_pc
+add wave -position end  sim:/cpu_testbench/dut/pc
+add wave -position end  sim:/cpu_testbench/dut/pc_n
+add wave -position end  sim:/cpu_testbench/dut/instruction_set
+add wave -position end  sim:/cpu_testbench/dut/shift
+add wave -position end  sim:/cpu_testbench/dut/rm
+add wave -position end  sim:/cpu_testbench/dut/rn
+add wave -position end  sim:/cpu_testbench/dut/rd
+add wave -position end  sim:/cpu_testbench/dut/rotate
+add wave -position end  sim:/cpu_testbench/dut/immediateValue
+add wave -position end  sim:/cpu_testbench/dut/cond_field
+add wave -position end  sim:/cpu_testbench/dut/dt_address
+add wave -position end  sim:/cpu_testbench/dut/br_address
+add wave -position end  sim:/cpu_testbench/dut/ALUCtl_code
+add wave -position end  sim:/cpu_testbench/dut/ALUOut
+add wave -position end  sim:/cpu_testbench/dut/cpsr
+add wave -position end  sim:/cpu_testbench/dut/cpsr_n
+add wave -position end  sim:/cpu_testbench/dut/r1_data
+add wave -position end  sim:/cpu_testbench/dut/r2_data
+add wave -position end  sim:/cpu_testbench/dut/next_r14
+add wave -position end  sim:/cpu_testbench/dut/A
+add wave -position end  sim:/cpu_testbench/dut/B
+add wave -position end  sim:/cpu_testbench/dut/memOut
+add wave -position end  sim:/cpu_testbench/dut/write_en
+add wave -position end  sim:/cpu_testbench/dut/read_en
+add wave -position end  sim:/cpu_testbench/dut/instruction_en
+add wave -position end  sim:/cpu_testbench/dut/ldr_str_en
+add wave -position end  sim:/cpu_testbench/dut/temp_write_en
+add wave -position end  sim:/cpu_testbench/dut/temp_read_en
+add wave -position end  sim:/cpu_testbench/dut/temp_instruction_en
+add wave -position end  sim:/cpu_testbench/dut/temp_ldr_str_en
+add wave -position end  sim:/cpu_testbench/dut/cycle_counter
+add wave -position end  sim:/cpu_testbench/dut/cpsr_enable
+add wave -position end  sim:/cpu_testbench/dut/execute_flag
+add wave -position end  sim:/cpu_testbench/dut/fnp/clk
+add wave -position end  sim:/cpu_testbench/dut/fnp/ALUCtl_code
+add wave -position end  sim:/cpu_testbench/dut/fnp/br_address
+add wave -position end  sim:/cpu_testbench/dut/fnp/program_counter
+add wave -position end  sim:/cpu_testbench/dut/fnp/program_counter_next
+add wave -position end  sim:/cpu_testbench/dut/fnp/next_r14
+add wave -position end  sim:/cpu_testbench/dut/fnp/temp_program_counter_next
+add wave -position end  sim:/cpu_testbench/dut/fnp/temp_next_r14
+add wave -position end  sim:/cpu_testbench/dut/fnp/Branch
+add wave -position end  sim:/cpu_testbench/dut/fnp/BranchLink
+add wave -position end  sim:/cpu_testbench/dut/im/clk
+add wave -position end  sim:/cpu_testbench/dut/im/rst
+add wave -position end  sim:/cpu_testbench/dut/im/pc_address
+add wave -position end  sim:/cpu_testbench/dut/im/instruction_set
+add wave -position end  sim:/cpu_testbench/dut/id/instruction_set
+add wave -position end  sim:/cpu_testbench/dut/id/enable
+add wave -position end  sim:/cpu_testbench/dut/id/cpsr
+add wave -position end  sim:/cpu_testbench/dut/id/rm
+add wave -position end  sim:/cpu_testbench/dut/id/shift
+add wave -position end  sim:/cpu_testbench/dut/id/rn
+add wave -position end  sim:/cpu_testbench/dut/id/rd
+add wave -position end  sim:/cpu_testbench/dut/id/rotate
+add wave -position end  sim:/cpu_testbench/dut/id/immediateValue
+add wave -position end  sim:/cpu_testbench/dut/id/cond_field
+add wave -position end  sim:/cpu_testbench/dut/id/br_address
+add wave -position end  sim:/cpu_testbench/dut/id/dt_address
+add wave -position end  sim:/cpu_testbench/dut/id/ALUCtl_code
+add wave -position end  sim:/cpu_testbench/dut/id/cpsr_enable
+add wave -position end  sim:/cpu_testbench/dut/id/execute_flag
+add wave -position end  sim:/cpu_testbench/dut/id/temp_rm
+add wave -position end  sim:/cpu_testbench/dut/id/temp_shift
+add wave -position end  sim:/cpu_testbench/dut/id/temp_rn
+add wave -position end  sim:/cpu_testbench/dut/id/temp_rd
+add wave -position end  sim:/cpu_testbench/dut/id/temp_rotate
+add wave -position end  sim:/cpu_testbench/dut/id/temp_immediateValue
+add wave -position end  sim:/cpu_testbench/dut/id/temp_cond_field
+add wave -position end  sim:/cpu_testbench/dut/id/temp_br_address
+add wave -position end  sim:/cpu_testbench/dut/id/temp_dt_address
+add wave -position end  sim:/cpu_testbench/dut/id/temp_ALUCtl_code
+add wave -position end  sim:/cpu_testbench/dut/id/temp_cpsr_enable
+add wave -position end  sim:/cpu_testbench/dut/id/temp_execute_flag
+add wave -position end  sim:/cpu_testbench/dut/rg/clk
+add wave -position end  sim:/cpu_testbench/dut/rg/read_addr1
+add wave -position end  sim:/cpu_testbench/dut/rg/read_addr2
+add wave -position end  sim:/cpu_testbench/dut/rg/write_addr
+add wave -position end  sim:/cpu_testbench/dut/rg/write_data
+add wave -position end  sim:/cpu_testbench/dut/rg/read_enable1
+add wave -position end  sim:/cpu_testbench/dut/rg/write_enable1
+add wave -position end  sim:/cpu_testbench/dut/rg/read_data1
+add wave -position end  sim:/cpu_testbench/dut/rg/read_data2
+add wave -position end  sim:/cpu_testbench/dut/mem/clk
+add wave -position end  sim:/cpu_testbench/dut/mem/addr
+add wave -position end  sim:/cpu_testbench/dut/mem/ldr_str_en
+add wave -position end  sim:/cpu_testbench/dut/mem/load_en
+add wave -position end  sim:/cpu_testbench/dut/mem/store_en
+add wave -position end  sim:/cpu_testbench/dut/mem/write_data
+add wave -position end  sim:/cpu_testbench/dut/mem/read_data
+add wave -position end  sim:/cpu_testbench/dut/mem/temp_read_data
+add wave -position end  sim:/cpu_testbench/dut/mem/memfile
+add wave -position end  sim:/cpu_testbench/dut/my_alu/ALUCtl
+add wave -position end  sim:/cpu_testbench/dut/my_alu/A
+add wave -position end  sim:/cpu_testbench/dut/my_alu/B
+add wave -position end  sim:/cpu_testbench/dut/my_alu/I
+add wave -position end  sim:/cpu_testbench/dut/my_alu/ALUOut
+add wave -position end  sim:/cpu_testbench/dut/my_alu/cpsr
+add wave -position end  sim:/cpu_testbench/dut/my_alu/cpsr_enable
+add wave -position end  sim:/cpu_testbench/dut/my_alu/temp_ALUOut
+add wave -position end  sim:/cpu_testbench/dut/my_alu/temp_cpsr
+add wave -position end  sim:/cpu_testbench/dut/my_alu/Z
+add wave -position end  sim:/cpu_testbench/dut/my_alu/sub_result
+add wave -position end  sim:/cpu_testbench/dut/my_alu/add_result
+add wave -position end  sim:/cpu_testbench/dut/my_alu/and_result
+add wave -position end  sim:/cpu_testbench/dut/my_alu/orr_result
+add wave -position end  sim:/cpu_testbench/dut/my_alu/eor_result
+add wave -position end  sim:/cpu_testbench/dut/my_alu/bic_result
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/14253/ee469/cpu/cpu_wave.do
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
@@ -429,3 +1145,159 @@ do runlab.do
 # Top level modules:
 # 	cpu_testbench
 # vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 176
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 176
+# MACRO ./runlab.do PAUSED at line 31
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/14253/ee469/cpu/cpu_wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/14253/ee469/cpu/cpu_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(134): (vlog-2730) Undefined variable: 'B'.
+# 
+# -- Compiling module cpu_testbench
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(134): (vlog-2730) Undefined variable: 'B'.
+# 
+# -- Compiling module cpu_testbench
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 174
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 174
+# MACRO ./runlab.do PAUSED at line 31

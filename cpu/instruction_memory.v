@@ -4,15 +4,15 @@
 // Erika Burk, Jeff Josephsen, Ameer Talal Mahmood
 
 module instruction_memory (clk, rst, pc_address, instruction_set);
-	input clk, rst;
-	input [31:0] pc_address;
+	input wire clk, rst;
+	input wire [31:0] pc_address;
 	output wire [31:0] instruction_set;
 
 
 	reg 	[31:0] machineCode_container [0:31];						// 32 32-bit words
 	initial $readmemb("Machine_code_02.mem", machineCode_container);		// reads in machine code and stores in memory
 
-	assign instruction_set =  machineCode_container[pc_address];
+	assign instruction_set =  machineCode_container[0];
 
 endmodule
 

@@ -5,10 +5,10 @@
 //input includes the instruction
 //output is the next program counter value/target
 module find_next_pc(
-	input clk,
-	input [10:0] ALUCtl_code,
-	input [23:0] br_address,
-	input [31:0] program_counter,
+	input wire clk,
+	input wire [10:0] ALUCtl_code,
+	input wire [23:0] br_address,
+	input wire [31:0] program_counter,
 	output wire [31:0] program_counter_next,
 	output wire [31:0] next_r14);
 

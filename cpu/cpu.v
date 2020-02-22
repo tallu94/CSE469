@@ -12,7 +12,8 @@ module cpu(
 	);
 
 	// declaring local variables
-	reg [31:0] pc;
+	reg [31:0] temp_pc;
+	wire [31:0] pc;
 	wire [31:0] pc_n;
 	wire [31:0] instruction_set;
 	wire [7:0]  shift;
@@ -28,27 +29,33 @@ module cpu(
 	wire [31:0] ALUOut;
 	wire [31:0]  cpsr;
 	wire [3:0]  cpsr_n;
-	wire [31:0] rm_data;
-	wire [31:0] rn_data;
+	wire [31:0] r1_data;
+	wire [31:0] r2_data;
 	wire [31:0] next_r14;			// R[14] value to be written into reg file
-	wire [31:0] A;					// ouput from reg file --> input in alu
-	wire [31:0] B;					// ouput from reg file --> input in alu
 	wire [31:0] memOut;
-	reg write_en;					// gets assigned as an output from alu
-	reg read_en;
-	wire ldr_en;
-	reg instruction_en;
-	reg ldr_str_en;
+	wire write_en;					// gets assigned as an output from alu
+	wire read_en;
+	wire instruction_en;
+	wire ldr_str_en;
+	reg temp_write_en;					// gets assigned as an output from alu
+	reg temp_read_en;
+	reg temp_instruction_en;
+	reg temp_ldr_str_en;
 	reg [1:0] cycle_counter;
 	wire cpsr_enable;
 	wire execute_flag;
 	// Controls the LED on the board.
 	assign led = 1'b1;
+	assign pc = temp_pc;
+	assign read_en = temp_read_en;
+	assign write_en = temp_write_en;
+	assign ldr_str_en = temp_ldr_str_en;
+	assign instruction_en = temp_instruction_en;
 
 	// These are how you communicate back to the serial port debugger.
 	assign debug_port1 = ALUCtl_code[7:0];	// INSTRUCTION  8'h01;
-	assign debug_port2 = A[7:0];			// A VALUE (Rm) 8'h02;
-	assign debug_port3 = B[7:0];			// B VALUE (Rn) 8'h03;
+	assign debug_port2 = r1_data[7:0];			// A VALUE (Rm) 8'h02;
+	assign debug_port3 = r2_data[7:0];			// B VALUE (Rn) 8'h03;
 	assign debug_port4 = cycle_counter;	// IMMEDIATE VALUE 8'h04;
 	assign debug_port5 = rm;
 	assign debug_port6 = rn;
@@ -58,50 +65,50 @@ module cpu(
 	// initialize and update next
 	always @(posedge clk) begin
 		if (~nreset) begin //might need to be a "~"
-			pc = 32'b0;
+			temp_pc <= 32'b0;
 			cycle_counter <= 0;
-			write_en <= 0;
-			read_en <= 0;
-			instruction_en <= 1;
-			ldr_str_en <= 0;
+			temp_write_en <= 0;
+			temp_read_en <= 0;
+			temp_instruction_en <= 1;
+			temp_ldr_str_en <= 0;
 		end
 
 		case (cycle_counter)
 			0: begin
-				pc = pc_n;
-				instruction_en <= 1;
-				read_en <= 0;
-				ldr_str_en <= 0;
-				write_en <= 0;
+				temp_pc <= pc_n;
+				temp_instruction_en <= 1;
+				temp_read_en <= 0;
+				temp_ldr_str_en <= 0;
+				temp_write_en <= 0;
 				cycle_counter <= cycle_counter + 1;
 			end
 
 			1: begin
 				if (execute_flag) begin
-				instruction_en <= 0;
-				read_en <= 1;
-				ldr_str_en <= 0;
-				write_en <= 0;
+				temp_instruction_en <= 0;
+				temp_read_en <= 1;
+				temp_ldr_str_en <= 0;
+				temp_write_en <= 0;
 				cycle_counter <= cycle_counter + 1;
 				end
 			end
 
 			2: begin
 			if (execute_flag) begin
-				instruction_en <= 0;
-				read_en <= 0;
-				ldr_str_en <= 1;
-				write_en <= 0;
+				temp_instruction_en <= 0;
+				temp_read_en <= 0;
+				temp_ldr_str_en <= 1;
+				temp_write_en <= 0;
 				cycle_counter <= cycle_counter + 1;
 				end
 			end
 
 			3: begin
 			if (execute_flag) begin
-				instruction_en <= 0;
-				read_en <= 0;
-				ldr_str_en <= 0;
-				write_en <= 1;
+				temp_instruction_en <= 0;
+				temp_read_en <= 0;
+				temp_ldr_str_en <= 0;
+				temp_write_en <= 1;
 				cycle_counter <= 0;
 			end
 			end
@@ -121,13 +128,13 @@ module cpu(
 
 	// Register File get and write values
 	reg_file rg (.clk(clk), .read_addr1(rm), .read_addr2(rn), .write_addr(rd), .write_data(memOut), .read_enable1(read_en),
-		.write_enable1(write_en), .read_data1(A), .read_data2(B));
+		.write_enable1(write_en), .read_data1(r1_data), .read_data2(r2_data));
 
 	// Mmeory File -- The input and output values need to be changed
-	memory_file mem (.clk(clk), .addr(B[3:0]), .write_data(A), .ldr_str_en(ldr_str_en), .read_data(memOut), .load_en(instruction_set[20]), .store_en(~instruction_set[20]));
+	memory_file mem (.clk(clk), .addr(r2_data[3:0]), .write_data(r1_data), .ldr_str_en(ldr_str_en), .read_data(memOut), .load_en(instruction_set[20]), .store_en(~instruction_set[20]));
 
 	// ALU File Compute instructions (m	ake sure to deal with cpsr values)
-	alu my_alu (.ALUCtl(ALUCtl_code), .A(A), .B(B), .I(immediateValue), .ALUOut(ALUOut), .cpsr(cpsr), .cpsr_enable(cpsr_enable));
+	alu my_alu (.ALUCtl(ALUCtl_code), .A(r1_data), .B(r2_data), .I(immediateValue), .ALUOut(ALUOut), .cpsr(cpsr), .cpsr_enable(cpsr_enable));
 	// if instruction is branch and link then write the new pc to R14
 endmodule
 

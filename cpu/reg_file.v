@@ -2,17 +2,37 @@
 // Erika Burk, Jeff Josephsen, Ameer Talal Mahmood
 
 module reg_file(
-	input clk,
-	input [3:0] read_addr1,
-	input [3:0] read_addr2,
-	input [3:0] write_addr,
-	input [31:0] write_data,
-	input read_enable1,
-	input write_enable1,
+	input wire clk,
+	input wire [3:0] read_addr1,
+	input wire [3:0] read_addr2,
+	input wire [3:0] write_addr,
+	input wire [31:0] write_data,
+	input wire read_enable1,
+	input wire write_enable1,
 	output wire [31:0] read_data1,
 	output wire [31:0] read_data2);
 
 	reg [31:0] regfile [15:0]; 	// 16 32-bit registers
+
+
+	initial begin
+		regfile[0] = 32'd0;
+		regfile[1] = 32'd0;
+		regfile[2] = 32'd0;
+		regfile[3] = 32'd2;
+		regfile[4] = 32'd0;
+		regfile[5] = 32'd0;
+		regfile[6] = 32'd0;
+		regfile[7] = 32'd0;
+		regfile[8] = 32'd0;
+		regfile[9] = 32'd0;
+		regfile[10] = 32'd0;
+		regfile[11] = 32'd5;
+		regfile[12] = 32'd0;
+		regfile[13] = 32'd0;
+		regfile[14] = 32'd0;
+		regfile[15] = 32'd0;
+	end
 
 	assign read_data1 = regfile[read_addr1];
 	assign read_data2 = regfile[read_addr2];
@@ -23,7 +43,6 @@ module reg_file(
 			if (write_enable1)
 				regfile[write_addr] = write_data;
 	end
-
 endmodule
 
 
