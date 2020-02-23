@@ -12,7 +12,7 @@ module instruction_memory (clk, rst, pc_address, instruction_set);
 	reg 	[31:0] machineCode_container [0:31];						// 32 32-bit words
 	initial $readmemb("Machine_code_02.mem", machineCode_container);		// reads in machine code and stores in memory
 
-	assign instruction_set =  machineCode_container[0];
+	assign instruction_set =  machineCode_container[pc_address];
 
 endmodule
 

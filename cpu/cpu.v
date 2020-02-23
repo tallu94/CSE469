@@ -85,6 +85,8 @@ module cpu(
 
 			1: begin
 				if (execute_flag) begin
+				temp_pc <= pc_n;
+
 				temp_instruction_en <= 0;
 				temp_read_en <= 1;
 				temp_ldr_str_en <= 0;
@@ -95,6 +97,8 @@ module cpu(
 
 			2: begin
 			if (execute_flag) begin
+			temp_pc <= pc_n;
+
 				temp_instruction_en <= 0;
 				temp_read_en <= 0;
 				temp_ldr_str_en <= 1;
@@ -105,6 +109,7 @@ module cpu(
 
 			3: begin
 			if (execute_flag) begin
+			temp_pc <= pc_n;
 				temp_instruction_en <= 0;
 				temp_read_en <= 0;
 				temp_ldr_str_en <= 0;
@@ -117,17 +122,17 @@ module cpu(
 
 	// figure out next-pc
 	find_next_pc fnp (.clk(clk), .ALUCtl_code(ALUCtl_code), .br_address(br_address),
-		.program_counter(pc), .program_counter_next(pc_n), .next_r14(next_r14));
+		.program_counter(temp_pc), .program_counter_next(pc_n), .next_r14(next_r14));
 
 	// fetch instruction
-	instruction_memory im (.clk(clk), .rst(nreset), .pc_address(pc), .instruction_set(instruction_set));
+	instruction_memory im (.clk(clk), .rst(nreset), .pc_address(temp_pc), .instruction_set(instruction_set));
 
 	// updates format flags and address/values
 	instruction_decoder id (.instruction_set(instruction_set), .rm(rm), .shift(shift), .rn(rn), .rd(rd), .rotate(rotate),
 		.immediateValue(immediateValue), .br_address(br_address), .dt_address(dt_address), .ALUCtl_code(ALUCtl_code), .enable(instruction_en), .cpsr_enable(cpsr_enable), .execute_flag(execute_flag), .cpsr(cpsr), .cond_field(cond_field));
 
 	// Register File get and write values
-	reg_file rg (.clk(clk), .read_addr1(rm), .read_addr2(rn), .write_addr(rd), .write_data(memOut), .read_enable1(read_en),
+	reg_file rg (.clk(clk), .read_addr1(rn), .read_addr2(rd), .write_addr(rm), .write_data(memOut), .read_enable1(read_en),
 		.write_enable1(write_en), .read_data1(r1_data), .read_data2(r2_data));
 
 	// Mmeory File -- The input and output values need to be changed

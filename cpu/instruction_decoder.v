@@ -316,10 +316,10 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 				end
 
 				8'b01xxxxx1: begin 						// STR
-					temp_rm = instruction_set[15:12];
+					temp_rm = 4'bx;
 					temp_shift = instruction_set[11:4];
 					temp_rn = instruction_set[19:16];
-					temp_rd = 4'bx;
+					temp_rd = instruction_set[15:12];
 					temp_rotate = 4'bx;
 					temp_immediateValue = instruction_set[11:0];
 					temp_dt_address = instruction_set[11:0];
