@@ -1,6 +1,3 @@
-// EE469 LAB 1
-// Erika Burk, Jeff Josephsen, Ameer Talal Mahmood
-
 module memory_file(clk, addr, write_data, ldr_str_en, read_data, load_en, store_en);
 
 	input clk;

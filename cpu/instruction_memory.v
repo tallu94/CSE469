@@ -1,8 +1,3 @@
-
-
-// EE469 LAB 1
-// Erika Burk, Jeff Josephsen, Ameer Talal Mahmood
-
 module instruction_memory (clk, rst, pc_address, instruction_set);
 	input wire clk, rst;
 	input wire [31:0] pc_address;

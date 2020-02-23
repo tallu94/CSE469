@@ -1,6 +1,3 @@
-// EE469 LAB 1
-// Erika Burk, Jeff Josephsen, Ameer Talal Mahmood
-
 module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediateValue,
 		 br_address, dt_address, ALUCtl_code, enable, cpsr_enable, execute_flag, cpsr, cond_field);
 

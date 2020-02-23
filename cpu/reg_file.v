@@ -1,6 +1,3 @@
-// EE469 LAB 1
-// Erika Burk, Jeff Josephsen, Ameer Talal Mahmood
-
 module reg_file(
 	input wire clk,
 	input wire [3:0] read_addr1,

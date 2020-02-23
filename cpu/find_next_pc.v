@@ -1,9 +1,4 @@
-//This module will reset at pc=0, and will increment according to the program instructions.
-//If the instructions are Branch, then this program will figure out what PC to branch to.
-//if the instructions are not branch then this program will increment the PC by 1 instruction set.
 
-//input includes the instruction
-//output is the next program counter value/target
 module find_next_pc(
 	input wire clk,
 	input wire [10:0] ALUCtl_code,
