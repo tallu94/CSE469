@@ -28,6 +28,7 @@ module find_next_pc(
 
 
 	always @(*) begin
+
 		case(ALUCtl_code)
 			Branch: begin
 				temp_next_r14 <= 32'dx;

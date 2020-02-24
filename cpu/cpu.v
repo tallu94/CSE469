@@ -67,10 +67,6 @@ module cpu(
 		if (~nreset) begin //might need to be a "~"
 			temp_pc <= 32'b0;
 			cycle_counter <= 0;
-			temp_write_en <= 0;
-			temp_read_en <= 0;
-			temp_instruction_en <= 1;
-			temp_ldr_str_en <= 0;
 		end
 
 		case (cycle_counter)
@@ -85,8 +81,7 @@ module cpu(
 
 			1: begin
 				if (execute_flag) begin
-				temp_pc <= pc_n;
-
+				temp_pc <= temp_pc;
 				temp_instruction_en <= 0;
 				temp_read_en <= 1;
 				temp_ldr_str_en <= 0;
@@ -97,8 +92,7 @@ module cpu(
 
 			2: begin
 			if (execute_flag) begin
-			temp_pc <= pc_n;
-
+			temp_pc <= temp_pc;
 				temp_instruction_en <= 0;
 				temp_read_en <= 0;
 				temp_ldr_str_en <= 1;
@@ -109,7 +103,7 @@ module cpu(
 
 			3: begin
 			if (execute_flag) begin
-			temp_pc <= pc_n;
+			temp_pc <= temp_pc;
 				temp_instruction_en <= 0;
 				temp_read_en <= 0;
 				temp_ldr_str_en <= 0;
@@ -125,7 +119,7 @@ module cpu(
 		.program_counter(temp_pc), .program_counter_next(pc_n), .next_r14(next_r14));
 
 	// fetch instruction
-	instruction_memory im (.clk(clk), .rst(nreset), .pc_address(temp_pc), .instruction_set(instruction_set));
+	instruction_memory im (.clk(clk), .enable(instruction_en), .rst(nreset), .pc_address(temp_pc), .instruction_set(instruction_set));
 
 	// updates format flags and address/values
 	instruction_decoder id (.instruction_set(instruction_set), .rm(rm), .shift(shift), .rn(rn), .rd(rd), .rotate(rotate),

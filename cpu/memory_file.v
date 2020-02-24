@@ -1,11 +1,11 @@
 module memory_file(clk, addr, write_data, ldr_str_en, read_data, load_en, store_en);
 
-	input clk;
-	input [3:0] addr;
-	input ldr_str_en;
-	input load_en;
-	input store_en;
-	input [31:0] write_data;
+	input wire clk;
+	input wire [3:0] addr;
+	input wire ldr_str_en;
+	input wire load_en;
+	input wire store_en;
+	input wire [31:0] write_data;
 
 	output wire [31:0] read_data;
 
@@ -14,26 +14,26 @@ module memory_file(clk, addr, write_data, ldr_str_en, read_data, load_en, store_
 	reg [31:0] memfile [15:0]; 	// 16 32-bit registers
 
 	assign read_data = temp_read_data;
-	/*
+
 	initial begin
-		memfile[0] = 32'd0;
-		memfile[1] = 32'd0;
-		memfile[2] = 32'd0;
-		memfile[3] = 32'd0;
-		memfile[4] = 32'd0;
-		memfile[5] = 32'd0;
-		memfile[6] = 32'd0;
-		memfile[7] = 32'd0;
-		memfile[8] = 32'd0;
-		memfile[9] = 32'd0;
-		memfile[10] = 32'd0;
-		memfile[11] = 32'd0;
-		memfile[12] = 32'd0;
-		memfile[13] = 32'd0;
-		memfile[14] = 32'd0;
-		memfile[15] = 32'd0;
+		memfile[0] = 32'd1;
+		memfile[1] = 32'd2;
+		memfile[2] = 32'd3;
+		memfile[3] = 32'd4;
+		memfile[4] = 32'd5;
+		memfile[5] = 32'd6;
+		memfile[6] = 32'd7;
+		memfile[7] = 32'd8;
+		memfile[8] = 32'd9;
+		memfile[9] = 32'd10;
+		memfile[10] = 32'd11;
+		memfile[11] = 32'd12;
+		memfile[12] = 32'd13;
+		memfile[13] = 32'd14;
+		memfile[14] = 32'd15;
+		memfile[15] = 32'd16;
 	end
-	*/
+
 
 	always @(*) begin
 			if (ldr_str_en) begin

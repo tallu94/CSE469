@@ -1,13 +1,21 @@
-module instruction_memory (clk, rst, pc_address, instruction_set);
-	input wire clk, rst;
+module instruction_memory (clk, enable, rst, pc_address, instruction_set);
+	input wire clk, enable, rst;
 	input wire [31:0] pc_address;
 	output wire [31:0] instruction_set;
+
+	reg [31:0] temp_instruction_set;
+
+	assign instruction_set = temp_instruction_set;
 
 
 	reg 	[31:0] machineCode_container [0:31];						// 32 32-bit words
 	initial $readmemb("Machine_code_02.mem", machineCode_container);		// reads in machine code and stores in memory
 
-	assign instruction_set =  machineCode_container[pc_address];
+	always@ (*) begin
+		if (enable) begin
+		temp_instruction_set = machineCode_container[pc_address];
+	end
+	end
 
 endmodule
 

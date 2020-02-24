@@ -1,9 +1,9 @@
 module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediateValue,
 		 br_address, dt_address, ALUCtl_code, enable, cpsr_enable, execute_flag, cpsr, cond_field);
 
-	input [31:0] instruction_set;
-	input enable;
-	input [31:0] cpsr;
+	input wire [31:0] instruction_set;
+	input wire enable;
+	input wire [31:0] cpsr;
 
 	output wire [3:0] rm;
 	output wire [7:0] shift;
@@ -64,8 +64,6 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 
 	temp_cond_field = instruction_set[31:28];
 	temp_cpsr_enable = instruction_set[20];
-
-		if (enable) begin
 
 		case (temp_cond_field)
 			4'b0000: temp_execute_flag = cpsr[30];
@@ -337,7 +335,6 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 					temp_ALUCtl_code = 11'dx;
 				end
 			endcase
-		end
 	end
 endmodule
 

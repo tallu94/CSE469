@@ -13,22 +13,22 @@ module reg_file(
 
 
 	initial begin
-		regfile[0] = 32'd0;
-		regfile[1] = 32'd0;
-		regfile[2] = 32'd0;
-		regfile[3] = 32'd2;
-		regfile[4] = 32'd0;
-		regfile[5] = 32'd0;
-		regfile[6] = 32'd0;
-		regfile[7] = 32'd0;
-		regfile[8] = 32'd0;
-		regfile[9] = 32'd0;
-		regfile[10] = 32'd0;
-		regfile[11] = 32'd5;
-		regfile[12] = 32'd0;
-		regfile[13] = 32'd0;
-		regfile[14] = 32'd0;
-		regfile[15] = 32'd0;
+		regfile[0] = 32'd1;
+		regfile[1] = 32'd2;
+		regfile[2] = 32'd3;
+		regfile[3] = 32'd4;
+		regfile[4] = 32'd5;
+		regfile[5] = 32'd6;
+		regfile[6] = 32'd7;
+		regfile[7] = 32'd8;
+		regfile[8] = 32'd9;
+		regfile[9] = 32'd10;
+		regfile[10] = 32'd11;
+		regfile[11] = 32'd0;
+		regfile[12] = 32'd13;
+		regfile[13] = 32'd14;
+		regfile[14] = 32'd15;
+		regfile[15] = 32'd16;
 	end
 
 	assign read_data1 = regfile[read_addr1];
@@ -38,7 +38,7 @@ module reg_file(
 	always @(*) begin
 
 			if (write_enable1)
-				regfile[write_addr] = write_data;
+				regfile[write_addr] <= write_data;
 	end
 endmodule
 
