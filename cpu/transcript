@@ -50,113 +50,8 @@ do runlab.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 174
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 174
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# ** Error: ./cpu.v(74): (vlog-2110) Illegal reference to net "pc".
-# 
-# ** Error: ./cpu.v(85): (vlog-2110) Illegal reference to net "pc".
-# 
-# ** Error: ./cpu.v(96): (vlog-2110) Illegal reference to net "pc".
-# 
-# ** Error: ./cpu.v(108): (vlog-2110) Illegal reference to net "pc".
-# 
-# ** Error: ./cpu.v(120): (vlog-2110) Illegal reference to net "pc".
-# 
-# -- Compiling module cpu_testbench
-# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 13
-# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./cpu.v""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 174
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 174
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
 # MACRO ./runlab.do PAUSED at line 31
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
@@ -209,1197 +104,8 @@ do runlab.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 180
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 180
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 179
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 179
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 179
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 179
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 179
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 179
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 179
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 179
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 179
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 179
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 179
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 179
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 179
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 179
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 179
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 179
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 174
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 174
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# ** Error: (vlog-1935) Unable to move temporary file C:/Users/14253/ee469/cpu/work/_temp/vlogy2z7r2 to C:/Users/14253/ee469/cpu/work/cpu_testbench/_primary.dbs.
-# 
-# No such file or directory. (errno = ENOENT)
-# ** Error: ./cpu.v(177): Verilog Compiler exiting
-# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 13
-# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./cpu.v""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 174
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 174
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 174
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 174
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 174
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 174
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 174
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 174
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 174
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 174
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 174
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 174
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 170
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 170
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 170
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 170
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# ** Error: ./find_next_pc.v(49): near "end": syntax error, unexpected end
-# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 8
-# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./find_next_pc.v""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 170
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 170
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 170
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 170
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# ** Error: ./Instruction_memory.v(19): near "endmodule": syntax error, unexpected endmodule
-# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 9
-# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./Instruction_memory.v""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# ** Error: ./Instruction_memory.v(8): (vlog-2110) Illegal reference to memory "temp_instruction_set".
-# 
-# ** Error: ./Instruction_memory.v(8): Illegal assignment to type 'reg[31:0]' from type 'reg $[31:0]': Cannot assign an unpacked type to a packed type.
-# ** Error: ./Instruction_memory.v(16): (vlog-2110) Illegal reference to memory "temp_instruction_set".
-# 
-# ** Error: ./Instruction_memory.v(16): Illegal LHS of assignment.
-# ** Error: ./Instruction_memory.v(16): Illegal assignment to type 'reg $[31:0]' from type 'reg[31:0]': Cannot assign a packed type to an unpacked type.
-# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 9
-# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./Instruction_memory.v""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 170
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 170
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
 # MACRO ./runlab.do PAUSED at line 31
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
@@ -1563,8 +269,33 @@ do runlab.do
 # Break in Module cpu_testbench at ./cpu.v line 173
 # Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
 # MACRO ./runlab.do PAUSED at line 31
-do runlab.d
-# Cannot open macro file: runlab.d
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# ** Error: ./instruction_decoder.v(305): near "temp_rotate": syntax error, unexpected IDENTIFIER, expecting ';'
+# ** Error: ./instruction_decoder.v(303): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 10
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./instruction_decoder.v""
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
@@ -1595,10 +326,319 @@ do runlab.do
 # 	memory_file
 # Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
 # -- Compiling module reg_file
-# ** Error: (vlog-1935) Unable to move temporary file C:/Users/14253/ee469/cpu/work/_temp/vlogd9jwi5 to C:/Users/14253/ee469/cpu/work/reg_file/_primary.dat.
 # 
-# No such file or directory. (errno = ENOENT)
-# ** Error: ./reg_file.v(43): Verilog Compiler exiting
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.o
+# Cannot open macro file: runlab.o
+do runlab.o
+# Cannot open macro file: runlab.o
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# ** Error: ./reg_file.v(42): (vlog-2730) Undefined variable: 'read_en'.
+# 
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 12
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./reg_file.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# ** Error: ./reg_file.v(42): (vlog-2730) Undefined variable: 'read_en'.
+# 
 # ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
 # Error in macro ./runlab.do line 12
 # C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
@@ -1698,173 +738,3 @@ do runlab.do
 # Top level modules:
 # 	cpu_testbench
 # vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 173
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 173
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# Break in Module cpu_testbench at ./cpu.v line 173
-# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
-# MACRO ./runlab.do PAUSED at line 31
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module find_next_pc
-# 
-# Top level modules:
-# 	find_next_pc
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_memory
-# 
-# Top level modules:
-# 	instruction_memory
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module instruction_decoder
-# 
-# Top level modules:
-# 	instruction_decoder
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module memory_file
-# 
-# Top level modules:
-# 	memory_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
-# -- Compiling module cpu
-# -- Compiling module cpu_testbench
-# 
-# Top level modules:
-# 	cpu_testbench
-# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# Loading work.cpu_testbench
-# Loading work.cpu
-# Loading work.find_next_pc
-# Loading work.instruction_memory
-# Loading work.instruction_decoder
-# Loading work.reg_file
-# Loading work.memory_file
-# Loading work.alu

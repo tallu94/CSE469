@@ -126,11 +126,11 @@ module cpu(
 		.immediateValue(immediateValue), .br_address(br_address), .dt_address(dt_address), .ALUCtl_code(ALUCtl_code), .enable(instruction_en), .cpsr_enable(cpsr_enable), .execute_flag(execute_flag), .cpsr(cpsr), .cond_field(cond_field));
 
 	// Register File get and write values
-	reg_file rg (.clk(clk), .read_addr1(rn), .read_addr2(rd), .write_addr(rm), .write_data(memOut), .read_enable1(read_en),
+	reg_file rg (.clk(clk), .read_addr1(rn), .read_addr2(rm), .write_addr(rd), .write_data(memOut), .read_enable1(read_en),
 		.write_enable1(write_en), .read_data1(r1_data), .read_data2(r2_data));
 
 	// Mmeory File -- The input and output values need to be changed
-	memory_file mem (.clk(clk), .addr(r2_data[3:0]), .write_data(r1_data), .ldr_str_en(ldr_str_en), .read_data(memOut), .load_en(instruction_set[20]), .store_en(~instruction_set[20]));
+	memory_file mem (.clk(clk), .addr(r1_data[3:0]), .write_data(r2_data), .ldr_str_en(ldr_str_en), .read_data(memOut), .load_en(instruction_set[20]), .store_en(~instruction_set[20]));
 
 	// ALU File Compute instructions (m	ake sure to deal with cpsr values)
 	alu my_alu (.ALUCtl(ALUCtl_code), .A(r1_data), .B(r2_data), .I(immediateValue), .ALUOut(ALUOut), .cpsr(cpsr), .cpsr_enable(cpsr_enable));
@@ -163,10 +163,10 @@ module cpu_testbench();
 		.debug_port5(debug_port5), .debug_port6(debug_port6), .debug_port7(debug_port7));
 
 	initial begin
-		nreset = 1'b0;
-		@(posedge clk);
-		nreset = 1'b1;
-		@(posedge clk);
+	//	nreset = 1'b0;
+	//	@(posedge clk);
+	//	nreset = 1'b1;
+	//	@(posedge clk);
 		nreset = 1'b0;
 		repeat (50)
 		@(posedge clk);

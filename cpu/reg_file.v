@@ -11,6 +11,8 @@ module reg_file(
 
 	reg [31:0] regfile [15:0]; 	// 16 32-bit registers
 
+	reg [31:0] temp_d1;
+	reg [31:0] temp_d2;
 
 	initial begin
 		regfile[0] = 32'd1;
@@ -31,11 +33,16 @@ module reg_file(
 		regfile[15] = 32'd16;
 	end
 
-	assign read_data1 = regfile[read_addr1];
-	assign read_data2 = regfile[read_addr2];
+	assign read_data1 = temp_d1;
+	assign read_data2 = temp_d2;
 
 
 	always @(*) begin
+
+			if (read_enable1) begin
+				temp_d1 = regfile[read_addr1];
+				temp_d2 = regfile[read_addr2];
+			end
 
 			if (write_enable1)
 				regfile[write_addr] <= write_data;

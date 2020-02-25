@@ -300,8 +300,8 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 				8'b01xxxxx0: begin 						// LDR
 					temp_rm = 	4'bx;
 					temp_shift = instruction_set[11:4];
-					temp_rn = instruction_set[19:16];
-					temp_rd = instruction_set[15:12];
+					temp_rn = instruction_set[19:16]; // mem address to read data
+					temp_rd = instruction_set[15:12]; // reg address to store mem Out
 					temp_rotate = 4'bx;
 					temp_immediateValue = instruction_set[11:0];
 					temp_dt_address = instruction_set[11:0];
@@ -313,8 +313,8 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 				8'b01xxxxx1: begin 						// STR
 					temp_rm = 4'bx;
 					temp_shift = instruction_set[11:4];
-					temp_rn = instruction_set[19:16];
-					temp_rd = instruction_set[15:12];
+					temp_rn = instruction_set[19:16]; //r11 - data address in mem
+					temp_rd = instruction_set[15:12]; //data addr in reg
 					temp_rotate = 4'bx;
 					temp_immediateValue = instruction_set[11:0];
 					temp_dt_address = instruction_set[11:0];
