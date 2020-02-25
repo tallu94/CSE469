@@ -738,3 +738,934 @@ do runlab.do
 # Top level modules:
 # 	cpu_testbench
 # vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(133): near "write_addr": syntax error, unexpected IDENTIFIER, expecting .* or '.'
+# -- Compiling module cpu_testbench
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(133): near "write_addr": syntax error, unexpected IDENTIFIER, expecting .* or '.'
+# -- Compiling module cpu_testbench
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(133): near "write_addr": syntax error, unexpected IDENTIFIER, expecting .* or '.'
+# -- Compiling module cpu_testbench
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 101
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+add wave -position 106  sim:/cpu_testbench/dut/mem/read_addr
+add wave -position 107  sim:/cpu_testbench/dut/mem/write_addr
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/14253/ee469/cpu/cpu_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/14253/ee469/cpu/cpu_wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/14253/ee469/cpu/cpu_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(133): [PCDPC] - Port size (4 or 4) does not match connection size (32) for port 'write_addr'. The port definition is at: ./memory_file.v(1).
+# 
+#         Region: /cpu_testbench/dut/mem
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(133): [PCDPC] - Port size (4 or 4) does not match connection size (32) for port 'write_addr'. The port definition is at: ./memory_file.v(1).
+# 
+#         Region: /cpu_testbench/dut/mem
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(133): [PCDPC] - Port size (4 or 4) does not match connection size (32) for port 'write_addr'. The port definition is at: ./memory_file.v(1).
+# 
+#         Region: /cpu_testbench/dut/mem
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(133): [PCDPC] - Port size (4 or 4) does not match connection size (32) for port 'read_addr'. The port definition is at: ./memory_file.v(1).
+# 
+#         Region: /cpu_testbench/dut/mem
+# ** Warning: (vsim-3015) ./cpu.v(133): [PCDPC] - Port size (4 or 4) does not match connection size (32) for port 'write_addr'. The port definition is at: ./memory_file.v(1).
+# 
+#         Region: /cpu_testbench/dut/mem
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(133): [PCDPC] - Port size (4 or 4) does not match connection size (32) for port 'read_addr'. The port definition is at: ./memory_file.v(1).
+# 
+#         Region: /cpu_testbench/dut/mem
+# ** Warning: (vsim-3015) ./cpu.v(133): [PCDPC] - Port size (4 or 4) does not match connection size (32) for port 'write_addr'. The port definition is at: ./memory_file.v(1).
+# 
+#         Region: /cpu_testbench/dut/mem
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(133): [PCDPC] - Port size (4 or 4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+# 
+#         Region: /cpu_testbench/dut/mem
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(133): [PCDPC] - Port size (4 or 4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+# 
+#         Region: /cpu_testbench/dut/mem
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(133): [PCDPC] - Port size (4 or 4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+# 
+#         Region: /cpu_testbench/dut/mem
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 173
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 173
+# MACRO ./runlab.do PAUSED at line 31
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 

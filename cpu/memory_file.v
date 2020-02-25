@@ -14,7 +14,7 @@ module memory_file(clk, addr, write_data, ldr_str_en, read_data, load_en, store_
 	reg [31:0] memfile [15:0]; 	// 16 32-bit registers
 
 	assign read_data = temp_read_data;
-
+/*
 	initial begin
 		memfile[0] = 32'd1;
 		memfile[1] = 32'd2;
@@ -33,6 +33,7 @@ module memory_file(clk, addr, write_data, ldr_str_en, read_data, load_en, store_
 		memfile[14] = 32'd15;
 		memfile[15] = 32'd16;
 	end
+	*/
 
 
 	always @(*) begin

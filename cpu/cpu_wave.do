@@ -98,10 +98,11 @@ add wave -noupdate -expand -group Register_file -radix unsigned /cpu_testbench/d
 add wave -noupdate -expand -group Register_file -radix unsigned /cpu_testbench/dut/rg/read_data2
 add wave -noupdate -radix unsigned -childformat {{{/cpu_testbench/dut/rg/regfile[15]} -radix unsigned} {{/cpu_testbench/dut/rg/regfile[14]} -radix unsigned} {{/cpu_testbench/dut/rg/regfile[13]} -radix unsigned} {{/cpu_testbench/dut/rg/regfile[12]} -radix unsigned} {{/cpu_testbench/dut/rg/regfile[11]} -radix unsigned} {{/cpu_testbench/dut/rg/regfile[10]} -radix unsigned} {{/cpu_testbench/dut/rg/regfile[9]} -radix unsigned} {{/cpu_testbench/dut/rg/regfile[8]} -radix unsigned} {{/cpu_testbench/dut/rg/regfile[7]} -radix unsigned} {{/cpu_testbench/dut/rg/regfile[6]} -radix unsigned} {{/cpu_testbench/dut/rg/regfile[5]} -radix unsigned} {{/cpu_testbench/dut/rg/regfile[4]} -radix unsigned} {{/cpu_testbench/dut/rg/regfile[3]} -radix unsigned} {{/cpu_testbench/dut/rg/regfile[2]} -radix unsigned} {{/cpu_testbench/dut/rg/regfile[1]} -radix unsigned} {{/cpu_testbench/dut/rg/regfile[0]} -radix unsigned}} -expand -subitemconfig {{/cpu_testbench/dut/rg/regfile[15]} {-height 15 -radix unsigned} {/cpu_testbench/dut/rg/regfile[14]} {-height 15 -radix unsigned} {/cpu_testbench/dut/rg/regfile[13]} {-height 15 -radix unsigned} {/cpu_testbench/dut/rg/regfile[12]} {-height 15 -radix unsigned} {/cpu_testbench/dut/rg/regfile[11]} {-height 15 -radix unsigned} {/cpu_testbench/dut/rg/regfile[10]} {-height 15 -radix unsigned} {/cpu_testbench/dut/rg/regfile[9]} {-height 15 -radix unsigned} {/cpu_testbench/dut/rg/regfile[8]} {-height 15 -radix unsigned} {/cpu_testbench/dut/rg/regfile[7]} {-height 15 -radix unsigned} {/cpu_testbench/dut/rg/regfile[6]} {-height 15 -radix unsigned} {/cpu_testbench/dut/rg/regfile[5]} {-height 15 -radix unsigned} {/cpu_testbench/dut/rg/regfile[4]} {-height 15 -radix unsigned} {/cpu_testbench/dut/rg/regfile[3]} {-height 15 -radix unsigned} {/cpu_testbench/dut/rg/regfile[2]} {-height 15 -radix unsigned} {/cpu_testbench/dut/rg/regfile[1]} {-height 15 -radix unsigned} {/cpu_testbench/dut/rg/regfile[0]} {-height 15 -radix unsigned}} /cpu_testbench/dut/rg/regfile
 add wave -noupdate -expand -group Memory_file -radix unsigned /cpu_testbench/dut/mem/clk
-add wave -noupdate -expand -group Memory_file -radix unsigned /cpu_testbench/dut/mem/addr
 add wave -noupdate -expand -group Memory_file -radix unsigned /cpu_testbench/dut/mem/ldr_str_en
 add wave -noupdate -expand -group Memory_file -radix unsigned /cpu_testbench/dut/mem/load_en
 add wave -noupdate -expand -group Memory_file -radix unsigned /cpu_testbench/dut/mem/store_en
+add wave -noupdate -expand -group Memory_file -radix unsigned /cpu_testbench/dut/mem/read_addr
+add wave -noupdate -expand -group Memory_file -radix unsigned /cpu_testbench/dut/mem/write_addr
 add wave -noupdate -expand -group Memory_file -radix unsigned /cpu_testbench/dut/mem/write_data
 add wave -noupdate -expand -group Memory_file -radix unsigned /cpu_testbench/dut/mem/read_data
 add wave -noupdate -expand -group Memory_file -radix unsigned /cpu_testbench/dut/mem/temp_read_data
@@ -123,7 +124,7 @@ add wave -noupdate -group ALU /cpu_testbench/dut/my_alu/orr_result
 add wave -noupdate -group ALU /cpu_testbench/dut/my_alu/eor_result
 add wave -noupdate -group ALU /cpu_testbench/dut/my_alu/bic_result
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {900 ps} 0}
+WaveRestoreCursors {{Cursor 1} {842 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 175
 configure wave -valuecolwidth 100
