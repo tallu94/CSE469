@@ -7,7 +7,19 @@ module instruction_memory (clk, enable, rst, pc_address, instruction_set);
 
 	assign instruction_set = temp_instruction_set;
 
+	reg [7:0] regfile [0:127];
+	always@(*) begin
+		if (enable) begin
+			temp_instruction_set = {regfile[pc_address], regfile[pc_address + 1], regfile[pc_address + 2], regfile[pc_address + 3]};
+  	end
+	end
 
+  initial begin
+    $readmemh("code_mem.mem", regfile);
+  end
+
+endmodule
+/*
 	reg 	[31:0] machineCode_container [0:31];						// 32 32-bit words
 	initial $readmemb("Machine_code_02.mem", machineCode_container);		// reads in machine code and stores in memory
 
@@ -18,7 +30,7 @@ module instruction_memory (clk, enable, rst, pc_address, instruction_set);
 	end
 
 endmodule
-
+*/
 
 /*// Testbench
 module instruction_memory_testbench();

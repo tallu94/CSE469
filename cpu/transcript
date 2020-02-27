@@ -1618,3 +1618,2307 @@ do runlab.do
 # ** Note: $stop    : ./cpu.v(190)
 #    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
 # Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:50 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 18:09:50 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:50 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 18:09:50 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:50 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 18:09:50 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:50 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 18:09:50 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:50 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 18:09:50 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:50 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 18:09:51 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:09:51 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 18:09:51 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:09:52 on Feb 26,2020, Elapsed time: 0:14:32
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 18:09:52 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlftk4wxx5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftk4wxx5
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:18 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 18:10:19 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:19 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 18:10:19 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:19 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 18:10:19 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:19 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 18:10:19 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:19 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 18:10:19 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:19 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 18:10:19 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:10:19 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 18:10:20 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 18:10:21 on Feb 26,2020, Elapsed time: 0:00:29
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 18:10:21 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlfteexyfy".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfteexyfy
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:11 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 18:11:11 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:11 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 18:11:11 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:11 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 18:11:11 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:11 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 18:11:12 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:12 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 18:11:12 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:12 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 18:11:12 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:11:12 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 18:11:12 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:11:14 on Feb 26,2020, Elapsed time: 0:00:53
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 18:11:14 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlftq4j7r4".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftq4j7r4
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:28:47 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 18:28:47 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:28:47 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 18:28:47 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:28:47 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 18:28:47 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:28:47 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 18:28:47 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:28:47 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 18:28:48 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:28:48 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 18:28:48 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:28:48 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 18:28:48 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:28:49 on Feb 26,2020, Elapsed time: 0:17:35
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 18:28:50 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlft2dxm5i".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2dxm5i
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:29:27 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 18:29:27 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:29:27 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 18:29:27 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:29:27 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 18:29:28 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:29:28 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 18:29:28 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:29:28 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 18:29:28 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:29:28 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 18:29:28 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:29:28 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 18:29:28 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:29:30 on Feb 26,2020, Elapsed time: 0:00:40
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 18:29:30 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlftjv8wzr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftjv8wzr
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:31:36 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 18:31:37 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:31:37 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 18:31:37 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:31:37 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 18:31:37 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:31:37 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 18:31:37 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:31:37 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 18:31:37 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:31:37 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 18:31:37 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:31:37 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 18:31:38 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 18:31:39 on Feb 26,2020, Elapsed time: 0:02:09
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 18:31:39 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlftd3wjsq".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftd3wjsq
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:32:07 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 18:32:07 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:32:08 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 18:32:08 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:32:08 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 18:32:08 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:32:08 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 18:32:08 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:32:08 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 18:32:08 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:32:08 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 18:32:08 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:32:08 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 18:32:09 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 18:32:10 on Feb 26,2020, Elapsed time: 0:00:31
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 18:32:10 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlftggq7xr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftggq7xr
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:43:18 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 18:43:18 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:43:18 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 18:43:18 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:43:18 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 18:43:18 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:43:18 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 18:43:18 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:43:18 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 18:43:19 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:43:19 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 18:43:19 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:43:19 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 18:43:19 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:43:21 on Feb 26,2020, Elapsed time: 0:11:11
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 18:43:21 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlft2sgzqv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2sgzqv
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:44:59 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 18:45:00 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:45:00 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 18:45:00 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:45:00 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 18:45:00 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:45:00 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 18:45:00 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:45:00 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 18:45:00 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:45:00 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 18:45:00 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:45:00 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 18:45:01 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 18:45:02 on Feb 26,2020, Elapsed time: 0:01:41
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 18:45:02 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlftvti0ic".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftvti0ic
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:51:38 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 18:51:38 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:51:38 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 18:51:38 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:51:38 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 18:51:39 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:51:39 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 18:51:39 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:51:39 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 18:51:39 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:51:39 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 18:51:39 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:51:39 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 18:51:39 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 18:51:41 on Feb 26,2020, Elapsed time: 0:06:39
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 18:51:41 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlftyakf5a".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftyakf5a
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:00:25 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 19:00:25 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:00:25 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 19:00:25 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:00:25 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 19:00:25 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:00:25 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 19:00:26 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:00:26 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 19:00:26 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:00:26 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 19:00:26 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:00:26 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 19:00:26 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:00:27 on Feb 26,2020, Elapsed time: 0:08:46
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 19:00:27 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlftsrdkr1".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftsrdkr1
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:04:07 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 19:04:07 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:04:07 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 19:04:07 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:04:07 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 19:04:07 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:04:07 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 19:04:07 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:04:07 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 19:04:07 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:04:07 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 19:04:07 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:04:07 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 19:04:08 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 19:04:09 on Feb 26,2020, Elapsed time: 0:03:42
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 19:04:09 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlftb6f7h2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftb6f7h2
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:06:09 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 19:06:09 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:06:09 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 19:06:09 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:06:09 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 19:06:09 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:06:09 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 19:06:09 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:06:09 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 19:06:09 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:06:09 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 19:06:09 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:06:09 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 19:06:09 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:06:10 on Feb 26,2020, Elapsed time: 0:02:01
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 19:06:10 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlft662qen".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft662qen
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:08 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 19:07:08 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:08 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 19:07:08 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:08 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 19:07:08 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:08 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 19:07:08 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:08 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 19:07:08 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:08 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 19:07:08 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:08 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 19:07:08 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:07:09 on Feb 26,2020, Elapsed time: 0:00:59
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 19:07:09 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlftqrakvt".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftqrakvt
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:01 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 19:08:02 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:02 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 19:08:02 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:02 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 19:08:02 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:02 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 19:08:02 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:02 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 19:08:02 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:02 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 19:08:02 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:02 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 19:08:02 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:08:03 on Feb 26,2020, Elapsed time: 0:00:54
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 19:08:03 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlft74v2fa".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft74v2fa
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:37:15 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 19:37:15 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:37:15 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 19:37:15 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:37:15 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 19:37:15 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:37:15 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 19:37:15 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:37:15 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 19:37:15 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:37:15 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 19:37:15 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:37:15 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 19:37:15 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:37:17 on Feb 26,2020, Elapsed time: 0:29:14
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 19:37:17 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlftwtc3rh".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwtc3rh
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:57 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 19:38:57 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:57 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 19:38:57 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:57 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 19:38:57 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:57 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 19:38:57 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:57 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 19:38:57 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:57 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 19:38:57 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:57 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 19:38:57 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:38:58 on Feb 26,2020, Elapsed time: 0:01:41
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 19:38:59 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlft14kc0q".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft14kc0q
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:00 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 19:59:00 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:00 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 19:59:00 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:00 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 19:59:00 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:00 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 19:59:00 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:00 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 19:59:00 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:01 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 19:59:01 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:01 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 19:59:01 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:59:02 on Feb 26,2020, Elapsed time: 0:20:03
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 19:59:02 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlft1advgc".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft1advgc
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:43 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 19:59:43 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:43 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 19:59:43 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:43 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 19:59:43 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:43 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 19:59:44 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:44 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 19:59:44 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:44 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 19:59:44 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:59:44 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 19:59:44 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:59:45 on Feb 26,2020, Elapsed time: 0:00:43
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 19:59:45 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlft15chsz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft15chsz
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:03:33 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 20:03:33 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:03:33 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 20:03:33 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:03:33 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 20:03:33 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:03:33 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 20:03:33 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:03:33 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 20:03:33 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:03:33 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 20:03:33 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:03:33 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 20:03:33 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:03:34 on Feb 26,2020, Elapsed time: 0:03:49
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 20:03:34 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlftvi9qhv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftvi9qhv
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:23:25 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 20:23:25 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:23:25 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 20:23:26 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:23:26 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 20:23:26 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:23:26 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 20:23:26 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:23:26 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 20:23:26 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:23:26 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 20:23:26 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:23:26 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 20:23:26 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:23:27 on Feb 26,2020, Elapsed time: 0:19:53
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 20:23:27 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlftij278v".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftij278v
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 5 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:01 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 20:27:01 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:01 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 20:27:02 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:02 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 20:27:02 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:02 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 20:27:02 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:02 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 20:27:02 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:02 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 20:27:02 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:02 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 20:27:02 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:27:05 on Feb 26,2020, Elapsed time: 0:03:38
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 20:27:05 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlftqvd1kr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftqvd1kr
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 10 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:13 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 20:27:13 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:13 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 20:27:13 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:13 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 20:27:13 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:13 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 20:27:14 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:14 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 20:27:14 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:14 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 20:27:14 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:14 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 20:27:14 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:27:15 on Feb 26,2020, Elapsed time: 0:00:10
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 20:27:15 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlfts56ccs".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfts56ccs
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 10 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:47:59 on Feb 26,2020
+# vlog -reportprogress 300 ./alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 20:47:59 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:47:59 on Feb 26,2020
+# vlog -reportprogress 300 ./find_next_pc.v 
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# End time: 20:47:59 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:47:59 on Feb 26,2020
+# vlog -reportprogress 300 ./Instruction_memory.v 
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# End time: 20:47:59 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:47:59 on Feb 26,2020
+# vlog -reportprogress 300 ./instruction_decoder.v 
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# End time: 20:48:00 on Feb 26,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:48:00 on Feb 26,2020
+# vlog -reportprogress 300 ./memory_file.v 
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# End time: 20:48:00 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:48:00 on Feb 26,2020
+# vlog -reportprogress 300 ./reg_file.v 
+# -- Compiling module reg_file
+# ** Warning: ./reg_file.v(43): (vlog-2182) 'regfile' might be read before written in always_comb or always @* block.
+# 
+# Top level modules:
+# 	reg_file
+# End time: 20:48:00 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:48:00 on Feb 26,2020
+# vlog -reportprogress 300 ./cpu.v 
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# End time: 20:48:00 on Feb 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:48:01 on Feb 26,2020, Elapsed time: 0:20:46
+# Errors: 6, Warnings: 4
+# vsim -voptargs=""+acc"" -t 1ps -lib work cpu_testbench 
+# Start time: 20:48:01 on Feb 26,2020
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# ** Warning: (vsim-3015) ./cpu.v(150): [PCDPC] - Port size (4) does not match connection size (32) for port 'addr'. The port definition is at: ./memory_file.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_testbench/dut/mem File: ./memory_file.v
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+#           Attempting to use alternate WLF file "./wlft5md860".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5md860
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/read_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 104
+# ** Error: (vish-4014) No objects found matching '/cpu_testbench/dut/mem/write_addr'.
+# Executing ONERROR command at macro ./cpu_wave.do line 105
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./cpu.v(190)
+#    Time: 10 ns  Iteration: 1  Instance: /cpu_testbench
+# Break in Module cpu_testbench at ./cpu.v line 190

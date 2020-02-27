@@ -19,7 +19,6 @@ module find_next_pc(
 
 	reg [31:0] temp_program_counter_next;
 	reg [31:0] temp_next_r14;
-
 	assign program_counter_next = temp_program_counter_next;
 	assign next_r14 = temp_next_r14;
 
@@ -32,7 +31,8 @@ module find_next_pc(
 		case(ALUCtl_code)
 			Branch: begin
 				temp_next_r14 <= 32'dx;
-				temp_program_counter_next <= program_counter + br_address;
+				temp_program_counter_next <= program_counter + ({{6{br_address[23]}}, br_address[23:0]} << 2) + 32'd8;
+				//temp_program_counter_next <= program_counter + br_address;
 			end
 
 			BranchLink: begin
@@ -42,7 +42,7 @@ module find_next_pc(
 
 			default: begin
 				temp_next_r14 <= 32'dx;
-				temp_program_counter_next <= program_counter + 32'd1; //we will increment by just one
+				temp_program_counter_next <= program_counter + 32'd4; //we will increment by just one
 			end
 		endcase
 	end

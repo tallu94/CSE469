@@ -128,6 +128,7 @@ module alu (
 					else temp_cpsr[30] = 1'b0; 		//set zero bit
 				end
 		end
+
 			31: temp_ALUOut = 32'bx;			// B
 			32: temp_ALUOut = 32'bx;			// BL
 			41: temp_ALUOut = 32'bx;			// LDR

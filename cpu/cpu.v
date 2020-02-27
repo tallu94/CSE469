@@ -185,7 +185,7 @@ module cpu_testbench();
 	//	nreset = 1'b1;
 	//	@(posedge clk);
 		nreset = 1'b0;
-		repeat (50)
+		repeat (100)
 		@(posedge clk);
 		$stop;
 
