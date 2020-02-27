@@ -1,5 +1,5 @@
 module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediateValue,
-		 br_address, dt_address, ALUCtl_code, enable, cpsr_enable, execute_flag, cpsr, cond_field);
+		 br_address, dt_address, ALUCtl_code, enable, cpsr_enable, execute_flag, cpsr, cond_field, immediate_enable);
 
 	input wire [31:0] instruction_set;
 	input wire enable;
@@ -17,6 +17,7 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 	output wire [10:0] ALUCtl_code;
 	output wire cpsr_enable;
 	output wire execute_flag;
+	output wire immediate_enable;
 
 	reg [3:0]  temp_rm;
 	reg [7:0]  temp_shift;
@@ -30,7 +31,7 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 	reg [10:0] temp_ALUCtl_code;
 	reg temp_cpsr_enable;
 	reg temp_execute_flag;
-
+	reg temp_immediate_enable;
 
 	assign rm = temp_rm;
 	assign shift = temp_shift;
@@ -44,6 +45,7 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 	assign ALUCtl_code = temp_ALUCtl_code;
 	assign cpsr_enable = temp_cpsr_enable;
 	assign execute_flag = temp_execute_flag;
+	assign immediate_enable = temp_immediate_enable;
 
 
 
@@ -87,91 +89,114 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 			casex(instruction_set[27:20])
 
 				// ------------- DATA PROCESSING OPERATIONS (0-30) --------------
-				8'b0000100x: begin 						// ADD
+				8'b00x0100x: begin 						// ADD
 					temp_rm = instruction_set[3:0];
 					temp_shift = instruction_set[11:4];
 					temp_rn = instruction_set[19:16];
 					temp_rd = instruction_set[15:12];
 					temp_rotate = 4'bx;
-					temp_immediateValue = 8'bx;
+					if (instruction_set[25]) begin
+						temp_immediateValue = instruction_set[7:0];
+						temp_immediate_enable = 1'b1;
+					end else begin
+						temp_immediateValue = 32'bx;
+						temp_immediate_enable = 1'b0;
+					end
 					temp_dt_address = 12'bx;
 					temp_br_address = 24'bx;
 					temp_cond_field = instruction_set[31:28];
 					temp_ALUCtl_code = 11'd0;
 				end
 
-				8'b0010100x: begin 						// ADDI
-					temp_rm = 4'bx;
-					temp_shift = instruction_set[11:4];
-					temp_rn = instruction_set[19:16];
-					temp_rd = instruction_set[15:12];
-					temp_rotate = 4'bx;
-					temp_immediateValue = instruction_set[7:0];
-					temp_dt_address = 12'bx;
-					temp_br_address = 24'bx;
-					temp_cond_field = instruction_set[31:28];
-					temp_ALUCtl_code = 11'd1;
-				end
-
-				8'b0000010x: begin 						// SUB
+				8'b00x0010x: begin 						// SUB
 					temp_rm = instruction_set[3:0];
 					temp_shift = instruction_set[11:4];
 					temp_rn = instruction_set[19:16];
 					temp_rd = instruction_set[15:12];
 					temp_rotate = 4'bx;
-					temp_immediateValue = 8'bx;
+					if (instruction_set[25]) begin
+						temp_immediateValue = instruction_set[7:0];
+						temp_immediate_enable = 1'b1;
+					end else begin
+						temp_immediateValue = 32'bx;
+						temp_immediate_enable = 1'b0;
+					end
 					temp_dt_address = 12'bx;
 					temp_br_address = 24'bx;
 					temp_cond_field = instruction_set[31:28];
 					temp_ALUCtl_code = 11'd2;
 				end
 
-				8'b0000000x: begin 						// AND
+				8'b00x0000x: begin 						// AND
 					temp_rm = instruction_set[3:0];
 					temp_shift = instruction_set[11:4];
 					temp_rn = instruction_set[19:16];
 					temp_rd = instruction_set[15:12];
 					temp_rotate = 4'bx;
-					temp_immediateValue = 8'bx;
+					if (instruction_set[25]) begin
+						temp_immediateValue = instruction_set[7:0];
+						temp_immediate_enable = 1'b1;
+					end else begin
+						temp_immediateValue = 32'bx;
+						temp_immediate_enable = 1'b0;
+					end
 					temp_dt_address = 12'bx;
 					temp_br_address = 24'bx;
 					temp_cond_field = instruction_set[31:28];
 					temp_ALUCtl_code = 11'd3;
 				end
 
-				8'b0001100x: begin 						// ORR
+				8'b00x1100x: begin 						// ORR
 					temp_rm = instruction_set[3:0];
 					temp_shift = instruction_set[11:4];
 					temp_rn = instruction_set[19:16];
 					temp_rd = instruction_set[15:12];
 					temp_rotate = 4'bx;
-					temp_immediateValue = 8'bx;
+					if (instruction_set[25]) begin
+						temp_immediateValue = instruction_set[7:0];
+						temp_immediate_enable = 1'b1;
+					end else begin
+						temp_immediateValue = 32'bx;
+						temp_immediate_enable = 1'b0;
+					end
 					temp_dt_address = 12'bx;
 					temp_br_address = 24'bx;
 					temp_cond_field = instruction_set[31:28];
 					temp_ALUCtl_code = 11'd4;
 				end
 
-				8'b0000001x: begin 						// EOR
+				8'b00x0001x: begin 						// EOR
 					temp_rm = instruction_set[3:0];
 					temp_shift = instruction_set[11:4];
 					temp_rn = instruction_set[19:16];
 					temp_rd = instruction_set[15:12];
 					temp_rotate = 4'bx;
-					temp_immediateValue = 8'bx;
+					if (instruction_set[25]) begin
+						temp_immediateValue = instruction_set[7:0];
+						temp_immediate_enable = 1'b1;
+					end else begin
+						temp_immediateValue = 32'bx;
+						temp_immediate_enable = 1'b0;
+					end
 					temp_dt_address = 12'bx;
 					temp_br_address = 24'bx;
 					temp_cond_field = instruction_set[31:28];
 					temp_ALUCtl_code = 11'd5;
 				end
 
-				8'b0001101x: begin 						// MOV
+				8'b00x1101x: begin 						// MOV
 					temp_rm = instruction_set[3:0];
 					temp_shift = instruction_set[11:4];
 					temp_rn = instruction_set[19:16];
 					temp_rd = instruction_set[15:12];
 					temp_rotate = 4'bx;
-					temp_immediateValue = 8'bx;
+					if (instruction_set[25]) begin
+						temp_immediateValue = instruction_set[7:0];
+						temp_immediate_enable = 1'b1;
+					end else begin
+						temp_immediateValue = 32'bx;
+						temp_immediate_enable = 1'b0;
+					end
 					temp_dt_address = 12'bx;
 					temp_br_address = 24'bx;
 					temp_cond_field = instruction_set[31:28];
@@ -191,13 +216,19 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 					temp_ALUCtl_code = 11'd7;
 				end
 
-				8'b0001010x: begin 						// CMP
+				8'b00x1010x: begin 						// CMP
 					temp_rm = instruction_set[3:0];
 					temp_shift = instruction_set[11:4];
 					temp_rn = instruction_set[19:16];
 					temp_rd = instruction_set[15:12];
 					temp_rotate = 4'bx;
-					temp_immediateValue = 8'bx;
+					if (instruction_set[25]) begin
+						temp_immediateValue = instruction_set[7:0];
+						temp_immediate_enable = 1'b1;
+					end else begin
+						temp_immediateValue = 32'bx;
+						temp_immediate_enable = 1'b0;
+					end
 					temp_dt_address = 12'bx;
 					temp_br_address = 24'bx;
 					temp_cond_field = instruction_set[31:28];
@@ -241,19 +272,6 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 					temp_br_address = 24'bx;
 					temp_cond_field = instruction_set[31:28];
 					temp_ALUCtl_code = 11'd11;
-				end
-
-				8'b0011101x: begin 						// MOVI
-					temp_rm = 4'bx;
-					temp_shift = 8'bx;
-					temp_rn = instruction_set[19:16];
-					temp_rd = instruction_set[15:12];
-					temp_rotate = instruction_set[11:8];
-					temp_immediateValue = instruction_set[7:0];
-					temp_dt_address = 12'bx;
-					temp_br_address = 24'bx;
-					temp_cond_field = instruction_set[31:28];
-					temp_ALUCtl_code = 11'd12;
 				end
 
 				8'b0011010x: begin 						// CMPI

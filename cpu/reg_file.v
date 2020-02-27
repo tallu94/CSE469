@@ -26,7 +26,7 @@ module reg_file(
 		regfile[8] = 32'd9;
 		regfile[9] = 32'd10;
 		regfile[10] = 32'd11;
-		regfile[11] = 32'd0;
+		regfile[11] = 32'd12;
 		regfile[12] = 32'd13;
 		regfile[13] = 32'd14;
 		regfile[14] = 32'd15;

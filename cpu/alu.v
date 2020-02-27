@@ -1,11 +1,11 @@
 module alu (
 	input [10:0] ALUCtl,
 	input [31:0] A,
-	input [31:0] B,
+	input [31:0] B_initial,
 	input [7:0] I,
 	output wire [31:0] ALUOut,
 	output wire [31:0] cpsr,
-	input cpsr_enable);
+	input cpsr_enable, input immediate_enable);
 
 	//in/out
 	/*
@@ -18,7 +18,7 @@ module alu (
 
 	reg [31:0] temp_ALUOut;
 	reg [31:0] temp_cpsr;
-
+	reg [31:0] B;
 	assign cpsr = temp_cpsr;
 	assign ALUOut = temp_ALUOut;
 
@@ -39,6 +39,8 @@ module alu (
 	assign bic_result = A & (~B);
 
 	always @(ALUCtl, A, B, I) begin
+		if (immediate_enable) B = I;
+		else B = B_initial;
 		casex(ALUCtl)
 			0: begin
 			 temp_ALUOut = A + B;			//ADD
@@ -93,7 +95,7 @@ module alu (
 				end
 			end
 
-			6: temp_ALUOut = 32'bx;				// MOV
+			6: temp_ALUOut = B;				// MOV
 			7: temp_ALUOut = 32'bx;				// MVN
 			8: begin
 				temp_ALUOut = A < B;				// CMP
@@ -126,7 +128,6 @@ module alu (
 					else temp_cpsr[30] = 1'b0; 		//set zero bit
 				end
 		end
-
 			31: temp_ALUOut = 32'bx;			// B
 			32: temp_ALUOut = 32'bx;			// BL
 			41: temp_ALUOut = 32'bx;			// LDR
