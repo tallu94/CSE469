@@ -46,10 +46,12 @@ module cpu(
 	reg [31:0] reg_write_data;
 	reg [31:0] r1_data_final;
 	reg [31:0] reg_write_addr;
+	wire [31:0] shift_output;
 	reg mem_str_enable;
 	wire immediate_enable;
 	wire cpsr_enable;
 	wire execute_flag;
+	wire carry_bit;
 	// Controls the LED on the board.
 	assign led = 1'b1;
 	assign pc = temp_pc;
@@ -164,6 +166,8 @@ module cpu(
 	// ALU File Compute instructions (m	ake sure to deal with cpsr values)
 	alu my_alu (.ALUCtl(ALUCtl_code), .A(r2_data), .B_initial(r1_data_final), .I(immediateValue), .ALUOut(ALUOut), .cpsr(cpsr), .cpsr_enable(cpsr_enable), .immediate_enable(immediate_enable));
 	// if instruction is branch and link then write the new pc to R14
+
+	shifter my_shifter (.shift_type(immediateValue[7:5]), .a(immediateValue[3:0]), .shift(immediateValue[6:5]), .b(shift_output), .carry(carry_bit));
 endmodule
 
 

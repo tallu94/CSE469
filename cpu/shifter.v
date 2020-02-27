@@ -1,11 +1,15 @@
 module shifter
-(
-  input wire [2:0] shift_type, //bits 654 of instruction (specifies address, not actual register)
-  input wire signed [31:0] a, //Rm: bits 3210
-  input wire [4:0] shift, //amount to shift by: bits 11
-  output reg signed [31:0] b, //shifted Rm
-  output reg carry
+(shift_type, //bits 654 of instruction (specifies address, not actual register)
+a, //Rm: bits 3210
+shift, //amount to shift by: bits 11
+b, //shifted Rm
+carry
 );
+input wire [2:0] shift_type; //bits 654 of instruction (specifies address, not actual register)
+input wire signed [31:0] a;//Rm: bits 3210
+input wire [4:0] shift; //amount to shift by: bits 11
+output reg signed [31:0] b; //shifted Rm
+output reg carry;
 
 always @* begin
 	case (shift_type)
@@ -25,7 +29,7 @@ always @* begin
 		end else begin
 			b = a >> shift;
 			carry = a[shift - 1];
-		end	
+		end
 	end
 	3'b100: begin //arithmetic shift right by immediate
 		if (shift == 0) begin
@@ -39,7 +43,7 @@ always @* begin
 		end else begin
 			b = a >>> shift;
 			carry = a[shift - 1];
-		end	
+		end
 	end
 	3'b110: begin //rotate right by immediate
 		if (shift == 0) begin
@@ -80,7 +84,7 @@ always @* begin
 			5'b11111: b = {a[30:0], a[31]};
 			endcase
 			carry <= a[shift - 1];
-		end	
+		end
 	end
 	default: b <= a;
 	endcase

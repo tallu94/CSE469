@@ -11,6 +11,7 @@ vlog "./instruction_decoder.v"
 vlog "./memory_file.v"
 vlog "./reg_file.v"
 vlog "./cpu.v"
+vlog "./shifter.v"
 
 # Call vsim to invoke simulator
 #     Make sure the last item on the line is the name of the
