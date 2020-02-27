@@ -44,6 +44,8 @@ module cpu(
 
 	reg [1:0] cycle_counter;
 	reg [31:0] reg_write_data;
+	reg [31:0] r1_data_final;
+	reg [31:0] reg_write_addr;
 	reg mem_str_enable;
 	wire immediate_enable;
 	wire cpsr_enable;
@@ -73,6 +75,14 @@ module cpu(
 			reg_write_data = ALUOut;
 			mem_str_enable = 1'b0;
 		end
+		if (rn == 15) r1_data_final = pc;
+		else r1_data_final = r1_data;
+		if (ALUCtl_code == 11'd32) begin
+			reg_write_data = next_r14;
+			reg_write_addr = 11'd14;
+		end else begin
+			reg_write_addr = rd;
+		end
 	end
 	// initialize and update next
 	always @(posedge clk) begin
@@ -94,7 +104,6 @@ module cpu(
 			1: begin
 			temp_pc <= temp_pc;
 				if (execute_flag) begin
-
 				temp_instruction_en <= 0;
 				temp_read_en <= 1;
 				temp_ldr_str_en <= 0;
@@ -118,12 +127,15 @@ module cpu(
 
 			3: begin
 			temp_pc <= temp_pc;
-			if (execute_flag) begin
-
+			if (execute_flag && ALUCtl_code != 8) begin
+				if (rd == 15) begin
+					temp_pc <= reg_write_data;
+				end else begin
 				temp_instruction_en <= 0;
 				temp_read_en <= 0;
 				temp_ldr_str_en <= 0;
 				temp_write_en <= 1;
+				end
 			end
 			cycle_counter <= 0;
 			end
@@ -143,14 +155,14 @@ module cpu(
 		.cpsr_enable(cpsr_enable), .execute_flag(execute_flag), .cpsr(cpsr), .cond_field(cond_field), .immediate_enable(immediate_enable));
 
 	// Register File get and write values
-	reg_file rg (.clk(clk), .read_addr1(rm), .read_addr2(rn), .write_addr(rd), .write_data(reg_write_data), .read_enable1(read_en),
+	reg_file rg (.clk(clk), .read_addr1(rm), .read_addr2(rn), .write_addr(reg_write_addr), .write_data(reg_write_data), .read_enable1(read_en),
 		.write_enable1(write_en), .read_data1(r1_data), .read_data2(r2_data));
 
 	// Mmeory File -- The input and output values need to be changed
-	memory_file mem (.clk(clk), .addr(r2_data), .write_data(r1_data), .ldr_str_en(ldr_str_en), .read_data(memOut), .load_en(instruction_set[20]), .store_en(mem_str_enable));
+	memory_file mem (.clk(clk), .addr(r2_data), .write_data(r1_data_final), .ldr_str_en(ldr_str_en), .read_data(memOut), .load_en(instruction_set[20]), .store_en(mem_str_enable), .i(immediateValue));
 
 	// ALU File Compute instructions (m	ake sure to deal with cpsr values)
-	alu my_alu (.ALUCtl(ALUCtl_code), .A(r2_data), .B_initial(r1_data), .I(immediateValue), .ALUOut(ALUOut), .cpsr(cpsr), .cpsr_enable(cpsr_enable), .immediate_enable(immediate_enable));
+	alu my_alu (.ALUCtl(ALUCtl_code), .A(r2_data), .B_initial(r1_data_final), .I(immediateValue), .ALUOut(ALUOut), .cpsr(cpsr), .cpsr_enable(cpsr_enable), .immediate_enable(immediate_enable));
 	// if instruction is branch and link then write the new pc to R14
 endmodule
 

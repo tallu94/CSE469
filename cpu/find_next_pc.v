@@ -39,8 +39,11 @@ module find_next_pc(
 			end
 
 			BranchLink: begin
-				temp_next_r14 <= program_counter + 32'd1;
-				temp_program_counter_next <= program_counter + br_address;
+			if (execute_flag) begin
+				temp_next_r14 <= program_counter + 32'd4;
+				temp_program_counter_next <= program_counter + ({{6{br_address[23]}}, br_address[23:0]} << 2) + 32'd8;
+			end
+				else temp_program_counter_next <= program_counter + 32'd4;
 			end
 
 			default: begin
