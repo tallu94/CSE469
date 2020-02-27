@@ -5,7 +5,8 @@ module find_next_pc(
 	input wire [23:0] br_address,
 	input wire [31:0] program_counter,
 	output wire [31:0] program_counter_next,
-	output wire [31:0] next_r14);
+	output wire [31:0] next_r14,
+	input wire execute_flag);
 
 	/*
 	input wire clk;
@@ -31,7 +32,9 @@ module find_next_pc(
 		case(ALUCtl_code)
 			Branch: begin
 				temp_next_r14 <= 32'dx;
+				if (execute_flag)
 				temp_program_counter_next <= program_counter + ({{6{br_address[23]}}, br_address[23:0]} << 2) + 32'd8;
+				else temp_program_counter_next <= program_counter + 32'd4;
 				//temp_program_counter_next <= program_counter + br_address;
 			end
 

@@ -132,7 +132,7 @@ module cpu(
 
 	// figure out next-pc
 	find_next_pc fnp (.clk(clk), .ALUCtl_code(ALUCtl_code), .br_address(br_address),
-		.program_counter(temp_pc), .program_counter_next(pc_n), .next_r14(next_r14));
+		.program_counter(temp_pc), .program_counter_next(pc_n), .next_r14(next_r14), .execute_flag(execute_flag));
 
 	// fetch instruction
 	instruction_memory im (.clk(clk), .enable(instruction_en), .rst(nreset), .pc_address(temp_pc), .instruction_set(instruction_set));
