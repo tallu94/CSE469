@@ -16,6 +16,7 @@ entity instruction_decoder is
         cpsr_enable     : out    vl_logic;
         execute_flag    : out    vl_logic;
         cpsr            : in     vl_logic_vector(31 downto 0);
-        cond_field      : out    vl_logic_vector(3 downto 0)
+        cond_field      : out    vl_logic_vector(3 downto 0);
+        immediate_enable: out    vl_logic
     );
 end instruction_decoder;

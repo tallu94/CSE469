@@ -15,7 +15,7 @@ module instruction_memory (clk, enable, rst, pc_address, instruction_set);
 	end
 
   initial begin
-    $readmemh("code_mem.mem", regfile);
+    $readmemh("code_mem0.mem", regfile);
   end
 
 endmodule

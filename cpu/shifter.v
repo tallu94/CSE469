@@ -5,7 +5,7 @@ shift, //amount to shift by: bits 11
 b, //shifted Rm
 carry
 );
-input wire [2:0] shift_type; //bits 654 of instruction (specifies address, not actual register)
+input wire [1:0] shift_type; //bits 654 of instruction (specifies address, not actual register)
 input wire signed [31:0] a;//Rm: bits 3210
 input wire [4:0] shift; //amount to shift by: bits 11
 output reg signed [31:0] b; //shifted Rm
@@ -13,7 +13,7 @@ output reg carry;
 
 always @* begin
 	case (shift_type)
-	3'b000: begin //logical shift left by immediate
+	2'b00: begin //logical shift left by immediate
 		if (shift == 0) begin
 			b = a;
 			carry = 1'b0;
@@ -22,7 +22,7 @@ always @* begin
 			carry = a[32 - shift];
 		end
 	end
-	3'b010: begin //logical shift right by immediate
+	2'b01: begin //logical shift right by immediate
 		if (shift == 0) begin //shift by 32: output is 0
 			b = 0;
 			carry = a[31];
@@ -31,7 +31,7 @@ always @* begin
 			carry = a[shift - 1];
 		end
 	end
-	3'b100: begin //arithmetic shift right by immediate
+	2'b10: begin //arithmetic shift right by immediate
 		if (shift == 0) begin
 			if (a[31] == 0) begin
 				b = 0;
@@ -45,7 +45,7 @@ always @* begin
 			carry = a[shift - 1];
 		end
 	end
-	3'b110: begin //rotate right by immediate
+	2'b11: begin //rotate right by immediate
 		if (shift == 0) begin
 			b = a >> 1'b1;
 			carry = a[0];
@@ -93,7 +93,7 @@ endmodule
 
 module shifter_testbench();
 // Inputs
-reg [2:0] shift_type;
+reg [1:0] shift_type;
 reg [31:0] a;
 reg [4:0] shift;
 reg C;
@@ -113,19 +113,19 @@ shifter dut (
 
 initial begin
 	//shift left by immediate
-	shift_type <= 3'b000; a <= 32'hFFFFFFFF; shift <= 5'b00001; C <= 0; #10;
+	shift_type <= 2'b00; a <= 32'hFFFFFFFF; shift <= 5'b00001; C <= 0; #10;
 	shift <= 5'b11111; #10;
 	shift <= 5'b00000; #10;
 	//shift right by immediate
-	shift_type <= 3'b010; a <= 32'hFFFFFFFF; shift <= 5'b00001; C <= 0; #10;
+	shift_type <= 2'b01; a <= 32'hFFFFFFFF; shift <= 5'b00001; C <= 0; #10;
 	shift <= 5'b11111; a <= 32'h80000FFF; #10;
 	shift <= 5'b00000; #10;
 	//arithmetic shift right by immediate
-	shift_type <= 3'b100; a <= 32'hFF0000FF; shift <= 5'b10000; C <= 0; #10;
+	shift_type <= 2'b10; a <= 32'hFF0000FF; shift <= 5'b10000; C <= 0; #10;
 	shift <= 5'b11111; a <= 32'h80000FFF; #10;
 	shift <= 5'b00000; #10;
 	//rotate right by immediate
-	shift_type <= 3'b110; a <= 32'hFFF000FF; shift <= 5'b10000; C <= 0; #10;
+	shift_type <= 2'b11; a <= 32'hFFF000FF; shift <= 5'b10000; C <= 0; #10;
 	shift <= 5'b11111; a <= 32'h00000FFF; #10;
 	shift <= 5'b00000; #10;
 

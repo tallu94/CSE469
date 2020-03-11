@@ -1,225 +1,215 @@
 m255
 K3
-z0
 13
 cModel Technology
 Z0 dC:\Users\14253\ee469\cpu
 valu
-Z1 !s110 1582838404
-!i10b 1
-!s100 bIL<YMGmRV6HEUcmZd_4h3
-IGn58f1fILCoI0mUQidDzZ0
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 dC:/Users/billy/Desktop/469/CSE469/cpu
-w1582770560
-Z4 8./alu.v
-Z5 F./alu.v
+Z1 IQnOh1:]7R02?aT4O:8]mA3
+Z2 VOMlo=HPKk^Q`PUYgTgU:B1
+Z3 dC:\Users\14253\ee469\cpu
+Z4 w1582841409
+Z5 8./alu.v
+Z6 F./alu.v
 L0 1
-Z6 OV;L;10.5b;63
-r1
-!s85 0
-31
-Z7 !s108 1582838404.000000
-Z8 !s107 ./alu.v|
-Z9 !s90 -reportprogress|300|./alu.v|
-!i113 1
-Z10 tCvgOpt 0
-valu_testbench
-!s100 F=BnYOYz1P7i8>WUCA5m`2
-I?G8A1?BU@PPOFcVj5[XI]0
-VN^B;K=YF1jHT`KC`UlBP_1
-R0
-w1582245284
-R4
-R5
-L0 123
-OV;L;10.1b;51
+Z7 OV;L;10.1b;51
 r1
 31
-!s108 1582245877.696000
-R8
-R9
+Z8 !s90 -reportprogress|300|./alu.v|
 o-O0
+Z9 !s100 CNKjFYnY9BG1R85N;W>5Q0
+Z10 !s108 1582842425.061000
+Z11 !s107 ./alu.v|
+!i10b 1
+!s85 0
+!s101 -O0
+valu_testbench
+Z12 I?G8A1?BU@PPOFcVj5[XI]0
+Z13 VN^B;K=YF1jHT`KC`UlBP_1
+R3
+Z14 w1582245284
+R5
+R6
+Z15 L0 123
+R7
+r1
+31
+R11
+R8
+o-O0
+Z16 !s100 F=BnYOYz1P7i8>WUCA5m`2
+Z17 !s108 1582245877.696000
 !i10b 1
 !s85 0
 !s101 -O0
 vcpu
-Z11 !s110 1582838405
-!i10b 1
-!s100 S2M1o3zF49c2h<?9Jz9`11
-I^eVe`PQchzHHMOEKQEY??2
-R2
+Z18 I=4EY]a2g<:;@lE[LddTRa2
+Z19 VRng^<d8F2`AHHE`^;oAlA0
 R3
-Z12 w1582838401
-Z13 8./cpu.v
-Z14 F./cpu.v
+Z20 w1582842314
+Z21 8./cpu.v
+Z22 F./cpu.v
 L0 1
-R6
-r1
-!s85 0
-31
-Z15 !s108 1582838405.000000
-Z16 !s107 ./cpu.v|
-Z17 !s90 -reportprogress|300|./cpu.v|
-!i113 1
-R10
-vcpu_testbench
-R11
-!i10b 1
-!s100 eb`BfD2?FILZe0;UNO`1B3
-IYlE5OAl`=[6Kh``Qh_b6U2
-R2
-R3
-R12
-R13
-R14
-L0 175
-R6
-r1
-!s85 0
-31
-R15
-R16
-R17
-!i113 1
-R10
-vfind_next_pc
-R1
-!i10b 1
-!s100 TL;dhk`Q4=EeKie6cQ=GU0
-IO4JS?H]Q;9Aal_ml?DW`21
-R2
-R3
-w1582789502
-8./find_next_pc.v
-F./find_next_pc.v
-L0 2
-R6
-r1
-!s85 0
-31
 R7
-!s107 ./find_next_pc.v|
-!s90 -reportprogress|300|./find_next_pc.v|
-!i113 1
-R10
-vinstruction_decoder
-R11
-!i10b 1
-!s100 79NgUR?;<<N`;jP_z>Z7N1
-Ia6l9NXG>K5oEdCTE;`^NF2
-R2
-R3
-w1582787300
-8./instruction_decoder.v
-F./instruction_decoder.v
-L0 1
-R6
 r1
-!s85 0
 31
-R15
-!s107 ./instruction_decoder.v|
-!s90 -reportprogress|300|./instruction_decoder.v|
-!i113 1
-R10
-vinstruction_memory
-R11
+Z23 !s90 -reportprogress|300|./cpu.v|
+o-O0
 !i10b 1
-!s100 B30K]cO3VTQ=dIV@Oj2A33
-IWZNEz8eE_3MmLaI;g:7SR2
-R2
-R3
-w1582781347
-8./Instruction_memory.v
-F./Instruction_memory.v
-L0 1
-R6
-r1
+Z24 !s100 2eMY`eW`6CkZmK2]?W1KZ0
 !s85 0
-31
-R15
-!s107 ./Instruction_memory.v|
-!s90 -reportprogress|300|./Instruction_memory.v|
-!i113 1
-R10
-vmemory_file
-R11
-!i10b 1
-!s100 9mb;BX?:TDH155Oz@>UFj1
-IV=a9kTSLloSoiV3ca=TaI0
-R2
-R3
-w1582787202
-8./memory_file.v
-F./memory_file.v
-L0 1
-R6
-r1
-!s85 0
-31
-R15
-!s107 ./memory_file.v|
-!s90 -reportprogress|300|./memory_file.v|
-!i113 1
-R10
-vreg_file
-R11
-!i10b 1
-!s100 0UDdl4b:Y8HUMaYId0GfW1
-InhZATcR@N4SJMIU4gFW>23
-R2
-R3
-w1582764035
-8./reg_file.v
-F./reg_file.v
-L0 1
-R6
-r1
-!s85 0
-31
-R15
-!s107 ./reg_file.v|
-!s90 -reportprogress|300|./reg_file.v|
-!i113 1
-R10
-vshifter
-Z18 !s110 1582838406
-!i10b 1
-!s100 l9^E6OT?9ed4m[8U;:WZ21
-I1?E^DDROYo2ILUAK?5VLL3
-R2
-R3
-Z19 w1582838271
-Z20 8./shifter.v
-Z21 F./shifter.v
-L0 1
-R6
-r1
-!s85 0
-31
-R15
-Z22 !s107 ./shifter.v|
-Z23 !s90 -reportprogress|300|./shifter.v|
-!i113 1
-R10
-vshifter_testbench
-R18
-!i10b 1
-!s100 ^:3jzf?^Z2c8@f8MRkQCI2
-Ihb;;`JQ3gYYCW=2LdMFhU0
-R2
-R3
-R19
-R20
+Z25 !s108 1582842426.057000
+Z26 !s107 ./cpu.v|
+!s101 -O0
+vcpu_testbench
+Z27 !s110 1582838405
+Z28 IYlE5OAl`=[6Kh``Qh_b6U2
+Z29 VDg1SIo80bB@j0V0VzS_@n1
+Z30 dC:/Users/billy/Desktop/469/CSE469/cpu
+Z31 w1582838401
 R21
-L0 94
-R6
+R22
+Z32 L0 175
+Z33 OV;L;10.5b;63
+r1
+31
+Z34 !s108 1582838405.000000
+R26
+R23
+Z35 tCvgOpt 0
+Z36 !s100 eb`BfD2?FILZe0;UNO`1B3
+!i10b 1
+!s85 0
+!i113 1
+vfind_next_pc
+Z37 IPAGkelgmgKRO<GfDkZ8@J1
+Z38 Vk>_0WzTzR72Uk;]VLRX;33
+R3
+R4
+Z39 8./find_next_pc.v
+Z40 F./find_next_pc.v
+L0 2
+R7
+r1
+31
+Z41 !s90 -reportprogress|300|./find_next_pc.v|
+o-O0
+Z42 !s100 M6BLo9Jz?<bi4>0o`I[_N2
+Z43 !s108 1582842425.253000
+Z44 !s107 ./find_next_pc.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vinstruction_decoder
+Z45 IaB0P0P6o[=ZH0<XLm7VUK2
+Z46 VJnOG1<bh0d0?][BRAOzBJ3
+R3
+R4
+Z47 8./instruction_decoder.v
+Z48 F./instruction_decoder.v
+L0 1
+R7
+r1
+31
+Z49 !s90 -reportprogress|300|./instruction_decoder.v|
+o-O0
+Z50 !s100 Yc2c@?CXld_mS6mFJo>[l0
+Z51 !s108 1582842425.622000
+Z52 !s107 ./instruction_decoder.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vinstruction_memory
+Z53 I1PTXV>EbkoXCiAl1lOR:R2
+Z54 V]0YTCaRBf35YC^Z5bQ0FJ2
+R3
+R4
+Z55 8./Instruction_memory.v
+Z56 F./Instruction_memory.v
+L0 1
+R7
+r1
+31
+Z57 !s90 -reportprogress|300|./Instruction_memory.v|
+o-O0
+Z58 !s100 U?9P822SIYeP=@7jR1^eE2
+Z59 !s108 1582842425.452000
+Z60 !s107 ./Instruction_memory.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmemory_file
+Z61 IObR`L:XOeOe10VP[:4S2n0
+Z62 Vz6D2G<0T6jTJP6QS[dP180
+R3
+Z63 w1582841708
+Z64 8./memory_file.v
+Z65 F./memory_file.v
+L0 1
+R7
+r1
+31
+Z66 !s90 -reportprogress|300|./memory_file.v|
+o-O0
+Z67 !s100 1OnCd7:lEebT_Gb>S`7672
+Z68 !s108 1582842425.766000
+Z69 !s107 ./memory_file.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vreg_file
+Z70 IPEC`;W]W9<`57<m92iahR0
+Z71 VcLoicDO>bjTzg5OLMEaS12
+R3
+Z72 w1582842109
+Z73 8./reg_file.v
+Z74 F./reg_file.v
+L0 1
+R7
+r1
+31
+Z75 !s90 -reportprogress|300|./reg_file.v|
+o-O0
+Z76 !s100 _OZj64HXZ3<Y_b88;o_B]3
+Z77 !s108 1582842425.920000
+Z78 !s107 ./reg_file.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vshifter
+!i10b 1
+!s100 Z^7OoEJWGWO]Qk1;kjn5M1
+I5XX];Yhoj[L0?dk>0;@@?0
+VNFgTGS3g260V5<RfUkA6H2
+R3
+R4
+Z79 8./shifter.v
+Z80 F./shifter.v
+L0 1
+R7
 r1
 !s85 0
 31
-R15
-R22
-R23
-!i113 1
-R10
+Z81 !s108 1582842426.221000
+Z82 !s107 ./shifter.v|
+Z83 !s90 -reportprogress|300|./shifter.v|
+!s101 -O0
+o-O0
+vshifter_testbench
+!i10b 1
+!s100 `5eBdX=7MQ79J>NR?WFB=0
+I2BV56XZ;`l3[EbB3aBiEG0
+VcW1RH=M^[j<6jQ`GcF1Le2
+R3
+R4
+R79
+R80
+L0 94
+R7
+r1
+!s85 0
+31
+R81
+R82
+R83
+!s101 -O0
+o-O0

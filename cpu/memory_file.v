@@ -12,7 +12,7 @@ module memory_file(clk, addr, write_data, ldr_str_en, read_data, load_en, store_
 
 	reg [31:0] temp_read_data;
 
-	reg [31:0] memfile [255:0]; 	// 16 32-bit registers
+	reg [31:0] memfile [15:0]; 	// 16 32-bit registers
 
 	assign read_data = temp_read_data;
 
@@ -41,9 +41,9 @@ module memory_file(clk, addr, write_data, ldr_str_en, read_data, load_en, store_
 	always @(*) begin
 			if (ldr_str_en) begin
 				if (store_en)
-					memfile[addr + i] <= write_data;
+					memfile[addr[3:0] + i] <= write_data;
 				if (load_en)
-					temp_read_data <= memfile[addr + i];
+					temp_read_data <= memfile[addr[3:0] + i];
 			end
 	end
 
