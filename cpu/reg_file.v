@@ -37,7 +37,7 @@ module reg_file(
 	assign read_data2 = temp_d2;
 
 
-	always @(*) begin
+	always @(posedge clk) begin
 
 			if (read_enable1) begin
 				temp_d1 = regfile[read_addr1];

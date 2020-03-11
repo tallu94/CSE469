@@ -38,7 +38,7 @@ module memory_file(clk, addr, write_data, ldr_str_en, read_data, load_en, store_
 	*/
 
 
-	always @(*) begin
+	always @(posedge clk) begin
 			if (ldr_str_en) begin
 				if (store_en)
 					memfile[addr[3:0] + i] <= write_data;
