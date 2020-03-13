@@ -20,6 +20,7 @@ module find_next_pc(
 
 	reg [31:0] temp_program_counter_next;
 	reg [31:0] temp_next_r14;
+	
 	assign program_counter_next = temp_program_counter_next;
 	assign next_r14 = temp_next_r14;
 
@@ -27,7 +28,7 @@ module find_next_pc(
 	reg [10:0] BranchLink = 11'd32;
 
 
-	always @(*) begin
+	always @(posedge clk) begin
 
 		case(ALUCtl_code)
 			Branch: begin

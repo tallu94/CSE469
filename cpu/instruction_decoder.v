@@ -1,8 +1,8 @@
-module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediateValue,
-		 br_address, dt_address, ALUCtl_code, enable, cpsr_enable, execute_flag, cpsr, cond_field, immediate_enable);
+module instruction_decoder (clk, instruction_set, rm, shift, rn, rd, rotate, immediateValue,
+		 br_address, dt_address, ALUCtl_code, cpsr_enable, execute_flag, cpsr, cond_field, immediate_enable);
 
+	input wire clk;
 	input wire [31:0] instruction_set;
-	input wire enable;
 	input wire [31:0] cpsr;
 
 	output wire [3:0] rm;
@@ -62,7 +62,7 @@ module instruction_decoder (instruction_set, rm, shift, rn, rd, rotate, immediat
 	end */
 
 	// case statememt to decode instruction set
-	always @(*) begin
+	always @(posedge clk) begin
 
 	temp_cond_field = instruction_set[31:28];
 	temp_cpsr_enable = instruction_set[20];

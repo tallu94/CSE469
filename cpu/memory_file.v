@@ -29,6 +29,7 @@ module memory_file(clk, addr, write_data, ldr_str_en, read_data, load_en, store_
 		memfile[8] = 32'd9;
 		memfile[9] = 32'd10;
 		memfile[10] = 32'd11;
+		
 		memfile[11] = 32'd12;
 		memfile[12] = 32'd13;
 		memfile[13] = 32'd14;

@@ -11,11 +11,14 @@ module cpu(
 	output wire  [7:0] debug_port7
 	);
 
-	// declaring local variables
+	//instruction fetch Variables
+	wire [31:0] instruction_set;
+
+	// Instructio Decoder & register read varaibles
 	reg [31:0] temp_pc;
 	wire [31:0] pc;
 	wire [31:0] pc_n;
-	wire [31:0] instruction_set;
+	reg [31:0] decoder_instruction;
 	wire [7:0]  shift;
 	wire [3:0]  rm;
 	wire [3:0]  rn;
@@ -26,9 +29,13 @@ module cpu(
 	wire [11:0] dt_address;
 	wire [23:0] br_address;
 	wire [10:0] ALUCtl_code;
-	wire [31:0] ALUOut;
 	wire [31:0]  cpsr;
+	wire immediate_enable;
+	wire cpsr_enable;
+	wire execute_flag;
+	wire [31:0] ALUOut;
 	wire [3:0]  cpsr_n;
+	wire carry_bit;
 	wire [31:0] r1_data;
 	wire [31:0] r2_data;
 	wire [31:0] next_r14;			// R[14] value to be written into reg file
@@ -42,16 +49,61 @@ module cpu(
 	reg temp_instruction_en;
 	reg temp_ldr_str_en;
 
-	reg [1:0] cycle_counter;
+	//Decoder Variables
+	reg [7:0]  decoder_shift;
+	reg [3:0]  decoder_rm;
+	reg [3:0]  decoder_rn;
+	reg [3:0]  decoder_rd;
+	reg [3:0]  decoder_rotate;
+	reg [7:0]  decoder_immediateValue;
+	reg [3:0]  decoder_cond_field;
+	reg [11:0] decoder_dt_address;
+	reg [23:0] decoder_br_address;
+	reg [10:0] decoder_ALUCtl_code;
+	reg [31:0] decoder_cpsr;
+	reg decoder_immediate_enable;
+	reg decoder_cpsr_enable;
+	reg decoder_execute_flag;
+
+	//ALU Variables
+	reg [10:0] alu_ALUCtl_Code;
+	reg [31:0] alu_data1;
+	reg [31:0] alu_data2;
+	reg [7:0] alu_immediateValue;
+	reg [31:0] alu_ALUOut;
+	reg [31:0] alu_cpsr;
+	reg alu_cpsr_enable;
+	reg [3:0] alu_rm;
+	reg [3:0] alu_rn;
+	reg [3:0] alu_rd;
+
+
+	//Memory varaibles
+	reg [7:0] mem_addr;
+	reg [31:0] mem_read_data;
+	reg [31:0] mem_write_data;
+	reg [7:0] mem_immediateValue;
+	reg [3:0] mem_rm;
+	reg [3:0] mem_rn;
+	reg [3:0] mem_rd;
+	reg mem_en;
+	reg load_en;
+	reg store_en;
+
+	//Register Write Variables
+	reg [3:0] reg_write_addr;
 	reg [31:0] reg_write_data;
+	reg reg_write_en;
+	reg [3:0] reg_rd;
+
+
+	reg [1:0] cycle_counter;
+	//reg [31:0] reg_write_data;
 	reg [31:0] r1_data_final;
-	reg [31:0] reg_write_addr;
+	//reg [31:0] reg_write_addr;
 	wire [31:0] shift_output;
 	reg mem_str_enable;
-	wire immediate_enable;
-	wire cpsr_enable;
-	wire execute_flag;
-	wire carry_bit;
+
 	// Controls the LED on the board.
 	assign led = 1'b1;
 	assign pc = temp_pc;
@@ -89,10 +141,56 @@ module cpu(
 	// initialize and update next
 	always @(posedge clk) begin
 		if (~nreset) begin //might need to be a "~"
-			temp_pc <= 32'b0;
-			cycle_counter <= 0;
+			temp_pc = 32'b0;
+		end
+		else begin
+		//Increment PC
+		temp_pc <= pc_n;
+
+		//Instruction Fetch -> instruction Decode
+		decoder_instruction <= instruction_set;
+
+		//decoded instructions
+		decoder_shift <= shift;
+		decoder_rm <= rm;
+		decoder_rn <= rn;
+		decoder_rd <= rd;
+		decoder_rotate <= rotate;
+		decoder_immediateValue <= immediateValue;
+		decoder_cond_field <= cond_field;
+		decoder_dt_address <= dt_address;
+		decoder_br_address <= br_address;
+		decoder_ALUCtl_code <= ALUCtl_code;
+		decoder_immediate_enable <= immediate_enable;
+		decoder_cpsr_enable <= cpsr_enable;
+		decoder_execute_flag <= execute_flag;
+
+		//ALU
+		alu_cpsr <=  cpsr;
+		alu_ALUOut <= ALUOut;
+
+		//Decoder -> ALU
+		alu_ALUCtl_Code <= ALUCtl_code;
+		alu_data1 <= r1_data;
+		alu_data2 <= r2_data;
+		alu_immediateValue <= immediateValue;
+		alu_cpsr_enable <= cpsr_enable;
+		alu_rm <= rm;
+		alu_rn <= rn;
+		alu_rd <= rd;
+
+		//ALU -> Memory
+		mem_rm <= alu_rm;
+		mem_rn <= alu_rn;
+		mem_rd <= alu_rd;
+
+		//Memory -> Register
+		reg_rd <= mem_rd;
 		end
 
+
+
+		/*
 		case (cycle_counter)
 			0: begin
 				temp_pc <= pc_n;
@@ -141,9 +239,35 @@ module cpu(
 			end
 			cycle_counter <= 0;
 			end
-		endcase
+
+		endcase*/
 	end
 
+	// figure out next-pc
+	find_next_pc fnp (.clk(clk), .ALUCtl_code(ALUCtl_code), .br_address(br_address),
+		.program_counter(temp_pc), .program_counter_next(pc_n), .next_r14(next_r14), .execute_flag(1'b0 /*execute_flag*/));
+
+	// fetch instruction
+	instruction_memory im (.clk(clk), .enable(1'b1), .rst(nreset), .pc_address(pc), .instruction_set(instruction_set));
+
+	// updates format flags and address/values
+	instruction_decoder id (.clk, .instruction_set(decoder_instruction), .rm(rm), .shift(shift), .rn(rn), .rd(rd), .rotate(rotate),
+		.immediateValue(immediateValue), .br_address(br_address), .dt_address(dt_address), .ALUCtl_code(ALUCtl_code),
+		.cpsr_enable(cpsr_enable), .execute_flag(execute_flag), .cpsr(cpsr), .cond_field(cond_field), .immediate_enable(immediate_enable));
+
+	// Register File get and write values
+	reg_file rg (.clk(clk), .read_addr1(rm[3:0]), .read_addr2(rn), .write_addr(reg_write_addr[3:0]), .write_data(reg_write_data), .read_enable1(read_en),
+		.write_enable1(write_en), .read_data1(r1_data), .read_data2(r2_data));
+
+	// Mmeory File -- The input and output values need to be changed
+	memory_file mem (.clk(clk), .addr(r2_data[7:0]), .write_data(mem_write_data), .ldr_str_en(mem_en), .read_data(memOut), .load_en(mem_load), .store_en(mem_store), .i(immediateValue));
+
+	// ALU File Compute instructions (m	ake sure to deal with cpsr values)
+	alu my_alu (.ALUCtl(alu_ALUCtl_code), .A(alu_data1), .B_initial(alu_data2), .I(alu_immediateValue), .ALUOut(ALUOut), .cpsr(cpsr), .cpsr_enable(alu_cpsr_enable), .immediate_enable(alu_immediate_enable));
+	// if instruction is branch and link then write the new pc to R14
+
+	shifter my_shifter (.shift_type(alu_immediateValue[7:5]), .a(alu_immediateValue[3:0]), .shift(alu_immediateValue[6:5]), .b(shift_output), .carry(carry_bit));
+	/*
 	// figure out next-pc
 	find_next_pc fnp (.clk(clk), .ALUCtl_code(ALUCtl_code), .br_address(br_address),
 		.program_counter(temp_pc), .program_counter_next(pc_n), .next_r14(next_r14), .execute_flag(execute_flag));
@@ -152,7 +276,7 @@ module cpu(
 	instruction_memory im (.clk(clk), .enable(instruction_en), .rst(nreset), .pc_address(temp_pc), .instruction_set(instruction_set));
 
 	// updates format flags and address/values
-	instruction_decoder id (.instruction_set(instruction_set), .rm(rm), .shift(shift), .rn(rn), .rd(rd), .rotate(rotate),
+	instruction_decoder id (.instruction_set(decoder_instruction), .rm(rm), .shift(shift), .rn(rn), .rd(rd), .rotate(rotate),
 		.immediateValue(immediateValue), .br_address(br_address), .dt_address(dt_address), .ALUCtl_code(ALUCtl_code), .enable(instruction_en),
 		.cpsr_enable(cpsr_enable), .execute_flag(execute_flag), .cpsr(cpsr), .cond_field(cond_field), .immediate_enable(immediate_enable));
 
@@ -168,10 +292,13 @@ module cpu(
 	// if instruction is branch and link then write the new pc to R14
 
 	shifter my_shifter (.shift_type(immediateValue[7:5]), .a(immediateValue[3:0]), .shift(immediateValue[6:5]), .b(shift_output), .carry(carry_bit));
+*/
 endmodule
 
 
-/*
+
+
+
 module cpu_testbench();
 	reg clk;
 	reg nreset;
@@ -196,10 +323,10 @@ module cpu_testbench();
 		.debug_port5(debug_port5), .debug_port6(debug_port6), .debug_port7(debug_port7));
 
 	initial begin
-	//	nreset = 1'b0;
-	//	@(posedge clk);
-	//	nreset = 1'b1;
-	//	@(posedge clk);
+		//nreset = 1'b0;
+		//@(posedge clk);
+		//nreset = 1'b1;
+		//@(posedge clk);
 		nreset = 1'b0;
 		repeat (100)
 		@(posedge clk);
@@ -207,4 +334,3 @@ module cpu_testbench();
 
 	end
 endmodule
-*/

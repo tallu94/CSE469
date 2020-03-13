@@ -1,6 +1,4 @@
 # Reading C:/altera/12.1sp1/modelsim_ase/tcl/vsim/pref.tcl 
-do runlab.o
-# Cannot open macro file: runlab.o
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
@@ -36,9 +34,182 @@ do runlab.do
 # 	reg_file
 # Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
 # -- Compiling module cpu
+# ** Error: ./cpu.v(149): 'temp_pc' already exists; must not be redefined as a named block
+# ** Error: ./cpu.v(149): near "<=": syntax error, unexpected <=
+# -- Compiling module cpu_testbench
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
 # 
 # Top level modules:
-# 	cpu
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(149): 'temp_pc' already exists; must not be redefined as a named block
+# ** Error: ./cpu.v(149): near "<=": syntax error, unexpected <=
+# -- Compiling module cpu_testbench
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(149): 'temp_pc' already exists; must not be redefined as a named block
+# ** Error: ./cpu.v(149): near "=": syntax error, unexpected '='
+# -- Compiling module cpu_testbench
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(152): 'decoder_instruction' already exists; must not be redefined as a named block
+# ** Error: ./cpu.v(152): near "<=": syntax error, unexpected <=
+# -- Compiling module cpu_testbench
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
 # Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
 # -- Compiling module shifter
 # -- Compiling module shifter_testbench
@@ -46,11 +217,2539 @@ do runlab.do
 # Top level modules:
 # 	shifter_testbench
 # vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
-# ** Error: This version of vsim is incompatible with file "C:/Users/14253/ee469/cpu/work/cpu_testbench/_primary.dat".
-# ** Fatal: (vsim-3382) New library format is incompatible with this version of the simulator.  Design unit 'C:/Users/14253/ee469/cpu/work.cpu_testbench'
-#    Time: 0 ps  Iteration: 0  Root: / File: NOFILE
-# FATAL ERROR while loading design
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(267): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftsqsc6t".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftsqsc6t
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 334
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 334
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(267): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlfty526b4".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfty526b4
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 334
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 334
+# MACRO ./runlab.do PAUSED at line 32
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/14253/ee469/cpu/cpu_wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/14253/ee469/cpu/cpu_wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# ** Error: (vlog-1935) Unable to move temporary file C:/Users/14253/ee469/cpu/work/_temp/vlog8qa651 to C:/Users/14253/ee469/cpu/work/find_next_pc/_primary.dbs.
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: ./find_next_pc.v(56): Verilog Compiler exiting
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 8
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./find_next_pc.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(267): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlft38xbhm".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft38xbhm
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 334
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 334
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(267): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftvft145".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftvft145
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 334
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 334
+# MACRO ./runlab.do PAUSED at line 32
+add wave -position end  sim:/cpu_testbench/dut/fnp/clk
+add wave -position end  sim:/cpu_testbench/dut/fnp/ALUCtl_code
+add wave -position end  sim:/cpu_testbench/dut/fnp/br_address
+add wave -position end  sim:/cpu_testbench/dut/fnp/program_counter
+add wave -position end  sim:/cpu_testbench/dut/fnp/program_counter_next
+add wave -position end  sim:/cpu_testbench/dut/fnp/next_r14
+add wave -position end  sim:/cpu_testbench/dut/fnp/execute_flag
+add wave -position end  sim:/cpu_testbench/dut/fnp/temp_program_counter_next
+add wave -position end  sim:/cpu_testbench/dut/fnp/temp_next_r14
+add wave -position end  sim:/cpu_testbench/dut/fnp/Branch
+add wave -position end  sim:/cpu_testbench/dut/fnp/BranchLink
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(266): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftmti22s".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftmti22s
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 333
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 333
+# MACRO ./runlab.do PAUSED at line 32
+add wave -position 25  sim:/cpu_testbench/dut/fnp/clk
+add wave -position 26  sim:/cpu_testbench/dut/fnp/ALUCtl_code
+add wave -position 27  sim:/cpu_testbench/dut/fnp/br_address
+add wave -position 28  sim:/cpu_testbench/dut/fnp/program_counter
+add wave -position 29  sim:/cpu_testbench/dut/fnp/program_counter_next
+add wave -position 30  sim:/cpu_testbench/dut/fnp/next_r14
+add wave -position 31  sim:/cpu_testbench/dut/fnp/execute_flag
+add wave -position 32  sim:/cpu_testbench/dut/fnp/temp_program_counter_next
+add wave -position 33  sim:/cpu_testbench/dut/fnp/temp_next_r14
+add wave -position 34  sim:/cpu_testbench/dut/fnp/Branch
+add wave -position 35  sim:/cpu_testbench/dut/fnp/BranchLink
+add wave -position 35  sim:/cpu_testbench/dut/fnp/BranchLink
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(266): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftw3tvw5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftw3tvw5
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 333
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 333
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(266): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlft6gbkq2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft6gbkq2
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 333
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 333
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(266): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftehn3ta".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftehn3ta
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 333
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 333
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(248): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'execute_flag'. The port definition is at: ./find_next_pc.v(9).
+# 
+#         Region: /cpu_testbench/dut/fnp
+# ** Warning: (vsim-3015) ./cpu.v(266): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftkn0xa9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftkn0xa9
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 333
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 333
+# MACRO ./runlab.do PAUSED at line 32
+add wave -position 26  sim:/cpu_testbench/dut/fnp/clk
+add wave -position 27  sim:/cpu_testbench/dut/fnp/ALUCtl_code
+add wave -position 28  sim:/cpu_testbench/dut/fnp/br_address
+add wave -position 29  sim:/cpu_testbench/dut/fnp/program_counter
+add wave -position 30  sim:/cpu_testbench/dut/fnp/program_counter_next
+add wave -position 31  sim:/cpu_testbench/dut/fnp/next_r14
+add wave -position 32  sim:/cpu_testbench/dut/fnp/execute_flag
+add wave -position 33  sim:/cpu_testbench/dut/fnp/temp_program_counter_next
+add wave -position 34  sim:/cpu_testbench/dut/fnp/temp_next_r14
+add wave -position 35  sim:/cpu_testbench/dut/fnp/Branch
+add wave -position 36  sim:/cpu_testbench/dut/fnp/BranchLink
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(248): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'execute_flag'. The port definition is at: ./find_next_pc.v(9).
+# 
+#         Region: /cpu_testbench/dut/fnp
+# ** Warning: (vsim-3015) ./cpu.v(266): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftfrxdxj".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftfrxdxj
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 333
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 333
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(248): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'execute_flag'. The port definition is at: ./find_next_pc.v(9).
+# 
+#         Region: /cpu_testbench/dut/fnp
+# ** Warning: (vsim-3015) ./cpu.v(266): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftajzyn9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftajzyn9
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 333
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 333
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(148): (vlog-2110) Illegal reference to net "pc".
+# 
+# -- Compiling module cpu_testbench
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+add wave -position 21  sim:/cpu_testbench/dut/fnp/clk
+add wave -position 22  sim:/cpu_testbench/dut/fnp/ALUCtl_code
+add wave -position 23  sim:/cpu_testbench/dut/fnp/br_address
+add wave -position 24  sim:/cpu_testbench/dut/fnp/program_counter
+add wave -position 25  sim:/cpu_testbench/dut/fnp/program_counter_next
+add wave -position 26  sim:/cpu_testbench/dut/fnp/next_r14
+add wave -position 27  sim:/cpu_testbench/dut/fnp/execute_flag
+add wave -position 28  sim:/cpu_testbench/dut/fnp/temp_program_counter_next
+add wave -position 29  sim:/cpu_testbench/dut/fnp/temp_next_r14
+add wave -position 30  sim:/cpu_testbench/dut/fnp/Branch
+add wave -position 31  sim:/cpu_testbench/dut/fnp/BranchLink
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(248): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'execute_flag'. The port definition is at: ./find_next_pc.v(9).
+# 
+#         Region: /cpu_testbench/dut/fnp
+# ** Warning: (vsim-3015) ./cpu.v(266): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftn0zvbf".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftn0zvbf
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 333
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 333
+# MACRO ./runlab.do PAUSED at line 32
+d runlab.do
+# ambiguous command name "d": dataset datasetcheck delete describe destroy disablebp divTime do do_with_tree_disabled down drivers dumplog64
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(248): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'execute_flag'. The port definition is at: ./find_next_pc.v(9).
+# 
+#         Region: /cpu_testbench/dut/fnp
+# ** Warning: (vsim-3015) ./cpu.v(266): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftzix4m4".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftzix4m4
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 333
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 333
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(248): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'execute_flag'. The port definition is at: ./find_next_pc.v(9).
+# 
+#         Region: /cpu_testbench/dut/fnp
+# ** Error: (vsim-3053) ./cpu.v(256): Illegal output or inout port connection for "port 'immediate_enable'".
+# 
+#         Region: /cpu_testbench/dut/id
+# ** Warning: (vsim-3015) ./cpu.v(266): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
 # Error loading design
 # Error: Error loading design 
 #        Pausing macro execution 
 # MACRO ./runlab.do PAUSED at line 19
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Error: (vsim-3053) ./cpu.v(256): Illegal output or inout port connection for "port 'immediate_enable'".
+# 
+#         Region: /cpu_testbench/dut/id
+# ** Warning: (vsim-3015) ./cpu.v(266): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./runlab.do PAUSED at line 19
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(266): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlfteq4281".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfteq4281
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 333
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 333
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(266): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlft2eg4fs".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft2eg4fs
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 333
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 333
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(148): (vlog-2730) Undefined variable: 'pn_n'.
+# 
+# -- Compiling module cpu_testbench
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(266): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(269): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftridmts".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftridmts
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 333
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 333
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(148): (vlog-2730) Undefined variable: 'stall'.
+# 
+# ** Error: ./cpu.v(148): near ":": syntax error, unexpected ':'
+# ** Error: ./cpu.v(193): near "endcase": syntax error, unexpected endcase
+# -- Compiling module cpu_testbench
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(153): near ":": syntax error, unexpected ':'
+# ** Error: ./cpu.v(198): near "endcase": syntax error, unexpected endcase
+# -- Compiling module cpu_testbench
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(276): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(279): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(279): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(279): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftjt7gcv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftjt7gcv
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 343
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 343
+# MACRO ./runlab.do PAUSED at line 32
+d runlab.do
+# ambiguous command name "d": dataset datasetcheck delete describe destroy disablebp divTime do do_with_tree_disabled down drivers dumplog64
+do runlab.od
+# Cannot open macro file: runlab.od
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(321): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(324): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(324): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(324): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftfz61k2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftfz61k2
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 388
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 388
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(267): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlft4xfxdn".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft4xfxdn
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 334
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 334
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.od
+# Cannot open macro file: runlab.od
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(147): (vlog-2730) Undefined variable: 'always_comb'.
+# 
+# ** Error: ./cpu.v(147): near "begin": syntax error, unexpected begin
+# ** Error: ./cpu.v(248): near "end": syntax error, unexpected end
+# -- Compiling module cpu_testbench
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(267): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftt1wkmb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftt1wkmb
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 334
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 334
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(267): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftszq47m".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftszq47m
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 334
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 334
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.od
+# Cannot open macro file: runlab.od
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(267): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(270): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftr1e44c".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftr1e44c
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 334
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 334
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(247): near "end": syntax error, unexpected end
+# -- Compiling module cpu_testbench
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(268): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(271): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(271): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(271): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ameer  Hostname: DESKTOP-KK0N0Q1  ProcessID: 14432
+# 
+#           Attempting to use alternate WLF file "./wlftt5rsc9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftt5rsc9
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break in Module cpu_testbench at ./cpu.v line 335
+# Simulation Breakpoint: Break in Module cpu_testbench at ./cpu.v line 335
+# MACRO ./runlab.do PAUSED at line 32
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(249): Checker 'find_next_pc' not found.  Instantiation 'fnp' must be of a visible checker.
+# ** Error: ./cpu.v(252): Checker 'instruction_memory' not found.  Instantiation 'im' must be of a visible checker.
+# ** Error: ./cpu.v(257): Checker 'instruction_decoder' not found.  Instantiation 'id' must be of a visible checker.
+# ** Error: ./cpu.v(261): Checker 'reg_file' not found.  Instantiation 'rg' must be of a visible checker.
+# ** Error: ./cpu.v(264): (vlog-2730) Undefined variable: 'mem_load'.
+# 
+# ** Error: ./cpu.v(264): (vlog-2730) Undefined variable: 'mem_store'.
+# 
+# ** Error: ./cpu.v(264): Checker 'memory_file' not found.  Instantiation 'mem' must be of a visible checker.
+# ** Error: ./cpu.v(267): (vlog-2730) Undefined variable: 'alu_ALUCtl_code'.
+# 
+# ** Error: ./cpu.v(267): (vlog-2730) Undefined variable: 'alu_immediate_enable'.
+# 
+# ** Error: ./cpu.v(267): Checker 'alu' not found.  Instantiation 'my_alu' must be of a visible checker.
+# ** Error: ./cpu.v(270): Checker 'shifter' not found.  Instantiation 'my_shifter' must be of a visible checker.
+# ** Error: ./cpu.v(297): near "endmodule": syntax error, unexpected endmodule
+# ** Error: ./cpu.v(304): 'clk' already declared in this scope (cpu).
+# ** Error: ./cpu.v(304): Declarations not allowed in unnamed block.
+# ** Error: ./cpu.v(305): 'nreset' already declared in this scope (cpu).
+# ** Error: ./cpu.v(305): Declarations not allowed in unnamed block.
+# ** Error: ./cpu.v(306): Illegal declaration after the statement near line '303'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: ./cpu.v(315): Declarations not allowed in unnamed block.
+# ** Error: ./cpu.v(316): Illegal declaration after the statement near line '313'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# ** Error: ./cpu.v(249): Checker 'find_next_pc' not found.  Instantiation 'fnp' must be of a visible checker.
+# ** Error: ./cpu.v(252): Checker 'instruction_memory' not found.  Instantiation 'im' must be of a visible checker.
+# ** Error: ./cpu.v(257): Checker 'instruction_decoder' not found.  Instantiation 'id' must be of a visible checker.
+# ** Error: ./cpu.v(261): Checker 'reg_file' not found.  Instantiation 'rg' must be of a visible checker.
+# ** Error: ./cpu.v(264): (vlog-2730) Undefined variable: 'mem_load'.
+# 
+# ** Error: ./cpu.v(264): (vlog-2730) Undefined variable: 'mem_store'.
+# 
+# ** Error: ./cpu.v(264): Checker 'memory_file' not found.  Instantiation 'mem' must be of a visible checker.
+# ** Error: ./cpu.v(267): (vlog-2730) Undefined variable: 'alu_ALUCtl_code'.
+# 
+# ** Error: ./cpu.v(267): (vlog-2730) Undefined variable: 'alu_immediate_enable'.
+# 
+# ** Error: ./cpu.v(267): Checker 'alu' not found.  Instantiation 'my_alu' must be of a visible checker.
+# ** Error: ./cpu.v(270): Checker 'shifter' not found.  Instantiation 'my_shifter' must be of a visible checker.
+# ** Error: ./cpu.v(297): near "endmodule": syntax error, unexpected endmodule
+# ** Error: ./cpu.v(304): 'clk' already declared in this scope (cpu).
+# ** Error: ./cpu.v(304): Declarations not allowed in unnamed block.
+# ** Error: ./cpu.v(305): 'nreset' already declared in this scope (cpu).
+# ** Error: ./cpu.v(305): Declarations not allowed in unnamed block.
+# ** Error: ./cpu.v(306): Illegal declaration after the statement near line '303'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: ./cpu.v(315): Declarations not allowed in unnamed block.
+# ** Error: ./cpu.v(316): Illegal declaration after the statement near line '313'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 13
+# C:/altera/12.1sp1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cpu.v""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module find_next_pc
+# 
+# Top level modules:
+# 	find_next_pc
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_memory
+# 
+# Top level modules:
+# 	instruction_memory
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module instruction_decoder
+# 
+# Top level modules:
+# 	instruction_decoder
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module memory_file
+# 
+# Top level modules:
+# 	memory_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module cpu
+# -- Compiling module cpu_testbench
+# 
+# Top level modules:
+# 	cpu_testbench
+# Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+# -- Compiling module shifter
+# -- Compiling module shifter_testbench
+# 
+# Top level modules:
+# 	shifter_testbench
+# vsim -lib work -voptargs=\"+acc\" -t 1ps cpu_testbench 
+# Loading work.cpu_testbench
+# Loading work.cpu
+# Loading work.find_next_pc
+# Loading work.instruction_memory
+# Loading work.instruction_decoder
+# Loading work.reg_file
+# Loading work.memory_file
+# Loading work.alu
+# Loading work.shifter
+# ** Warning: (vsim-3015) ./cpu.v(268): [PCDPC] - Port size (11 or 11) does not match connection size (1) for port 'ALUCtl'. The port definition is at: ./alu.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_alu
+# ** Warning: (vsim-3015) ./cpu.v(271): [PCDPC] - Port size (2 or 2) does not match connection size (3) for port 'shift_type'. The port definition is at: ./shifter.v(2).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(271): [PCDPC] - Port size (32 or 32) does not match connection size (4) for port 'a'. The port definition is at: ./shifter.v(3).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
+# ** Warning: (vsim-3015) ./cpu.v(271): [PCDPC] - Port size (5 or 5) does not match connection size (2) for port 'shift'. The port definition is at: ./shifter.v(4).
+# 
+#         Region: /cpu_testbench/dut/my_shifter
