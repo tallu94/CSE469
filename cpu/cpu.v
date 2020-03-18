@@ -48,6 +48,7 @@ module cpu(
 	reg temp_read_en;
 	reg temp_instruction_en;
 	reg temp_ldr_str_en;
+	reg temp
 
 	//Decoder Variables
 	reg [7:0]  decoder_shift;
@@ -78,11 +79,14 @@ module cpu(
 	reg [3:0] alu_rd;
 
 
+
 	//Memory varaibles
 	reg [7:0] mem_addr;
 	reg [31:0] mem_read_data;
 	reg [31:0] mem_write_data;
+	reg [10:0] mem_ALUCtl_Code;
 	reg [7:0] mem_immediateValue;
+	reg [10:0] mem_ALUOut;
 	reg [3:0] mem_rm;
 	reg [3:0] mem_rn;
 	reg [3:0] mem_rd;
@@ -91,7 +95,9 @@ module cpu(
 	reg store_en;
 
 	//Register Write Variables
+	reg [10:0] reg_ALUOut;
 	reg [3:0] reg_write_addr;
+	reg [10:0] reg_ALUCtl_Code;
 	reg [31:0] reg_write_data;
 	reg reg_write_en;
 	reg [3:0] reg_rd;
@@ -122,6 +128,13 @@ module cpu(
 	assign debug_port7 = rd;
 
 	always @(*) begin
+	//Enable Disable modules here. depending on alucode. this is where we stall as well.
+	temp_read_en = 1'b1;
+	temp_write_en = 1'b1;
+	temp_ldr_str_en = 1'b1;
+	temp_instruction_en = 1'b1;
+
+
 	 	if (ALUCtl_code == 11'd41 || ALUCtl_code == 11'd42) begin
 			reg_write_data = memOut;
 			mem_str_enable = ~instruction_set[20];
@@ -140,7 +153,7 @@ module cpu(
 	end
 	// initialize and update next
 	always @(posedge clk) begin
-		if (~nreset) begin //might need to be a "~"
+		if (nreset) begin //might need to be a "~"
 			temp_pc = 32'b0;
 		end
 		else begin
@@ -170,22 +183,28 @@ module cpu(
 		alu_ALUOut <= ALUOut;
 
 		//Decoder -> ALU
-		alu_ALUCtl_Code <= ALUCtl_code;
+		alu_ALUCtl_Code <= decoder_ALUCtl_code;
 		alu_data1 <= r1_data;
 		alu_data2 <= r2_data;
-		alu_immediateValue <= immediateValue;
-		alu_cpsr_enable <= cpsr_enable;
-		alu_rm <= rm;
-		alu_rn <= rn;
-		alu_rd <= rd;
+		alu_immediateValue <= decoder_immediateValue;
+		alu_cpsr_enable <= decoder_cpsr_enable;
+		alu_rm <= decoder_rm;
+		alu_rn <= decoder_rn;
+		alu_rd <= decoder_rd;
 
 		//ALU -> Memory
+		mem_ALUCtl_Code <= alu_ALUCtl_Code;
+		mem_addr <= alu_data2[7:0];
+		mem_write_data <= alu_data2;
 		mem_rm <= alu_rm;
 		mem_rn <= alu_rn;
 		mem_rd <= alu_rd;
 
 		//Memory -> Register
+		reg_ALUCtl_Code <= mem_ALUCtl_Code;
 		reg_rd <= mem_rd;
+		reg_ALUOut <= mem_ALUOut;
+
 		end
 
 
@@ -256,11 +275,11 @@ module cpu(
 		.cpsr_enable(cpsr_enable), .execute_flag(execute_flag), .cpsr(cpsr), .cond_field(cond_field), .immediate_enable(immediate_enable));
 
 	// Register File get and write values
-	reg_file rg (.clk(clk), .read_addr1(rm[3:0]), .read_addr2(rn), .write_addr(reg_write_addr[3:0]), .write_data(reg_write_data), .read_enable1(read_en),
+	reg_file rg (.clk(clk), .read_addr1(rm[3:0]), .read_addr2(rn), .write_addr(reg_rd), .write_data(reg_ALUOut), .read_enable1(read_en),
 		.write_enable1(write_en), .read_data1(r1_data), .read_data2(r2_data));
 
 	// Mmeory File -- The input and output values need to be changed
-	memory_file mem (.clk(clk), .addr(r2_data[7:0]), .write_data(mem_write_data), .ldr_str_en(mem_en), .read_data(memOut), .load_en(mem_load), .store_en(mem_store), .i(immediateValue));
+	memory_file mem (.clk(clk), .addr(mem_addr), .write_data(mem_write_data), .ldr_str_en(mem_en), .read_data(memOut), .load_en(mem_load), .store_en(mem_store), .i(mem_immediateValue));
 
 	// ALU File Compute instructions (m	ake sure to deal with cpsr values)
 	alu my_alu (.ALUCtl(alu_ALUCtl_code), .A(alu_data1), .B_initial(alu_data2), .I(alu_immediateValue), .ALUOut(ALUOut), .cpsr(cpsr), .cpsr_enable(alu_cpsr_enable), .immediate_enable(alu_immediate_enable));
@@ -323,10 +342,8 @@ module cpu_testbench();
 		.debug_port5(debug_port5), .debug_port6(debug_port6), .debug_port7(debug_port7));
 
 	initial begin
-		//nreset = 1'b0;
-		//@(posedge clk);
-		//nreset = 1'b1;
-		//@(posedge clk);
+		nreset = 1'b1;
+		@(posedge clk);
 		nreset = 1'b0;
 		repeat (100)
 		@(posedge clk);

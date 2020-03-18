@@ -17,7 +17,7 @@ r1
 31
 Z9 !s90 -reportprogress|300|./alu.v|
 o-O0
-Z10 !s108 1584086044.783000
+Z10 !s108 1584237575.739000
 Z11 !s107 ./alu.v|
 !i10b 1
 !s85 0
@@ -42,33 +42,33 @@ Z17 !s108 1582245877.696000
 !s85 0
 !s101 -O0
 vcpu
-Z18 IWJU1[_6hMP6bOE9oc:PDh3
+Z18 IPf7Kmhf>`e6MbTiN<<=3B2
 Z19 VRng^<d8F2`AHHE`^;oAlA0
 R4
-Z20 w1584086041
+Z20 w1584237573
 Z21 8./cpu.v
 Z22 F./cpu.v
 L0 1
 R8
 r1
 31
-Z23 !s108 1584086045.413000
+Z23 !s108 1584237576.528000
 Z24 !s107 ./cpu.v|
 Z25 !s90 -reportprogress|300|./cpu.v|
 o-O0
 !i10b 1
-Z26 !s100 J<<9fSM>502MU5ABFh]jY1
+Z26 !s100 V8477bZ=?2>0>^a4T7G3_0
 !s85 0
 !s101 -O0
 vcpu_testbench
-Z27 !s100 E8?^e=6eK2i67RkWJAI1>0
-Z28 IghI2;CPGQXPiT]AX`IjTG1
+Z27 !s100 LYQlE4AUQ9BA7UGKjII242
+Z28 I0?kXS@43kRc:5o>mLcnNK3
 Z29 VATbj`P_g`<0oQ4b]MDAb[3
 R4
 R20
 R21
 R22
-Z30 L0 304
+Z30 L0 320
 R8
 r1
 31
@@ -80,11 +80,11 @@ o-O0
 !s85 0
 !s101 -O0
 vfind_next_pc
-Z31 !s100 EX=5oPLg;kFfizRL1hcVA3
-Z32 I=<zV7ano][FW8S[PN?<dC0
+Z31 !s100 NTBR1fnR]UC=cK0`EazGW3
+Z32 Ih^4Cz?P3VAF8ohAzNAI7H1
 Z33 Vk>_0WzTzR72Uk;]VLRX;33
 R4
-Z34 w1584080957
+Z34 w1584136442
 Z35 8./find_next_pc.v
 Z36 F./find_next_pc.v
 L0 2
@@ -93,17 +93,17 @@ r1
 31
 Z37 !s90 -reportprogress|300|./find_next_pc.v|
 o-O0
-Z38 !s108 1584086044.903000
+Z38 !s108 1584237575.854000
 Z39 !s107 ./find_next_pc.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vinstruction_decoder
-Z40 !s100 keN5_l:XY:V=aBN>eA0iZ1
-Z41 IzKok8C<l5g>VS:4DmME`j3
+Z40 !s100 bXeFmUj:=eb]XM>:`8PMa2
+Z41 IGj@6f]a`Hf=DCRjBC^C7?0
 Z42 Vh=KN_U]1R;fIUb;H]WM3g0
 R4
-Z43 w1584078655
+Z43 w1584227059
 Z44 8./instruction_decoder.v
 Z45 F./instruction_decoder.v
 L0 1
@@ -112,17 +112,17 @@ r1
 31
 Z46 !s90 -reportprogress|300|./instruction_decoder.v|
 o-O0
-Z47 !s108 1584086045.106000
+Z47 !s108 1584237576.121000
 Z48 !s107 ./instruction_decoder.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vinstruction_memory
-Z49 !s100 QBYol=Mg[6dXWB<75OWJM0
-Z50 ILIzfmUgPIJka?SC35HA573
+Z49 !s100 d2mNP4aPAeg7H;LXhLTYc2
+Z50 IeF4N3l9i6`5>@WQBzCVAa2
 Z51 V]0YTCaRBf35YC^Z5bQ0FJ2
 R4
-Z52 w1584080790
+Z52 w1584136596
 Z53 8./Instruction_memory.v
 Z54 F./Instruction_memory.v
 L0 1
@@ -131,17 +131,17 @@ r1
 31
 Z55 !s90 -reportprogress|300|./Instruction_memory.v|
 o-O0
-Z56 !s108 1584086045.008000
+Z56 !s108 1584237575.996000
 Z57 !s107 ./Instruction_memory.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vmemory_file
-Z58 !s100 ZRj8U:fz[j?T<G=A`jZNY3
-Z59 IR=0Z7GV7fVPIg;U626d`O3
+Z58 !s100 9F<SDbD=>lfcY1JI6CAdY3
+Z59 I>Mj;J]6OEYLE@WRmQO2Y:1
 Z60 Vz6D2G<0T6jTJP6QS[dP180
 R4
-Z61 w1583890024
+Z61 w1584136712
 Z62 8./memory_file.v
 Z63 F./memory_file.v
 L0 1
@@ -150,17 +150,17 @@ r1
 31
 Z64 !s90 -reportprogress|300|./memory_file.v|
 o-O0
-Z65 !s108 1584086045.215000
+Z65 !s108 1584237576.302000
 Z66 !s107 ./memory_file.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vreg_file
-Z67 !s100 >0HJ53ThCBD5_MVSJ3U^]3
-Z68 IgZJaX^A7cGMoX62[>EIF[2
+Z67 !s100 _OZj64HXZ3<Y_b88;o_B]3
+Z68 IPEC`;W]W9<`57<m92iahR0
 Z69 VcLoicDO>bjTzg5OLMEaS12
 R4
-Z70 w1584072532
+Z70 w1584136729
 Z71 8./reg_file.v
 Z72 F./reg_file.v
 L0 1
@@ -169,7 +169,7 @@ r1
 31
 Z73 !s90 -reportprogress|300|./reg_file.v|
 o-O0
-Z74 !s108 1584086045.312000
+Z74 !s108 1584237576.415000
 Z75 !s107 ./reg_file.v|
 !i10b 1
 !s85 0
@@ -188,7 +188,7 @@ R8
 r1
 !s85 0
 31
-Z81 !s108 1584086045.561000
+Z81 !s108 1584237576.691000
 Z82 !s107 ./shifter.v|
 Z83 !s90 -reportprogress|300|./shifter.v|
 !s101 -O0

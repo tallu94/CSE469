@@ -8,7 +8,7 @@ module instruction_memory (clk, enable, rst, pc_address, instruction_set);
 	assign instruction_set = temp_instruction_set;
 
 	reg [7:0] regfile [0:127];
-	always@(posedge clk) begin
+	always@(*) begin
 		if (enable) begin
 			temp_instruction_set = {regfile[pc_address], regfile[pc_address + 1], regfile[pc_address + 2], regfile[pc_address + 3]};
   	end

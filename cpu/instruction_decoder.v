@@ -37,7 +37,7 @@ module instruction_decoder (clk, instruction_set, rm, shift, rn, rd, rotate, imm
 	assign shift = temp_shift;
 	assign rn = temp_rn;
 	assign rd = temp_rd;
-	assign	rotate = temp_rotate;
+	assign rotate = temp_rotate;
 	assign immediateValue = temp_immediateValue;
 	assign cond_field = temp_cond_field;
 	assign br_address = temp_br_address;
@@ -62,7 +62,7 @@ module instruction_decoder (clk, instruction_set, rm, shift, rn, rd, rotate, imm
 	end */
 
 	// case statememt to decode instruction set
-	always @(posedge clk) begin
+	always @(*) begin
 
 	temp_cond_field = instruction_set[31:28];
 	temp_cpsr_enable = instruction_set[20];
